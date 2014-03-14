@@ -1,6 +1,6 @@
 <?php
 
-require_once('includes/includes.php');
+require_once('../includes/includes.php');
 
 header("Vary: Accept-Encoding");
 header("Content-Type: text/html; charset=UTF-8");

@@ -1,6 +1,6 @@
 <?php
 
-require_once('includes/includes.php');
+require_once('../includes/includes.php');
 
 // get local blacklist and whitelist entries
 $blacklist_data = trim(file_get_contents(BLACKLIST));
