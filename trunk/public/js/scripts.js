@@ -50,4 +50,6 @@ $(document).ready(function() {
 	$('#lang').change(function() {
 		document.location.href = url_clean(document.location.href) + '?lang=' + $('#lang').val();
 	});
+	// enable nice tooltips
+	$('[title').tooltip();
 });

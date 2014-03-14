@@ -14,3 +14,5 @@ Include Blacklist=Blacklist miteinbeziehen
 Whitelist=Whitelist
 Include Whitelist=Whitelist miteinbeziehen
 Download hosts file=Hosts-Datei downloaden
+Open Source=Open Source
+BlockEmHosts.org is Open Source. Go check it out by clicking here.=BlockEmHosts.org ist Open Source. Sie können sich den Quellcode hier durch Klicken ansehen.

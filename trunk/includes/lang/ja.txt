@@ -14,3 +14,5 @@ Include Blacklist=ブラックリストを使います
 Whitelist=ホワイトリスト
 Include Whitelist=ホワイトリストを使います
 Download hosts file=ダウンロードhostsファイル
+Open Source=オープンソース
+BlockEmHosts.org is Open Source. Go check it out by clicking here.=BlockEmHosts.orgはオープンソースです。ここにクリックして、見てください。
