@@ -1,0 +1,16 @@
+Language:=語:
+Contact=コンタクト
+Legal notice=奥付
+Privacy notice=プライバシーポリシー
+Level up your browsing experience=ブラウザーエクスペリエンスを直す為に。
+You can combine hosts files for adblocking or tracking/privacy reasons here.=ここでは、アドブロックとトラッキングの為にhostsファイルを一つにすることができます。
+By using such an hosts file your computer can't make a connection to any of the domains listed in it any more.=hostsファイルを使う場合、hostsファイルの中に書いてあるドメインに通信できなくなります。
+This is the fastest and most secure way of blocking unwanted ads and shady sites.=それはアドの一番早く安全なブロッキングです。
+Additionaly it should also speed up your surfing experience :)=そしてインターネットは速くなります（^＿^）
+Hosts file URL:=Hosts ファイル URL:
+Choose sources=ソースを選びます
+Blacklist=ブラックリスト
+Include Blacklist=ブラックリストを使います
+Whitelist=ホワイトリスト
+Include Whitelist=ホワイトリストを使います
+Download hosts file=ダウンロードhostsファイル

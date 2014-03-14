@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+body {
+	font-family: verdana, sans, sans-serif;
+	/* monospace font */
+	/*font-family: "Courier New", Courier, monospace;*/
+	font-size: 0.9em;
+	background-color: #AC2E2E;
+	background: radial-gradient(circle,#BE6464,#AC2E2E);
+}
+h1 {
+	margin: 0;
+}
+h2 {
+	color: gray;
+}
+a {
+	text-decoration: none;
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+}
+a:not(.ui-state-default) {
+	text-decoration: none;
+	cursor: pointer;
+	color: #36c ! important;
+	background-color: inherit;
+}
+a:hover:not(.ui-state-default), a:focus:not(.ui-state-default) {
+	text-decoration: none;
+	cursor: pointer;
+	color: #36c ! important;
+	text-shadow: 0px 0px 10px lightgray;
+	background-color: inherit;
+}
+a:visited:not(.ui-state-default) {
+	text-decoration: none;
+	cursor: pointer;
+	color: #36c ! important;
+	background-color: inherit;
+}
+select {
+	background-color: white;
+	font-size: 1em;
+	padding: 1px;
+	border: 1px solid lightgray;
+}
+#titlebar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: white;
+	box-shadow: 0px 0px 10px black;
+	z-index: 1000;
+}
+.titlebar_inner {
+	margin: 10px;
+}
+#content {
+	position: absolute;
+	top: 20%;
+	left: 15%;
+	background: white;
+	box-shadow: 0px 0px 20px 1px black;
+	padding: 20px;
+	border-radius: 10px;
+	margin: auto;
+	max-width: 70%;
+	margin-bottom: 50px;
+}
+#footer {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	width: 100%;
+	background: white;
+	box-shadow: 0px 0px 10px black;
+	z-index: 1000;
+	padding: 10px;
+}
+.left {
+	text-align: left;
+}
+.right {
+	text-align: right;
+}
+.center {
+	text-align: center;
+}
+.middle {
+	vertical-align: middle;
+}
+.float_left {
+	float: left;
+}
+.float_right {
+	float: right;
+}
+.float_clear {
+	clear: both;
+}
+.bold {
+	font-weight: bold;
+}
+/* override jqueryui font-size in dialogs */
+.ui-dialog, .ui-widget {
+	font-size: 1em ! important;
+}
