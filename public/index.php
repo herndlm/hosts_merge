@@ -75,6 +75,7 @@ $content .= html_tag('p',
 	$tr->__('This is the fastest and most secure way of blocking unwanted ads and shady sites.') . ' ' .
 	$tr->__('Additionaly it should also speed up your surfing experience :)')
 );
+//$content .= html_tag('a', $tr->
 
 // step 1, select sources
 $step_data = html_tag('p', $tr->__('Choose sources'), array('class' => 'bold'));
@@ -169,7 +170,15 @@ if (IMPRESSUM_HREF)
 	$outputs[] = html_tag('a', $tr->__('Legal notice'), array('href' => htmlspecialchars(IMPRESSUM_HREF), 'target' => '_blank'));
 if (PRIVACY_INFO)
 	$outputs[] = html_tag('a', $tr->__('Privacy notice'), array('href' => 'javascript:void(0)', 'title' => htmlspecialchars(PRIVACY_INFO), 'target' => '_blank'));
+$outputs[] = html_tag('a', $tr->__('Open Source'), array(
+	'href'   => 'https://code.google.com/p/blockemhosts/',
+	'target' => '_blank',
+	'title'  => $tr->__('BlockEmHosts.org is Open Source. Go check it out by clicking here.')
+));
 $content .= html_tag('div', implode(' | ', $outputs), array('class' => 'float_right'));
+
+// end float
+$content .= html_tag('div', null, array('class' => 'float_clear'));
 
 echo html_tag('div', $content, array('id' => 'content'));
 
