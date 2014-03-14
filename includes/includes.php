@@ -60,8 +60,10 @@ function html_compress($html) {
 	// no minimized html, return
 	if (!USE_MINIMZED_JS_CSS_HTML)
 		return $html;
+	// remove javascript comments
+	$response = preg_replace('%/\*(.|[\r\n])*?\*/%', '', $html);
 	// newlines, tabs & carriage return
-	$response = str_replace(array("\n", "\t", "\r"), '', $html);
+	$response = str_replace(array("\t", "\r"), '', $response);
 	// convert multiple spaces into one
 	$response = preg_replace('/\s+/', ' ', $response);
 	// cleanup spaces inside tags
