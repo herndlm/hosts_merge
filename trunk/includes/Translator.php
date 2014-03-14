@@ -2,8 +2,6 @@
 
 // improvised version of http://tympanus.net/codrops/2009/12/30/easy-php-site-translation/
 
-define('LANG_DIR', 'includes/lang');
-
 // TODO load lang file in constructor avoids accessing the file for each translation
 
 class Translator {

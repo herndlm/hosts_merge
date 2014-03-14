@@ -9,6 +9,7 @@ define('PRIVACY_INFO', '<privacy info>');
 
 define('USE_MINIMZED_JS_CSS_HTML', false);
 
+define('LANG_DIR', '../includes/lang');
 define('CACHE', '../cache');
 define('WHITELIST', '../includes/whitelist');
 define('BLACKLIST', '../includes/blacklist');
