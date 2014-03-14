@@ -9,9 +9,9 @@ define('PRIVACY_INFO', '<privacy info>');
 
 define('USE_MINIMZED_JS_CSS_HTML', false);
 
-define('CACHE', 'cache');
-define('WHITELIST', 'includes/whitelist');
-define('BLACKLIST', 'includes/blacklist');
+define('CACHE', '../cache');
+define('WHITELIST', '../includes/whitelist');
+define('BLACKLIST', '../includes/blacklist');
 
 /*
  * a file with the translations has

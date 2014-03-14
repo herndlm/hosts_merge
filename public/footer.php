@@ -1,6 +1,6 @@
 <?php
 
-require_once('includes/includes.php');
+require_once('../includes/includes.php');
 
 echo '</body></html>';
 
