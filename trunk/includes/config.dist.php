@@ -9,10 +9,11 @@ define('PRIVACY_INFO', '<privacy info>');
 
 define('USE_MINIMZED_JS_CSS_HTML', false);
 
-define('LANG_DIR', '../includes/lang');
-define('CACHE', '../cache');
-define('WHITELIST', '../includes/whitelist');
-define('BLACKLIST', '../includes/blacklist');
+define('LANG_DIR', __DIR__ . '/../includes/lang');
+define('CACHE', __DIR__ . '/../cache');
+define('WHITELIST', __DIR__ . '/../includes/whitelist');
+define('BLACKLIST', __DIR__ . '/../includes/blacklist');
+define('CACHE_SECONDS', 60*60*60*24);
 
 /*
  * a file with the translations has

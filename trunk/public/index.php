@@ -6,8 +6,19 @@ require_once __DIR__ . '/../includes/includes.php';
 $blacklist_data = trim(file_get_contents(BLACKLIST));
 $whitelist_data = trim(file_get_contents(WHITELIST));
 
+// pre-cache via command line or get
+if (
+	isset($argv[1]) && $argv[1] == 'cache' ||
+	isset($_GET['cache'])
+) {
+	// query all sources
+	foreach ($sources as $source_id => $source_url) {
+		file_get_contents_cache($source_url, CACHE_SECONDS);
+	}
+	exit;
+}
 // download hosts file
-if (isset($_GET['src'])) {
+else if (isset($_GET['src'])) {
 	$hosts_data = array();
 	$all = (strpos($_GET['src'], 'all') !== false);
 	$sources_ids = explode(',', $_GET['src']);
@@ -16,8 +27,8 @@ if (isset($_GET['src'])) {
 	foreach ($sources as $source_id => $source_url) {
 		if (!$all && !in_array($source_id, $sources_ids))
 			continue;
-		// use 1 week local source cache
-		$hosts_data[] = file_get_contents_cache($source_url, 60*60*60*24*7);
+		// use local source cache
+		$hosts_data[] = file_get_contents_cache($source_url, CACHE_SECONDS);
 	}
 
 	// no blacklist / whitelist needed
