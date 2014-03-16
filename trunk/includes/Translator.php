@@ -9,8 +9,8 @@ class Translator {
 	public function __construct($lang){
 		$this->lang = $lang;
 
-		if (file_exists('./' . LANG_DIR . "/$lang.txt")) {
-			$strings = array_map(array($this, 'splitStrings'), file('./' . LANG_DIR . "/$lang.txt"));
+		if (file_exists(LANG_DIR . "/$lang.txt")) {
+			$strings = array_map(array($this, 'splitStrings'), file(LANG_DIR . "/$lang.txt"));
 			foreach ($strings as $k => $v) {
 				if (isset($v[1]) && !empty($v[1]))
 					$this->translations[$lang][$v[0]] = $v[1];
