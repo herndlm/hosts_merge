@@ -158,7 +158,6 @@ $step_data = html_tag('p', $tr->__('Download hosts file'), array('class' => 'bol
 $step_data .= html_tag('a', $hosts_url , array(
 	'id'       => 'url',
 	'href'     => $hosts_url,
-	'download' => 'download',
 ));
 $content .= html_tag('div', $step_data, array('style' => 'margin: 10px'));
 
@@ -180,7 +179,7 @@ $step_data .=
 	html_tag('a', $tr->__('Android Installer'), array(
 		'href'     => 'hosts_android.sh',
 		'download' => 'hosts_android.sh',
-		'title'    => $tr->__('Needs a rooted device and an app which can run shell scripts or has to be run via adb'),
+		'title'    => $tr->__('Needs a rooted device and BusyBox'),
 	))
 ;
 $content .= html_tag('div', $step_data, array('style' => 'margin: 10px'));
