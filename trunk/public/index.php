@@ -1,6 +1,6 @@
 <?php
 
-require_once('../includes/includes.php');
+require_once __DIR__ . '/../includes/includes.php';
 
 // get local blacklist and whitelist entries
 $blacklist_data = trim(file_get_contents(BLACKLIST));
@@ -100,7 +100,7 @@ foreach ($sources as $id => $source) {
 $step_data .= implode('<br/>', $sources_input);
 $content .= html_tag('div', $step_data, array('class' => 'float_left', 'style' => 'margin: 10px'));
 
-// step 2, adapt blacklisted
+// step 2, check blacklist
 $step_data = html_tag('p',
 	html_tag('label', $tr->__('Blacklist'), array('for' => 'text_blacklist')),
 	array('class' => 'bold')
@@ -109,7 +109,7 @@ $step_data .= html_tag('textarea', $blacklist_data, array(
 	'id'       => 'text_blacklist',
 	'name'     => 'text_blacklist',
 	'rows'     => '5',
-	'cols'     => '25',
+	'cols'     => '26',
 	'disabled' => 'disabled',
 	'style'    => 'background-color: #FFDDDD',
 ));
@@ -124,7 +124,7 @@ $step_data .= html_tag('input', null, array(
 $step_data .= html_tag('label', $tr->__('Include Blacklist'), array('for' => 'check_blacklist', 'class' => 'middle'));
 $content .= html_tag('div', $step_data, array('class' => 'float_left', 'style' => 'margin: 10px'));
 
-// step 3, adapt whitelist
+// step 3, check whitelist
 $step_data = html_tag('p',
 	html_tag('label', $tr->__('Whitelist'), array('for' => 'text_whitelist')),
 	array('class' => 'bold')
@@ -133,7 +133,7 @@ $step_data .= html_tag('textarea', $whitelist_data, array(
 	'id'       => 'text_whitelist',
 	'name'     => 'text_whitelist',
 	'rows'     => '5',
-	'cols'     => '25',
+	'cols'     => '26',
 	'disabled' => 'disabled',
 	'style'    => 'background-color: #DDFFDD'
 ));
@@ -156,10 +156,33 @@ $content .= html_tag('div', null, array('class' => 'float_clear'));
 $hosts_url = current_url() . '?src=all';
 $step_data = html_tag('p', $tr->__('Download hosts file'), array('class' => 'bold'));
 $step_data .= html_tag('a', $hosts_url , array(
-	'id'     => 'url',
-	'href'   => $hosts_url,
-	'target' => '_blank',
+	'id'       => 'url',
+	'href'     => $hosts_url,
+	'download' => 'download',
 ));
+$content .= html_tag('div', $step_data, array('style' => 'margin: 10px'));
+
+// step 5, download install scripts
+$step_data = html_tag('p', $tr->__('Download install script'), array('class' => 'bold'));
+$step_data .= 
+	html_tag('a', $tr->__('Windows Installer'), array(
+		'href'     => 'hosts_windows.bat',
+		'download' => 'hosts_windows.bat',
+		'title'    => $tr->__('Has to be run as administrator (right click - run as administrator)'),
+	)) .
+	html_tag('br') . 
+	html_tag('a', $tr->__('Linux Installer'), array(
+		'href'     => 'hosts_linux.sh',
+		'download' => 'hosts_linux.sh',
+		'title'    => $tr->__('Has to be run as root'),
+	)) .
+	html_tag('br') . 
+	html_tag('a', $tr->__('Android Installer'), array(
+		'href'     => 'hosts_android.sh',
+		'download' => 'hosts_android.sh',
+		'title'    => $tr->__('Needs a rooted device and an app which can run shell scripts or has to be run via adb'),
+	))
+;
 $content .= html_tag('div', $step_data, array('style' => 'margin: 10px'));
 
 // contact / legal info

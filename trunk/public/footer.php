@@ -1,6 +1,9 @@
 <?php
 
-require_once('../includes/includes.php');
+require_once __DIR__ . '/../includes/includes.php';
+
+if (!empty($tracking_code))
+	echo $tracking_code;
 
 echo '</body></html>';
 

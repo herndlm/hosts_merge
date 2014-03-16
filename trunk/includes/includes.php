@@ -62,10 +62,10 @@ function html_compress($html) {
 		return $html;
 	// remove javascript comments
 	$response = preg_replace('%/\*(.|[\r\n])*?\*/%', '', $html);
-	// newlines, tabs & carriage return
-	$response = str_replace(array("\t", "\r"), '', $response);
 	// convert multiple spaces into one
-	$response = preg_replace('/\s+/', ' ', $response);
+	$response = preg_replace('/\s{2,}/', ' ', $response);
+	// tabs and carriage return
+	$response = str_replace(array("\t", "\r"), '', $response);
 	// cleanup spaces inside tags
 	$response = str_replace(' />', '/>', $response);
 
@@ -191,7 +191,9 @@ function hosts_merge($hosts_data, $blacklist_data=null, $whitelist_data=null, $r
 	// hosts file syntax and return
 	ksort($entries);
 	$entries = array_keys($entries);
-	return $redirect_to . ' ' . implode("\n$redirect_to ", $entries) . "\n";
+	if (!empty($entries))
+		return $redirect_to . ' ' . implode("\n$redirect_to ", $entries) . "\n";
+	return null;
 }
 // create the header for the hosts file
 function hosts_header() {
