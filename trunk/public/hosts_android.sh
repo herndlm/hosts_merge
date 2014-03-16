@@ -2,7 +2,11 @@
 
 _remount_dir="/system"
 _hosts_file="/system/etc/hosts"
-_path=`dirname $0`
+
+# check if busybox exists
+command -v busybox >/dev/null 2>&1 || { echo >&2 "BusyBox is required"; exit 1; }
+
+_path=`busybox dirname $0`
 
 # check if root
 if [[ $EUID -ne 0 ]]; then

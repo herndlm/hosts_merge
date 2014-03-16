@@ -20,6 +20,6 @@ Has to be run as administrator (right click - run as administrator)=
 Linux Installer=リナックスのインストーラ
 Has to be run as root=
 Android Installer=アンドロイドのインストーラ
-Needs a rooted device and an app which can run shell scripts or has to be run via adb=
+Needs a rooted device and BusyBox=
 Open Source=オープンソース
 BlockEmHosts.org is Open Source. Go check it out by clicking here.=BlockEmHosts.orgはオープンソースです。ここにクリックして、見てください。

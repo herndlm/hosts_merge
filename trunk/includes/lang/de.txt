@@ -20,6 +20,6 @@ Has to be run as administrator (right click - run as administrator)=Muss als Adm
 Linux Installer=Linux-Installer
 Has to be run as root=Muss als root ausgeführt werden
 Android Installer=Android-Installer
-Needs a rooted device and an app which can run shell scripts or has to be run via adb=Benötigt ein gerootetes Gerät mit einer App, welche Shell-Scripts ausführen kann oder muss via adb ausgeführt werden
+Needs a rooted device and BusyBox=Benötigt ein gerootetes Gerät und BusyBox
 Open Source=Open Source
 BlockEmHosts.org is Open Source. Go check it out by clicking here.=BlockEmHosts.org ist Open Source. Sie können sich den Quellcode hier durch Klicken ansehen.
