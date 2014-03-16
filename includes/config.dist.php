@@ -31,4 +31,6 @@ $sources = array(
 	'1' => '<href',
 );
 
+$tracking_code = '<js tracking code'';
+
 ?>
