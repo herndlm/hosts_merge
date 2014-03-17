@@ -7,5 +7,5 @@ if [[ $EUID -ne 0 ]]; then
 	exit 1
 fi
 
-cat "$_path/hosts.txt" >> "/etc/hosts"
+cat "$_path/hosts.txt" > "/etc/hosts"
 echo "Hosts file has been updated. The ads should be gone now."
