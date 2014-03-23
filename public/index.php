@@ -6,19 +6,8 @@ require_once __DIR__ . '/../includes/includes.php';
 $blacklist_data = trim(file_get_contents(BLACKLIST));
 $whitelist_data = trim(file_get_contents(WHITELIST));
 
-// pre-cache via command line or get
-if (
-	isset($argv[1]) && $argv[1] == 'cache' ||
-	isset($_GET['cache'])
-) {
-	// query all sources
-	foreach ($sources as $source_id => $source_url) {
-		file_get_contents_cache($source_url, CACHE_SECONDS);
-	}
-	exit;
-}
 // download hosts file
-else if (isset($_GET['src'])) {
+if (isset($_GET['src'])) {
 	$hosts_data = array();
 	$all = (strpos($_GET['src'], 'all') !== false);
 	$sources_ids = explode(',', $_GET['src']);
@@ -86,6 +75,9 @@ $content .= html_tag('p',
 	$tr->__('This is the fastest and most secure way of blocking unwanted ads and shady sites.') . ' ' .
 	$tr->__('Additionaly it should also speed up your surfing experience :)')
 );
+$content .= html_tag('p',
+	$tr->__('Duplicates and non existing domains are removed to keep the file clean!')
+);
 //$content .= html_tag('a', $tr->
 
 // step 1, select sources
@@ -120,7 +112,7 @@ $step_data .= html_tag('textarea', $blacklist_data, array(
 	'id'       => 'text_blacklist',
 	'name'     => 'text_blacklist',
 	'rows'     => '5',
-	'cols'     => '26',
+	'cols'     => '29',
 	'disabled' => 'disabled',
 	'style'    => 'background-color: #FFDDDD',
 ));
@@ -144,7 +136,7 @@ $step_data .= html_tag('textarea', $whitelist_data, array(
 	'id'       => 'text_whitelist',
 	'name'     => 'text_whitelist',
 	'rows'     => '5',
-	'cols'     => '26',
+	'cols'     => '29',
 	'disabled' => 'disabled',
 	'style'    => 'background-color: #DDFFDD'
 ));
@@ -174,19 +166,19 @@ $content .= html_tag('div', $step_data, array('style' => 'margin: 10px'));
 
 // step 5, download install scripts
 $step_data = html_tag('p', $tr->__('Download install script'), array('class' => 'bold'));
-$step_data .= 
+$step_data .=
 	html_tag('a', $tr->__('Windows Installer'), array(
 		'href'     => 'hosts_windows.bat',
 		'download' => 'hosts_windows.bat',
 		'title'    => $tr->__('Has to be run as administrator (right click - run as administrator)'),
 	)) .
-	html_tag('br') . 
+	html_tag('br') .
 	html_tag('a', $tr->__('Linux Installer'), array(
 		'href'     => 'hosts_linux.sh',
 		'download' => 'hosts_linux.sh',
 		'title'    => $tr->__('Has to be run as root'),
 	)) .
-	html_tag('br') . 
+	html_tag('br') .
 	html_tag('a', $tr->__('Android Installer'), array(
 		'href'     => 'hosts_android.sh',
 		'download' => 'hosts_android.sh',

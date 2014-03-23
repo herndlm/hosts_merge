@@ -7,6 +7,7 @@ You can combine hosts files for adblocking or tracking/privacy reasons here.=Hie
 By using such an hosts file your computer can't make a connection to any of the domains listed in it any more.=Durch Verwendung solch einer hosts-Datei von hier kann Ihr Computer keine Verbindung mehr zu dessen Domains herstellen.
 This is the fastest and most secure way of blocking unwanted ads and shady sites.=Dies ist die schnellste und sicherste Art unerwünschte Werbung und zwielichtige Seiten zu blockieren.
 Additionaly it should also speed up your surfing experience :)=Außerdem sollte es sich auch positiv auf die Surf-Geschwindigkeit auswirken :)
+Duplicates and non existing domains are removed to keep the file clean!=Duplikate und nicht existierende Domains werden entfernt, um die Datei schlank zu halten!
 Hosts file URL:=Hosts-Datei URL:
 Choose sources=Quellen auswählen
 Blacklist=Blacklist

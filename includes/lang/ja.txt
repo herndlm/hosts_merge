@@ -7,6 +7,7 @@ You can combine hosts files for adblocking or tracking/privacy reasons here.=こ
 By using such an hosts file your computer can't make a connection to any of the domains listed in it any more.=hostsファイルを使う場合、hostsファイルの中に書いてあるドメインに通信できなくなります。
 This is the fastest and most secure way of blocking unwanted ads and shady sites.=それはアドの一番早く安全なブロッキングです。
 Additionaly it should also speed up your surfing experience :)=そしてインターネットは速くなります（^＿^）
+Duplicates and non existing domains are removed to keep the file clean!=
 Hosts file URL:=Hosts ファイル URL:
 Choose sources=ソースを選びます
 Blacklist=ブラックリスト

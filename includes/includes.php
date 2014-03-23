@@ -41,7 +41,7 @@ function parseDefaultLanguage($http_accept, $deflang = 'en') {
 }
 // get current access url without query
 function current_url() {
-	$url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+	$url = (isset($_SERVER['HTTP_HOST']) && isset($_SERVER['REQUEST_URI'])) ? "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]" : null;
 	if (strpos($url, '?') !== false)
 		$url = substr($url, 0, strpos($url, '?'));
 	return $url;
@@ -127,47 +127,59 @@ function file_get_contents_cache($url, $max_cache_seconds) {
 	file_put_contents($cache_path, $data_json);
 	return $data;
 }
+// writes the propriate data of the url to the cache manually
+function file_put_contents_cache($url, $data) {
+	$timestamp = time();
+	$filename = basename($url);
+	$cache_path = CACHE . '/' . md5($filename);
+	$data_json = array(
+		'timestamp' => $timestamp,
+		'data'      => $data,
+	);
+	$data_json = json_encode($data_json);
+	file_put_contents($cache_path, $data_json);
+}
+// gets the clean domain name of an hosts line
+// strips and ignores comments or localhost definitions
+function hosts_line_get_domain($line) {
+	global $local_hosts, $local_ips;
+
+	// strip local ip part from start
+	// ignore line if nothing removed
+	$ip_stripped = false;
+	foreach ($local_ips as $ip) {
+		$pos = strpos($line, $ip);
+		if ($pos === 0) {
+			$line = str_replace($ip, '', $line);
+			$ip_stripped = true;
+			break;
+		}
+	}
+	if (!$ip_stripped)
+		return null;
+	// remove ending comment
+	$start_comment = strpos($line, '#');
+	if ($start_comment !== false)
+		$line = substr($line, 0, $start_comment);
+	// cleanup line
+	$line = trim($line);
+	// ignore localhost definitions or empty entries
+	if (in_array($line, $local_hosts) || empty($line))
+		return null;
+
+	return $line;
+}
 // merges two or more hosts files together
 function hosts_merge($hosts_data, $blacklist_data=null, $whitelist_data=null, $redirect_to='0.0.0.0') {
-	$local_ips = array(
-		'127.0.0.1',
-		'0.0.0.0',
-	);
-	$local_hosts = array(
-		'localhost',
-		'localhost.localdomain',
-		'broadcasthost',
-		'local',
-	);
-
+	global $local_hosts, $local_ips;
 	$entries = array();
 
 	foreach ($hosts_data as $data) {
 		foreach((array)explode(PHP_EOL, $data) as $line) {
-			// strip local ip part from start
-			// ignore line if nothing removed
-			$ip_stripped = false;
-			foreach ($local_ips as $ip) {
-				$pos = strpos($line, $ip);
-				if ($pos === 0) {
-					$line = str_replace($ip, '', $line);
-					$ip_stripped = true;
-					break;
-				}
-			}
-			if (!$ip_stripped)
-				continue;
-			// remove ending comment
-			$start_comment = strpos($line, '#');
-			if ($start_comment !== false)
-				$line = substr($line, 0, $start_comment);
-			// cleanup line
-			$line = trim($line);
-			// ignore localhost definitions or empty entries
-			if (in_array($line, $local_hosts) || empty($line))
-				continue;
-			// add to array as key
-			$entries[$line] = null;
+			$domain = hosts_line_get_domain($line);
+			// add to array as unique key
+			if ($domain)
+				$entries[$domain] = null;
 		}
 	}
 
@@ -187,7 +199,7 @@ function hosts_merge($hosts_data, $blacklist_data=null, $whitelist_data=null, $r
 			unset($entries[$host]);
 	}
 
-	// sort entries, implode in 
+	// sort entries, implode in
 	// hosts file syntax and return
 	ksort($entries);
 	$entries = array_keys($entries);
@@ -197,10 +209,10 @@ function hosts_merge($hosts_data, $blacklist_data=null, $whitelist_data=null, $r
 }
 // create the header for the hosts file
 function hosts_header() {
-	return 
+	return
 		"# clean merged adblocking-hosts file\n" .
-		"# source: $_SERVER[HTTP_HOST]\n" . 
-		"# build date: " . date(DATE_ATOM) . "\n\n" . 
+		"# source: $_SERVER[HTTP_HOST]\n" .
+		"# build date: " . date(DATE_ATOM) . "\n\n" .
 
 		"127.0.0.1 localhost.localdomain localhost\n" .
 		"::1 localhost.localdomain localhost\n\n"

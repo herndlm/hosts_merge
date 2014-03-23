@@ -19,7 +19,7 @@ echo '<!DOCTYPE html>';
 echo '<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="' . $lang . '" lang="' . $lang . '">';
 echo '<head>';
 echo '<title>' . TITLE . '</title>';
-echo '<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />';
+echo '<meta charset="UTF-8" />';
 echo '<meta name="robots" content="INDEX,FOLLOW" />';
 echo '<meta name="keywords" content="' . META_KEYWORDS . '" />';
 echo '<meta name="description" content="' .  META_DESCRIPTION . '" />';
