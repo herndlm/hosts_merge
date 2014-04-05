@@ -97,11 +97,11 @@ foreach ($sources as $id => $source) {
 			'for'   => $id,
 			'title' => htmlspecialchars($source),
 			'class' => 'middle',
-			'style' => 'margin-left: 5px'
+			'style' => 'margin-left: .2em'
 		));
 }
 $step_data .= implode('<br/>', $sources_input);
-$content .= html_tag('div', $step_data, array('class' => 'float_left', 'style' => 'margin: 10px'));
+$content .= html_tag('div', $step_data, array('class' => 'dynamic_block'));
 
 // step 2, check blacklist
 $step_data = html_tag('p',
@@ -125,7 +125,7 @@ $step_data .= html_tag('input', null, array(
 	'class'   => 'middle',
 ));
 $step_data .= html_tag('label', $tr->__('Include Blacklist'), array('for' => 'check_blacklist', 'class' => 'middle'));
-$content .= html_tag('div', $step_data, array('class' => 'float_left', 'style' => 'margin: 10px'));
+$content .= html_tag('div', $step_data, array('class' => 'dynamic_block'));
 
 // step 3, check whitelist
 $step_data = html_tag('p',
@@ -149,7 +149,7 @@ $step_data .= html_tag('input', null, array(
 	'class'   => 'middle',
 ));
 $step_data .= html_tag('label', $tr->__('Include Whitelist'), array('for' => 'check_whitelist', 'class' => 'middle'));
-$content .= html_tag('div', $step_data, array('class' => 'float_left', 'style' => 'margin: 10px'));
+$content .= html_tag('div', $step_data, array('class' => 'dynamic_block'));
 
 // end float
 $content .= html_tag('div', null, array('class' => 'float_clear'));
@@ -162,7 +162,7 @@ $step_data .= html_tag('a', $hosts_url , array(
 	'id'       => 'url',
 	'href'     => $hosts_url,
 ));
-$content .= html_tag('div', $step_data, array('style' => 'margin: 10px'));
+$content .= html_tag('div', $step_data, array('style' => 'margin: .5em'));
 
 // step 5, download install scripts
 $step_data = html_tag('p', $tr->__('Download install script'), array('class' => 'bold'));
@@ -185,7 +185,7 @@ $step_data .=
 		'title'    => $tr->__('Needs a rooted device and BusyBox'),
 	))
 ;
-$content .= html_tag('div', $step_data, array('style' => 'margin: 10px'));
+$content .= html_tag('div', $step_data, array('style' => 'margin: .5em'));
 
 // contact / legal info
 $outputs = array();
