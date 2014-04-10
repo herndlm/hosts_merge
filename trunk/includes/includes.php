@@ -3,6 +3,16 @@
 require_once('config.php');
 require_once('Translator.php');
 
+header("Vary: Accept-Encoding");
+header("Content-Type: application/xhtml+xml; charset=UTF-8");
+
+// cache 1 week
+$seconds_to_cache = 604800;
+$ts = gmdate("D, d M Y H:i:s", time() + $seconds_to_cache) . " GMT";
+header("Expires: $ts");
+header("Pragma: cache");
+header("Cache-Control: private, post-check=900, pre-check=$seconds_to_cache, max-age=$seconds_to_cache");
+
 $lang = getDefaultLanguage();
 if (isset($_GET['lang']))
 	$lang = $_GET['lang'];
