@@ -15,6 +15,8 @@ define('WHITELIST', __DIR__ . '/../includes/whitelist');
 define('BLACKLIST', __DIR__ . '/../includes/blacklist');
 define('CACHE_SECONDS', 60*60*60*24);
 
+date_default_timezone_set('Europe/Vienna');
+
 /*
  * a file with the translations has
  * to exist in includes/lang/<id.txt>
