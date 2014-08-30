@@ -34,15 +34,21 @@ $sources = array(
 	'1' => '<href',
 );
 
-$local_ips = array(
+$strings_start_strip = array(
 	'127.0.0.1',
 	'0.0.0.0',
+	'PRIMARY',
 );
+
 $local_hosts = array(
 	'localhost',
 	'localhost.localdomain',
 	'broadcasthost',
 	'local',
+);
+
+$strings_to_strip = array(
+	'blockeddomain.hosts',
 );
 
 $tracking_code = '';

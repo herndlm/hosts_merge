@@ -9,7 +9,7 @@ This is the fastest and most secure way of blocking unwanted ads and shady sites
 Additionaly it should also speed up your surfing experience :)=そしてインターネットは速くなります（^＿^）
 Duplicates and non existing domains are removed to keep the file clean!=
 Hosts file URL:=Hosts ファイル URL:
-Choose sources=ソースを選びます
+Sources=ソース
 Blacklist=ブラックリスト
 Include Blacklist=ブラックリストを使います
 Whitelist=ホワイトリスト

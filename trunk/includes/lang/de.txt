@@ -9,7 +9,7 @@ This is the fastest and most secure way of blocking unwanted ads and shady sites
 Additionaly it should also speed up your surfing experience :)=Außerdem sollte es sich auch positiv auf die Surf-Geschwindigkeit auswirken :)
 Duplicates and non existing domains are removed to keep the file clean!=Duplikate und nicht existierende Domains werden entfernt, um die Datei schlank zu halten!
 Hosts file URL:=Hosts-Datei URL:
-Choose sources=Quellen auswählen
+Sources=Quellen
 Blacklist=Blacklist
 Include Blacklist=Blacklist miteinbeziehen
 Whitelist=Whitelist
