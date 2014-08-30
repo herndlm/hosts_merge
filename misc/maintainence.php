@@ -53,6 +53,7 @@ else if ($command == 'cache_lookup') {
 			unset($blacklist_data[$index]);
 		}
 	}
+	sort($blacklist_data);
 	$blacklist_data = implode("\n", $blacklist_data);
 	file_put_contents(BLACKLIST, $blacklist_data);
 
@@ -65,6 +66,7 @@ else if ($command == 'cache_lookup') {
 			unset($whitelist_data[$index]);
 		}
 	}
+	sort($whitelist_data);
 	$whitelist_data = implode("\n", $whitelist_data);
 	file_put_contents(WHITELIST, $whitelist_data);
 }

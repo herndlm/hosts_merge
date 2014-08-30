@@ -111,66 +111,59 @@ function html_tag($name, $content = null, $attributes = null) {
 function file_get_contents_cache($url, $max_cache_seconds) {
 	$timestamp = time();
 	$filename = basename($url);
-	$cache_path = CACHE . '/' . md5($filename);
+	$prefix = host_from_url($url);
+	$prefix = preg_replace('/[^0-9a-zA-Z]/', '', $prefix);
+	$cache_path = CACHE . '/' . $prefix . md5($filename);
 
 	// local file exists
 	if (file_exists($cache_path)) {
 		$data = file_get_contents($cache_path);
-		$data = json_decode($data, true);
 		// data ok and not too old
 		if (
-			$data !== null &&
-			isset($data['timestamp']) &&
-			abs($timestamp - $data['timestamp']) < $max_cache_seconds &&
-			isset($data['data'])
+			!empty($data) &&
+			abs($timestamp - filemtime($cache_path)) < $max_cache_seconds
 		)
-			return $data['data'];
+			return $data;
 	}
 
 	// still here? download file to local cache and return
 	$data = file_get_contents($url);
-	$data_json = array(
-		'timestamp' => $timestamp,
-		'data'      => $data,
-	);
-	$data_json = json_encode($data_json);
-	file_put_contents($cache_path, $data_json);
+	file_put_contents($cache_path, $data);
 	return $data;
 }
 // writes the propriate data of the url to the cache manually
 function file_put_contents_cache($url, $data) {
-	$timestamp = time();
 	$filename = basename($url);
-	$cache_path = CACHE . '/' . md5($filename);
-	$data_json = array(
-		'timestamp' => $timestamp,
-		'data'      => $data,
-	);
-	$data_json = json_encode($data_json);
-	file_put_contents($cache_path, $data_json);
+	$prefix = host_from_url($url);
+	$prefix = preg_replace('/[^0-9a-zA-Z]/', '', $prefix);
+	$cache_path = CACHE . '/' . $prefix . md5($filename);
+	file_put_contents($cache_path, $data);
 }
 // gets the clean domain name of an hosts line
 // strips and ignores comments or localhost definitions
 function hosts_line_get_domain($line) {
-	global $local_hosts, $local_ips;
+	global $local_hosts, $strings_start_strip, $strings_to_strip;
 
 	// strip local ip part from start
 	// ignore line if nothing removed
-	$ip_stripped = false;
-	foreach ($local_ips as $ip) {
-		$pos = strpos($line, $ip);
+	$string_stripped = false;
+	foreach ($strings_start_strip as $string) {
+		$pos = strpos($line, $string);
 		if ($pos === 0) {
-			$line = str_replace($ip, '', $line);
-			$ip_stripped = true;
+			$line = str_replace($string, '', $line);
+			$string_stripped = true;
 			break;
 		}
 	}
-	if (!$ip_stripped)
+	if (!$string_stripped)
 		return null;
 	// remove ending comment
 	$start_comment = strpos($line, '#');
 	if ($start_comment !== false)
 		$line = substr($line, 0, $start_comment);
+	// strip strings
+	foreach ($strings_to_strip as $string)
+		$line = str_replace($string, '', $line);
 	// cleanup line
 	$line = trim($line);
 	// ignore localhost definitions or empty entries
@@ -180,8 +173,8 @@ function hosts_line_get_domain($line) {
 	return $line;
 }
 // merges two or more hosts files together
+// TODO make this more memory friendly (e.g. line per line)
 function hosts_merge($hosts_data, $blacklist_data=null, $whitelist_data=null, $redirect_to='0.0.0.0') {
-	global $local_hosts, $local_ips;
 	$entries = array();
 
 	foreach ($hosts_data as $data) {

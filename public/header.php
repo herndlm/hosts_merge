@@ -16,37 +16,13 @@ echo '<meta name="description" content="' .  META_DESCRIPTION . '" />';
 echo '<meta name="viewport" content="width=device-width" />';
 
 // css and javascript
-$headLoadJS = 'js/head.load.min.js';
-$jqueryJS = 'js/jquery-1.11.0.min.js';
-$jqueryUiJS = 'js/jquery-ui-1.10.4.custom.min.js';
-if (USE_MINIMZED_JS_CSS_HTML) {
+if (USE_MINIMZED_JS_CSS_HTML)
 	$stylesCSS = 'css/styles-min.css';
-	$jqeryuiCSS = 'css/black-tie/jquery-ui-1.10.4.custom.min.css';
-	$scriptsJS = 'js/scripts-min.js';
-}
-else {
+else
 	$stylesCSS = 'css/styles.css';
-	$jqeryuiCSS = 'css/black-tie/jquery-ui-1.10.4.custom.css';
-	$scriptsJS = 'js/scripts.js';
-}
 // basic css
 echo '
 	<link rel="stylesheet" type="text/css" href="' . cacheSafeUrl($stylesCSS) . '" />
-	<link rel="stylesheet" type="text/css" href="' . cacheSafeUrl($jqeryuiCSS) . '" />
-';
-// javascript
-echo '
-	<script src="' . cacheSafeUrl($headLoadJS) . '" type="text/javascript"></script>
-	<script type="text/javascript">
-		head.js("' . cacheSafeUrl($jqueryJS) . '", function() {
-			head.js(
-				{scripts: "' . cacheSafeUrl($scriptsJS) . '"}
-			);
-		});
-		head.js("' . cacheSafeUrl($jqueryUiJS) . '", function() {
-			/* add jqeryui dependencies here */
-		});
-	</script>
 ';
 
 ?>
