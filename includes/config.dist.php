@@ -1,6 +1,6 @@
 <?php
 
-define('TITLE', 'BlockEmHosts.org');
+define('TITLE', 'hosts.herndl.org');
 define('META_KEYWORDS', 'blockemout hosts files adblock privacy tracking');
 define('META_DESCRIPTION', 'combine hosts files for adblocking / privacy reasons');
 define('CONTACT_HREF', '<contact site>');
@@ -25,13 +25,14 @@ $languages = array(
 	'en' => 'English',
 );
 /*
- * sources which are shown in GUI (only hostname)
- * the left number is used as ID for the sources
- * and therefore should never be changed
- * to avoid issues with bookmarked urls
+ * host file sources
  */
 $sources = array(
-	'1' => '<href',
+	'<href>',
+);
+
+$sources_show_only = array(
+	'<href>',
 );
 
 $strings_start_strip = array(

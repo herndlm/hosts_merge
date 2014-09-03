@@ -13,7 +13,7 @@ if (isset($_GET['src'])) {
 	// add all sources selected
 	foreach ($sources as $source_url) {
 		// use local source cache
-		$hosts_data[] = file_get_contents_cache($source_url, CACHE_SECONDS);
+		$hosts_data[] = file_get_contents_cache($source_url);
 	}
 
 	$data = hosts_header();
@@ -63,12 +63,12 @@ $content .= html_tag('p',
 );
 //$content .= html_tag('a', $tr->
 
-// step 1, select sources
+// step 1, show sources
 $step_data = html_tag('span', $tr->__('Sources'), array('class' => 'bold'));
 $sources_input = '';
-foreach ($sources as $source) {
-	$sources_input .= html_tag('li', htmlspecialchars(/*host_from_url(*/$source/*)*/), array(
-		'title' => htmlspecialchars($source),
+$sources_show = array_merge($sources, $sources_show_only);
+foreach ($sources_show as $source) {
+	$sources_input .= html_tag('li', html_tag('a', htmlspecialchars($source), array('href' => htmlspecialchars($source), 'target' => '_blank')), array(
 		'class' => 'middle',
 		'style' => 'margin-left: .2em'
 	));
