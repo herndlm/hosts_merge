@@ -108,7 +108,7 @@ function html_tag($name, $content = null, $attributes = null) {
 // file getter via local cache
 // downloads a file once and serves it from cache
 // until the downloaded copy is older than $max_cache_seconds seconds
-function file_get_contents_cache($url, $max_cache_seconds) {
+function file_get_contents_cache($url, $max_cache_seconds = CACHE_SECONDS) {
 	$timestamp = time();
 	$filename = basename($url);
 	$prefix = host_from_url($url);
@@ -183,6 +183,35 @@ function hosts_merge($hosts_data, $blacklist_data=null, $whitelist_data=null, $r
 			// add to array as unique key
 			if ($domain)
 				$entries[$domain] = null;
+		}
+	}
+
+	// add malwarepatrol domain list
+	$malwarepatrol_contents = file_get_contents_cache('https://www.malwarepatrol.net/cgi/submit?action=stats&s=domains#domains');
+	if ($malwarepatrol_contents) {
+		$doc = new DOMDocument();
+		if ($doc->loadHTML($malwarepatrol_contents)) {
+			$domains = $doc->getElementsByTagName('font');
+			foreach ($domains as $domain) {
+				$domain_entry = trim($domain->nodeValue);
+				if (!empty($domain_entry))
+					$entries[$domain_entry] = null;
+			}
+		}
+	}
+
+	// add koffix domain list
+	$koffix_contents = file_get_contents_cache('http://koffix.com/research/sites/');
+	if ($koffix_contents) {
+		$doc = new DOMDocument();
+		if ($doc->loadHTML($koffix_contents)) {
+			$content = $doc->getElementById('brickup-document');
+			$hrefs = $content->getElementsByTagName('a');
+			foreach ($hrefs as $href) {
+				$domain_entry = trim($href->nodeValue);
+				if (!empty($domain_entry))
+					$entries[$domain_entry] = null;
+			}
 		}
 	}
 
