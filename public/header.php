@@ -6,7 +6,7 @@ require_once __DIR__ . '/../includes/includes.php';
 ob_start('html_compress');
 
 echo '<!DOCTYPE html>';
-echo '<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="' . $lang . '" lang="' . $lang . '">';
+echo "<html lang='${lang}'>";
 echo '<head>';
 echo '<title>' . TITLE . '</title>';
 echo '<meta charset="UTF-8" />';

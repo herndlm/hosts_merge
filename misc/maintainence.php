@@ -48,7 +48,8 @@ else if ($command == 'cache_lookup') {
 	$blacklist_data = trim(file_get_contents(BLACKLIST));
 	$blacklist_data = explode(PHP_EOL, $blacklist_data);
 	foreach ($blacklist_data as $index => $domain) {
-		if ($domain == query_domain_lookup_cache($domain)) {
+		$domain = strip_bash_comments($domain);
+		if (!empty($domain) && $domain == query_domain_lookup_cache($domain)) {
 			error_log("$index: $domain not existing");
 			unset($blacklist_data[$index]);
 		}
@@ -62,7 +63,8 @@ else if ($command == 'cache_lookup') {
 	$whitelist_data = trim(file_get_contents(WHITELIST));
 	$whitelist_data = explode(PHP_EOL, $whitelist_data);
 	foreach ($whitelist_data as $index => $domain) {
-		if ($domain == query_domain_lookup_cache($domain)) {
+		$domain = strip_bash_comments($domain);
+		if (!empty($domain) && $domain == query_domain_lookup_cache($domain)) {
 			error_log("$index: $domain not existing");
 			unset($whitelist_data[$index]);
 		}
