@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-	font-family: verdana, sans, sans-serif;
+	font-family: sans-serif;
 	font-size: 0.9em;
 	background-color: #AC2E2E;
 	background: radial-gradient(circle,#BE6464,#AC2E2E);

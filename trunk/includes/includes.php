@@ -4,7 +4,7 @@ require_once('config.php');
 require_once('Translator.php');
 
 header("Vary: Accept-Encoding");
-header("Content-Type: application/xhtml+xml; charset=UTF-8");
+header("Content-Type: text/html; charset=UTF-8");
 
 // cache 1 week
 $seconds_to_cache = 604800;
@@ -139,6 +139,18 @@ function file_put_contents_cache($url, $data) {
 	$cache_path = CACHE . '/' . $prefix . md5($filename);
 	file_put_contents($cache_path, $data);
 }
+// removes bash like comments from the input (array, string)
+// via regex; e.g. "testdomain.org # just a test" => "testdomain.org"
+function strip_bash_comments($input) {
+	$output = preg_replace('/#.*/', '', $input);
+	if (is_array($output))
+		array_walk($output, function(&$value, &$key) {
+			$value = trim($value);
+		});
+	else if (is_string($output))
+		$output = trim($output);
+	return $output;
+}
 // gets the clean domain name of an hosts line
 // strips and ignores comments or localhost definitions
 function hosts_line_get_domain($line) {
@@ -157,10 +169,8 @@ function hosts_line_get_domain($line) {
 	}
 	if (!$string_stripped)
 		return null;
-	// remove ending comment
-	$start_comment = strpos($line, '#');
-	if ($start_comment !== false)
-		$line = substr($line, 0, $start_comment);
+	// strip bash comments
+	$line = strip_bash_comments($line);
 	// strip strings
 	foreach ($strings_to_strip as $string)
 		$line = str_replace($string, '', $line);
@@ -218,6 +228,8 @@ function hosts_merge($hosts_data, $blacklist_data=null, $whitelist_data=null, $r
 	// add hosts from blacklist
 	if (!empty($blacklist_data)) {
 		$blacklist_data = explode(PHP_EOL, $blacklist_data);
+		// strip bash comments
+		$blacklist_data = strip_bash_comments($blacklist_data);
 		$blacklist_data = array_unique($blacklist_data);
 		foreach ((array)$blacklist_data as $host)
 			$entries[$host] = null;
@@ -226,8 +238,10 @@ function hosts_merge($hosts_data, $blacklist_data=null, $whitelist_data=null, $r
 	// remove hosts from whitelist
 	if (!empty($whitelist_data)) {
 		$whitelist_data = explode(PHP_EOL, $whitelist_data);
+		// strip bash comments
+		$whitelist_data = strip_bash_comments($whitelist_data);
 		$whitelist_data = array_unique($whitelist_data);
-		foreach ($whitelist_data as $host)
+		foreach ((array)$whitelist_data as $host)
 			unset($entries[$host]);
 	}
 

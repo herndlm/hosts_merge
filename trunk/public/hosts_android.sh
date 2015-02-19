@@ -3,10 +3,11 @@
 _remount_dir="/system"
 _hosts_file="/system/etc/hosts"
 
-# check if busybox exists
-command -v busybox >/dev/null 2>&1 || { echo >&2 "BusyBox is required"; exit 1; }
-
-_path=`busybox dirname $0`
+# check if file exists
+if [ ! -e hosts.txt ]; then
+	echo "Either hosts.txt is missing or script was called from wrong path" 1>&2
+	exit 1
+fi
 
 # check if root
 if [[ $EUID -ne 0 ]]; then
@@ -14,10 +15,16 @@ if [[ $EUID -ne 0 ]]; then
 	exit 1
 fi
 
-# remount system dir as root
+# remount system dir writeable
 mount -o rw,remount "${_remount_dir}"
 
+# backup old hosts file
+cp "${_hosts_file}" "${_hosts_file}.bak"
+
 # writing hosts file
-cat "$_path/hosts.txt" > "${_hosts_file}"
+cat hosts.txt > "${_hosts_file}"
+
+# remount system dir readable
+mount -o r,remount "${_remount_dir}"
 
 echo "Hosts file has been updated. The ads should be gone now."
