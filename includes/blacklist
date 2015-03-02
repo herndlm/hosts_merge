@@ -12,8 +12,8 @@ aax-fe.amazon-adsystem.com
 aax-us-east-rtb.amazon-adsystem.com
 aboutads.info
 ace3.adoftheyear.com
+acookie.ztcadx.com
 ad-move.jp
-ad-server-235135479.eu-west-1.elb.amazonaws.com
 ad-x.co.uk
 ad.adsrvr.org
 ad.applipromotion.com
@@ -140,6 +140,7 @@ api.pitadtag.jp
 app-adforce.jp
 apps.crashlytics.com
 as.dc.impact-ad.jp
+as.gn.impact-ad.jp
 as.gq.impact-ad.jp
 as.iy.impact-ad.jp
 as.ko.impact-ad.jp
@@ -186,6 +187,7 @@ cf.ad-v.jp.edgekey.net
 choices.truste.com
 click.affiliate.ameba.jp
 click.v1.rtb.revcloud.adaos-ads.net
+consent-st.truste.com
 contents01.adingo.jp.eimg.jp
 cosmi-adtruth-1970014061.ap-northeast-1.elb.amazonaws.com
 counts.yieldlab.net
@@ -199,6 +201,7 @@ cs41.adn.edgecastcdn.net
 cs59.adn.edgecastcdn.net
 cs80.adn.edgecastcdn.net
 cs83.adn.edgecastcdn.net
+cv.mobile.adicio.com
 d-cache.microad.jp
 d-image-ad-jp.ad-cloud.jp
 d.adcl.medibaad.com
@@ -211,7 +214,6 @@ datatracker.ietf.org
 delivery.b.switchadhub.com
 dex.advg.jp
 dex.send.microad.jp
-die-boersenformel.com
 diriginal.info # virus
 dmp.amoad.com
 dsync.adserving.jp
@@ -231,6 +233,7 @@ fls-fe.amazon-adsystem.com
 fls-na.amazon-adsystem.com
 fluct.adingo.jp
 forum.statcounter.com
+fra-ad-lb1.rfihub.com
 ftp.iij.ad.jp
 gadcreatives.glam.com
 glb-mobile.a.adtech.de
@@ -267,6 +270,7 @@ ir-de.amazon-adsystem.com
 ir-jp.amazon-adsystem.com
 j-image-ad-jp.ad-cloud.jp
 j.adserving.jp
+j.adticker.net
 j.amoad.com
 j.sprout-ad.com
 jtracker.fear-group.de
@@ -299,6 +303,7 @@ nexus.adspirit.de
 nexusads.adspirit.de
 o.advg.jp
 ocsp.quovadisglobal.com
+official.stat.ameba.jp
 origin.global.hua.aads1.net
 p.amoad.com
 pagead.l.doubleclick.net
@@ -309,14 +314,19 @@ pbtng-u-b-ds.nuggad.net
 pbtng-u-ds.nuggad.net
 pbtngx-u-ds.nuggad.net
 pitadtag.jp
+piwik.afs.de
 piwik.arbeiterkammer.at
 piwik.bindertrittenwein.com
 piwik.boku.ac.at
 piwik.i-rsk.com
 piwik.labbe.de
 piwik.linuxandi.net
+piwik.nic.cz
 piwik.omnigroup.com
+piwik.openstreetmap.org
 piwiki.kk-bits.com
+preferences-mgr.truste.com
+presentationtracking.latency.prodaa.netflix.com
 prod-adlp.integra.fr
 prod-elb-ad-1687582245.ap-northeast-1.elb.amazonaws.com
 product.adingo.jp.eimg.jp
@@ -345,9 +355,12 @@ samuraiad.net
 samuraiad.net.s3-website-ap-northeast-1.amazonaws.com
 sankei2ad.durasite.net
 sc.adelement.com
+secure-ib.adnxs.com
 secure.adverserve.net
 servedby.proxena-adserver.com
+server05.adticket.de
 serverland.view-ads.de
+shopstyle-prod-tracking-935822041.us-east-1.elb.amazonaws.com
 show.v1.rtb.revcloud.adaos-ads.net
 smart.styria-digital.com
 smartads.mobile.g.yahoo.co.jp
@@ -360,6 +373,7 @@ spnet33.i-mobile.co.jp
 sports.bwin.com
 srv.adngin.netdna-cdn.com
 ssl.adworx.at
+ssl.logger.co.kr
 ssp.adriver.ru
 ssp.advg.jp
 startrack.at
@@ -372,8 +386,12 @@ static.affiliate.rakuten.co.jp.edgekey.net
 static.exoclick.com
 static.puls4.com #  cname to austria1.adverserve.net
 static.styria-digital.com
+static.trafficstars.com
+statsfe2.update.microsoft.com.akadns.net
+statsfe2.ws.microsoft.com.nsatc.net
 streaming.ad-balancer.at
 stun.services.mozilla.com
+survstat.rki.de
 sync-dsp.ad-m.asia
 sync.ad-stir.com
 sync.adserving.jp
@@ -385,7 +403,9 @@ tag.ad-satt.com
 tag.app-adforce.jp
 tag.yoc-adserver.com
 taz.adspirit.de
+tca-ad-lb1.rfihub.com
 tes-ampagnen.s3.amazonaws.com
+tm.r-ad.ne.jp.cdngc.net
 toei-ad.primestage.net
 track.amebame.com
 track.cj.akadns.net
@@ -410,6 +430,7 @@ ucounter.ucoz.net
 upstats.yadro.ru
 uuid.adlantis.jp
 uzuzuu.ru # dns ddos
+v.admaster.com.cn
 v4.moatads.com
 v6.advg.jp
 veryfunnyads.com
@@ -419,6 +440,7 @@ web-2.piwik.pro
 web-jp.ad-v.jp
 web.ad2games.com
 web.highad.de
+webanalytics.btelligent.net
 webstat02.feratel.at
 webstats.zserv.tuwien.ac.at
 ws-fe.amazon-adsystem.com
