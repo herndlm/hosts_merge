@@ -18,6 +18,7 @@ ad-x.co.uk
 ad.adsrvr.org
 ad.applipromotion.com
 ad.apsalar.com
+ad.benesse.co.jp
 ad.blogmura.com
 ad.ca-conv.amoad.com
 ad.ca-conv.jp
@@ -111,6 +112,7 @@ adtechjp-ads-540903076.ap-northeast-1.elb.amazonaws.com
 adtechjp-ssp-ums-1450300015.ap-northeast-1.elb.amazonaws.com
 adv.asahi.com
 advantage.digitalsunray.com
+advarkads.com
 adverlicio.us
 advertiseonabout.com
 advertising.apartmenttherapy.com
@@ -144,6 +146,7 @@ apps.crashlytics.com
 as.dc.impact-ad.jp
 as.gn.impact-ad.jp
 as.gq.impact-ad.jp
+as.hc.impact-ad.jp
 as.iy.impact-ad.jp
 as.ko.impact-ad.jp
 as.kw.impact-ad.jp
@@ -199,6 +202,8 @@ cs.r-ad.ne.jp
 cs114.adn.edgecastcdn.net
 cs123.adn.edgecastcdn.net
 cs129.adn.edgecastcdn.net
+cs134.adn.etacdn.net
+cs135.adn.etacdn.net
 cs41.adn.edgecastcdn.net
 cs59.adn.edgecastcdn.net
 cs80.adn.edgecastcdn.net
@@ -278,6 +283,7 @@ j.sprout-ad.com
 jobviewtrack.com
 jtracker.fear-group.de
 krebomedia.adspirit.de
+l.logly.co.jp
 l.neqty.net
 lb-bom-prod-fe-adserver-1390610020.us-west-2.elb.amazonaws.com
 ligatus.com
@@ -287,6 +293,9 @@ liveadoptimizer.com
 livestat.derstandard.at
 lizads.com
 lizadz.com
+log.snmi.cn
+logql.g.yahoo.co.jp
+logql.yahoo.co.jp
 m.addthis.com
 m.addthisedge.com
 m.adquar.store.aptoide.com
@@ -391,11 +400,14 @@ static.exoclick.com
 static.puls4.com #  cname to austria1.adverserve.net
 static.styria-digital.com
 static.trafficstars.com
+stats.ipinyou.com
+stats.update.microsoft.com
 stats.wintotal.de
 stats1.update.microsoft.com.nsatc.net
 statsfe2.update.microsoft.com.akadns.net
 statsfe2.ws.microsoft.com
 statsfe2.ws.microsoft.com.nsatc.net
+statsupdate.microsoft.com.nsatc.net
 streaming.ad-balancer.at
 stun.services.mozilla.com
 survstat.rki.de
@@ -409,6 +421,7 @@ t10.aqtracker.com
 tag.ad-satt.com
 tag.app-adforce.jp
 tag.yoc-adserver.com
+tags-cdn.deployads.com
 taz.adspirit.de
 tca-ad-lb1.rfihub.com
 tes-ampagnen.s3.amazonaws.com
@@ -426,6 +439,7 @@ tracker.novalayer.org
 tracker.nwps.ws
 tracker.secureboxes.net
 tracker.softgarden.de
+tracker4.piratux.com
 tracking-1651687710.eu-west-1.elb.amazonaws.com
 tracking.interspar.at
 tracking.netdoktor.at
@@ -445,7 +459,6 @@ v6.advg.jp
 veryfunnyads.com
 viewad.exchangecash.de
 vn.nuggad.net
-web-2.piwik.pro
 web-2.piwik.pro
 web-jp.ad-v.jp
 web.ad2games.com
