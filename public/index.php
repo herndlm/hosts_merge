@@ -168,7 +168,7 @@ if (IMPRESSUM_HREF)
 if (PRIVACY_INFO)
 	$outputs[] = html_tag('a', $tr->__('Privacy notice'), array('href' => 'javascript:void(0)', 'title' => htmlspecialchars(PRIVACY_INFO), 'target' => '_blank'));
 $outputs[] = html_tag('a', $tr->__('Open Source'), array(
-	'href'   => 'https://code.google.com/p/blockemhosts/',
+	'href'   => 'https://github.com/monojp/blockemhosts/',
 	'target' => '_blank',
 	'title'  => $tr->__('BlockEmHosts.org is Open Source. Go check it out by clicking here.')
 ));

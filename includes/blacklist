@@ -110,6 +110,7 @@ adshow.kodansha.net
 adt.measure.ameblo.jp
 adtechjp-ads-540903076.ap-northeast-1.elb.amazonaws.com
 adtechjp-ssp-ums-1450300015.ap-northeast-1.elb.amazonaws.com
+adtigerat.adspirit.net
 adv.asahi.com
 advantage.digitalsunray.com
 advarkads.com
@@ -142,6 +143,7 @@ api-tracking.hermesworld.com
 api.advarkads.com
 api.pitadtag.jp
 app-adforce.jp
+apps.ad-x.co.uk
 apps.crashlytics.com
 as.dc.impact-ad.jp
 as.gn.impact-ad.jp
@@ -181,6 +183,7 @@ cdn.ad.maist.jp
 cdn.adk2.co.edgekey.net
 cdn.adk2.com
 cdn.adspirit.de.glb.ipcache.net
+cdn.amanad.adtdp.com
 cdn.extensionanalytics.com
 cdn.teamskeetimages.com
 cdn2.mobile.contentdef.com
@@ -294,6 +297,7 @@ livestat.derstandard.at
 lizads.com
 lizadz.com
 log.snmi.cn
+logger.instagram.com
 logql.g.yahoo.co.jp
 logql.yahoo.co.jp
 m.addthis.com
@@ -338,8 +342,10 @@ piwik.nic.cz
 piwik.omnigroup.com
 piwik.openstreetmap.org
 piwiki.kk-bits.com
+postat01.webtrekk.net
 preferences-mgr.truste.com
 presentationtracking.latency.prodaa.netflix.com
+presentationtracking.netflix.com
 prod-adlp.integra.fr
 prod-elb-ad-1687582245.ap-northeast-1.elb.amazonaws.com
 product.adingo.jp.eimg.jp
@@ -387,9 +393,17 @@ sports.bwin.com
 srv.adngin.netdna-cdn.com
 ssl.adworx.at
 ssl.logger.co.kr
+ssp.adcamp.ru
 ssp.adriver.ru
 ssp.advg.jp
 startrack.at
+stat.7gogo.jp
+stat.7gogo.jp.edgesuite.net
+stat.ameba.jp
+stat.amebame.com
+stat.amebame.com.edgesuite.net
+stat.haloapps.com
+stat100.ameba.jp
 static.adf.ly
 static.adlantis.jp
 static.adroute.focas.jp
@@ -437,10 +451,12 @@ tracker.btzoo.eu
 tracker.ccc.de
 tracker.novalayer.org
 tracker.nwps.ws
+tracker.pomf.se
 tracker.secureboxes.net
 tracker.softgarden.de
 tracker4.piratux.com
 tracking-1651687710.eu-west-1.elb.amazonaws.com
+tracking.aldi-international.com
 tracking.interspar.at
 tracking.netdoktor.at
 tracking.okwave.com
