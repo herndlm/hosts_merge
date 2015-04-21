@@ -139,23 +139,17 @@ $content .= html_tag('div', $step_data, array('style' => 'margin: .5em'));
 // step 5, download install scripts
 $step_data = html_tag('p', $tr->__('Download install script'), array('class' => 'bold'));
 $step_data .=
-	html_tag('a', $tr->__('Windows Installer'), array(
-		'href'     => 'hosts_windows.bat',
-		'download' => 'hosts_windows.bat',
-		'title'    => $tr->__('Has to be run as administrator (right click - run as administrator)'),
-	)) .
-	html_tag('br') .
-	html_tag('a', $tr->__('Linux Installer'), array(
+	html_tag('a', $tr->__('Android/Linux Installer'), array(
 		'href'     => 'hosts_linux.sh',
 		'download' => 'hosts_linux.sh',
 		'title'    => $tr->__('Has to be run as root'),
 	)) .
 	html_tag('br') .
-	html_tag('a', $tr->__('Android Installer'), array(
-		'href'     => 'hosts_android.sh',
-		'download' => 'hosts_android.sh',
-		'title'    => $tr->__('Needs a rooted device and BusyBox'),
-	))
+	html_tag('a', $tr->__('Windows Installer'), array(
+                'href'     => 'hosts_windows.bat',
+                'download' => 'hosts_windows.bat',
+                'title'    => $tr->__('Has to be run as administrator (right click - run as administrator)'),
+        ));
 ;
 $content .= html_tag('div', $step_data, array('style' => 'margin: .5em'));
 

@@ -184,7 +184,7 @@ function hosts_line_get_domain($line) {
 }
 // merges two or more hosts files together
 // TODO make this more memory friendly (e.g. line per line)
-function hosts_merge($hosts_data, $blacklist_data=null, $whitelist_data=null, $redirect_to='0.0.0.0') {
+function hosts_merge($hosts_data, $blacklist_data=null, $whitelist_data=null, $redirect_to='0.0.0.0', $redirect_to_v6='::0') {
 	$entries = array();
 
 	foreach ($hosts_data as $data) {
@@ -197,7 +197,7 @@ function hosts_merge($hosts_data, $blacklist_data=null, $whitelist_data=null, $r
 	}
 
 	// add malwarepatrol domain list
-	$malwarepatrol_contents = file_get_contents_cache('https://www.malwarepatrol.net/cgi/submit?action=stats&s=domains#domains');
+	/*$malwarepatrol_contents = file_get_contents_cache('https://www.malwarepatrol.net/cgi/submit?action=stats&s=domains#domains');
 	if ($malwarepatrol_contents) {
 		$doc = new DOMDocument();
 		if ($doc->loadHTML($malwarepatrol_contents)) {
@@ -208,10 +208,10 @@ function hosts_merge($hosts_data, $blacklist_data=null, $whitelist_data=null, $r
 					$entries[$domain_entry] = null;
 			}
 		}
-	}
+	}*/
 
 	// add koffix domain list
-	$koffix_contents = file_get_contents_cache('http://koffix.com/research/sites/');
+	/*$koffix_contents = file_get_contents_cache('http://koffix.com/research/sites/');
 	if ($koffix_contents) {
 		$doc = new DOMDocument();
 		if ($doc->loadHTML($koffix_contents)) {
@@ -223,7 +223,7 @@ function hosts_merge($hosts_data, $blacklist_data=null, $whitelist_data=null, $r
 					$entries[$domain_entry] = null;
 			}
 		}
-	}
+	}*/
 
 	// add hosts from blacklist
 	if (!empty($blacklist_data)) {
@@ -249,8 +249,11 @@ function hosts_merge($hosts_data, $blacklist_data=null, $whitelist_data=null, $r
 	// hosts file syntax and return
 	ksort($entries);
 	$entries = array_keys($entries);
-	if (!empty($entries))
-		return $redirect_to . ' ' . implode("\n$redirect_to ", $entries) . "\n";
+	if (!empty($entries)) {
+		return
+			$redirect_to . ' ' . implode("\n${redirect_to} ", $entries) . "\n" .
+			$redirect_to_v6 . ' ' . implode("\n${redirect_to_v6} ", $entries) . "\n";
+	}
 	return null;
 }
 // create the header for the hosts file
