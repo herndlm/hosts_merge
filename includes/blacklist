@@ -64,6 +64,7 @@ adgen.socdm.com
 adherents.com
 adimg.teacup.com
 adimp.excite.co.jp
+adimpkwd.excite.co.jp
 adingo.jp
 adland.tv
 adlivery.wavecdn.net
@@ -98,6 +99,7 @@ ads.pandora.tv
 ads.party.at
 ads.petspot-gmbh.com
 ads.petspot-gmbh.com.s3.amazonaws.com
+ads.publick.apa.net
 ads.shoplove.com
 ads.simplyhired.com
 ads.smartstream.tv
@@ -148,7 +150,9 @@ analytics.copyright.com
 analytics.disney.go.com
 analytics.hotelwebservice.com
 analytics.hpprintx.com
+analytics.modul.ac.at
 analytics.phonedog.com
+analytics.seattleclouds.com
 apf.adc.medibaad.com
 api-tracking.hermesworld.com
 api.advarkads.com
@@ -171,15 +175,21 @@ as.sp.impact-ad.jp
 as.xa.impact-ad.jp
 asociacionvallisoletanademicologia.com
 assets.infinity-tracking.net
+atq.ad.valuecommerce.com
 aud.adjust-net.jp
 austria1.adverserve.net
 austriacomplus.at
 aw.dw.impact-ad.jp
+b1html5resources.bannerflow.netdna-cdn.com
+b2-banner-images.bannerflow.netdna-cdn.com
+b2-banners.bannerflow.netdna-cdn.com
+b2tracker.azurewebsites.net
 banner-lb-2-1064085431.us-east-1.elb.amazonaws.com
 banner.alldatasheet.com
 banner.dspcdn.com
 banner.dspcdn.com.edgekey.net
 banners-wxu.weather-perf.akadns.net
+banners.host.bannerflow.com
 bc.ads.gree.net
 bc.ads.gree.net.gslb.idc.jp
 be2.at
@@ -195,6 +205,7 @@ cast-cs-j.adtdp.com
 cast-js-j.adtdp.com
 cast-mark-j.adtdp.com
 cdn-careers.sstatic.net
+cdn-tracking.bannerflow.netdna-cdn.com
 cdn.ad.maist.jp
 cdn.adk2.co.edgekey.net
 cdn.adk2.com
@@ -249,17 +260,21 @@ dex.advg.jp
 dex.send.microad.jp
 diriginal.info # virus
 dmp.amoad.com
+dsp.ztcadx.com
 dsync.adserving.jp
 duktadvmmowhi.cloudfront.net
 dynalyst-imp.adtdp.com
 dynalyst-mk.adtdp.com
 dynalyst-rd.adtdp.com
 e01.taggyad.jp
+embed.bannerflow.com
 engine.kadira.io
 es.ads.justpremium.com
+eu-west-tracker-bannerflow.azurewebsites.net
 euwfb.adsrvr.org
 extensionanalytics-cdn2.elasticbeanstalk.com
 extensionanalytics-track.elasticbeanstalk.com
+fam-ad.com
 feedback.premiads.yahoo.co.jp
 firstfirst.net # virus
 fls-fe.amazon-adsystem.com
@@ -270,6 +285,7 @@ fra-ad-lb1.rfihub.com
 fso-tapi.admatrix.jp
 ftp.iij.ad.jp
 gadcreatives.glam.com
+gc136.xiti.com
 glb-mobile.a.adtech.de
 global.hua.aads1.net
 globalstats.ekmsecure.com
@@ -291,11 +307,15 @@ ibplb-analytics-1010299867.us-east-1.elb.amazonaws.com
 ict.infinity-tracking.net
 im.3eb2c200.780d675.ads.a4cdn.contentabc.com
 im.3eb2c258.ad74a95.public.a4cdn.tube8.phncdn.com
+images.host.bannerflow.com
+images.ztcadx.com
+images.ztcadx.com.w.alikunlun.com
 img.ad-trip.com
 img.adfurikun.jp
 img.adinte.jp
 img.ak.impact-ad.jp
 img.ak.impact-ad.jp.edgekey.net
+img.fam-ad.com
 img.ij.impact-ad.jp
 img.mediad2.jp
 img1.nend.net
@@ -310,6 +330,7 @@ j.adticker.net
 j.amoad.com
 j.sprout-ad.com
 jobviewtrack.com
+js.adsrvr.org
 js.logentries.com
 jtracker.fear-group.de
 krebomedia.adspirit.de
@@ -327,10 +348,14 @@ lizadz.com
 log-nj.adap.tv
 log.fc.yahoo.com
 log.heftig.co
+log.immoversum.com
 log.planb.cd
 log.snmi.cn
 log.youdutou.cn
+log1.gooddo.jp
+logc136.xiti.com
 logger.instagram.com
+logmi.jp
 logql.g.yahoo.co.jp
 logql.yahoo.co.jp
 m.addthis.com
@@ -355,7 +380,6 @@ nexus.adspirit.de
 nexusads.adspirit.de
 o.advg.jp
 ocsp.quovadisglobal.com
-ogc188.xiti.com
 origin.global.hua.aads1.net
 p.amoad.com
 pagead.l.doubleclick.net
@@ -371,14 +395,18 @@ piwik.arbeiterkammer.at
 piwik.berlinonline.de
 piwik.bindertrittenwein.com
 piwik.boku.ac.at
+piwik.cwd.at
 piwik.i-rsk.com
 piwik.labbe.de
 piwik.linuxandi.net
 piwik.nic.cz
 piwik.omnigroup.com
 piwik.openstreetmap.org
+piwik.pro
+piwikext.oebb.at
 piwiki.kk-bits.com
 pl.stat.tudou.com
+placements.bannerflow.netdna-cdn.com
 postat01.webtrekk.net
 preferences-mgr.truste.com
 presentationtracking.latency.prodaa.netflix.com
@@ -395,6 +423,7 @@ r.ligatus.com
 racking2.rce.veeseo.com
 rcm-fe.amazon-adsystem.com
 renegoads.com
+resources.host.bannerflow.com
 retracker.kld.ru
 rlog-new-795704922.ap-northeast-1.elb.amazonaws.com
 rlog.popin.cc
@@ -404,6 +433,7 @@ rs-j.adtdp.com
 rs-j.adtdp.com.edgekey.net
 rs-sync.adtdp.com
 rs.adapf.com
+run.trackinit.com
 s-cm.send.microad.jp
 s.ad-satt.com
 s.extensionanalytics.com
@@ -416,6 +446,8 @@ samuraiad.net
 samuraiad.net.s3-website-ap-northeast-1.amazonaws.com
 sankei2ad.durasite.net
 sc.adelement.com
+scripts.bannerflow.netdna-cdn.com
+scripts.host.bannerflow.com
 sdk.adspruce.com
 sdlp.europacasino.com
 secure-ib.adnxs.com
@@ -445,6 +477,8 @@ ssl-google-analytics.l.google.com
 ssl-ustat.amebame.com
 ssl-ustat.amebame.com.edgekey.net
 ssl.adworx.at
+ssl.b2tracker.azurewebsites.net
+ssl.eu-west-tracker-bannerflow.azurewebsites.net
 ssl.logger.co.kr
 ssp.adriver.ru
 ssp.advg.jp
@@ -452,9 +486,12 @@ startrack.at
 stat.acg.tv
 stat.ethz.ch
 stat.haloapps.com
+stat.hitosara.com
+stat.immolive24.com
 stat.techtimes.com
 stat.tudou.com
 stat.vcpost.com
+stat1.netletter.at
 static.adf.ly
 static.adlantis.jp
 static.adroute.focas.jp
@@ -468,14 +505,19 @@ static.trafficstars.com
 statistics.krone.mindtake.com
 statistik.artada.de
 stats-redditmedia-com-1900479082.us-east-1.elb.amazonaws.com
+stats.bookassist.com
 stats.cyanogenmod.org
+stats.g.douleclick.net
 stats.ibtimes.co.in
+stats.immogator.at
 stats.ipinyou.com
 stats.mezzobit.com
 stats.nikkeibp.co.jp
 stats.redditmedia.com
+stats.t-online.de
 stats.update.microsoft.com
 stats.wintotal.de
+stats.ztcadx.com
 stats1.update.microsoft.com.nsatc.net
 statsfe2.update.microsoft.com.akadns.net
 statsfe2.ws.microsoft.com
@@ -499,8 +541,10 @@ tags-cdn.deployads.com
 taz.adspirit.de
 tca-ad-lb1.rfihub.com
 tes-ampagnen.s3.amazonaws.com
+tm.r-ad.ne.jp
 tm.r-ad.ne.jp.cdngc.net
 toei-ad.primestage.net
+tr.r-ad.ne.jp
 track.amebame.com
 track.cj.akadns.net
 track.flexlinks.com
@@ -510,6 +554,8 @@ track.mk.impact-ad.jp
 track.userlike.com
 track.youdutou.cn
 track.zalando.at
+tracker-bannerflow.trafficmanager.net
+tracker.bannerflow.com
 tracker.btzoo.eu
 tracker.ccc.de
 tracker.kantan-access.com
@@ -521,7 +567,9 @@ tracker.softgarden.de
 tracker4.piratux.com
 tracking-1651687710.eu-west-1.elb.amazonaws.com
 tracking.aldi-international.com
+tracking.become.co.jp
 tracking.eduscho.at
+tracking.host.bannerflow.com
 tracking.interspar.at
 tracking.netdoktor.at
 tracking.okwave.com
@@ -537,7 +585,6 @@ ucounter.ucoz.net
 ums.adtechjp.com
 upstats.yadro.ru
 uuid.adlantis.jp
-uzuzuu.ru # dns ddos
 v.admaster.com.cn
 v4.moatads.com
 v6.advg.jp
@@ -597,4 +644,6 @@ yads.c.yimg.jp
 yads.g.yahoo.co.jp
 yads.yahoo.co.jp
 z-na.amazon-adsystem.com
+zads.care2.com
+zads.care2.com.edgesuite.net
 zor24.de
