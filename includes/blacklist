@@ -18,6 +18,7 @@ aax-fe.amazon-adsystem.com
 aax-us-east-rtb.amazon-adsystem.com
 aboutads.info
 acookie.ztcadx.com
+ad-api-v01.uliza.jp
 ad-js.chip.de
 ad-js.chip.de.edgesuite.net
 ad-move.jp
@@ -91,6 +92,7 @@ adm.shinobi.jp
 admaster.la.uae.uc.cn
 admaster.union.ucweb.com
 admax.socdm.com
+adn.18254.xicdn.net
 adn.6638.edgecastcdn.net
 adn.ae7f.edgecastcdn.net
 adn.biol.umontreal.ca
@@ -157,6 +159,7 @@ advertising.microsoft.com
 advertising.microsoft.com.nsatc.net
 advertising.nttr.co.jp
 advice-ads.s3.amazonaws.com
+adviqopartners.com
 advisionsort.yicha.jp
 advisionwebp.yicha.jp
 adzmob.net
@@ -224,6 +227,7 @@ b1html5resources.bannerflow.netdna-cdn.com
 b2-banner-images.bannerflow.netdna-cdn.com
 b2-banners.bannerflow.netdna-cdn.com
 b2tracker.azurewebsites.net
+balancer.unified-tracking.com
 banner-lb-2-1064085431.us-east-1.elb.amazonaws.com
 banner.alldatasheet.com
 banner.dspcdn.com
@@ -255,6 +259,8 @@ cdn.adspirit.de.glb.ipcache.net
 cdn.amanad.adtdp.com
 cdn.bttrack.com
 cdn.extensionanalytics.com
+cdn.r-adimg.com
+cdn.r-adimg.com.cdngc.net
 cdn.smartnews-ads.com
 cdn.smartnews-ads.com.edgekey.net
 cdn.teamskeetimages.com
@@ -270,6 +276,7 @@ click.affiliate.ameba.jp
 click.stat.tudou.com
 click.v1.rtb.revcloud.adaos-ads.net
 clientlog.portal.office.com
+cnt.megacount.com
 consent-st.truste.com
 content.cptrack.de
 contents01.adingo.jp.eimg.jp
@@ -325,10 +332,12 @@ engine.kadira.io
 ephadsi.hit.gemius.pl
 ephsi.adocean.pl
 es.ads.justpremium.com
+esprit-at.fpt.adclear.net
 eu-west-tracker-bannerflow.azurewebsites.net
 euwfb.adsrvr.org
 extensionanalytics-cdn2.elasticbeanstalk.com
 extensionanalytics-track.elasticbeanstalk.com
+factoreleven.adspirit.de
 fam-ad.com
 feedback.premiads.yahoo.co.jp
 firstfirst.net # virus
@@ -347,6 +356,7 @@ global.hua.aads1.net
 globalstats.ekmsecure.com
 go.trackinit.com
 gourmetads.com
+gp1.adn.v2cdn.net
 gplab1.adn.v2cdn.net
 gs1.adn.v2cdn.NET
 gs1.adn.v2cdn.net
@@ -384,11 +394,14 @@ insanetrack.com
 insight.adsrvr.org
 ir-de.amazon-adsystem.com
 ir-jp.amazon-adsystem.com
+itx5-secure.smartadserver.com
+itx5.smartadserver.com
 j-image-ad-jp.ad-cloud.jp
 j.adserving.jp
 j.adticker.net
 j.amoad.com
 j.sprout-ad.com
+jadserve.postrelease.com
 jobviewtrack.com
 js.adsrvr.org
 js.logentries.com
@@ -401,6 +414,7 @@ l.neqty.net
 lb-bom-prod-fe-adserver-1390610020.us-west-2.elb.amazonaws.com
 lb-logger-1729870803.ap-northeast-1.elb.amazonaws.com
 lb16-backend-external-astat-213590054.ap-southeast-1.elb.amazonaws.com
+libertad365.com
 ligatus.com
 linuxgizmos.advertserve.com
 live.adyen.com
@@ -422,6 +436,8 @@ log.uninstallmaster.com
 log.very911.com
 log.youdutou.cn
 log1.gooddo.jp
+log5-interactive-circle-1388207747.ap-northeast-1.elb.amazonaws.com
+log5.interactive-circle.jp
 logc136.xiti.com
 logger.instagram.com
 logging.immobilien.net
@@ -448,6 +464,7 @@ my7.statcounter.com
 n1020.adshostnet.com
 n141adserv.com
 n52.adshostnet.com
+na.ads.yahoo.com
 nad2a.shinobi.jp
 nexus.adspirit.de
 nexusads.adspirit.de
@@ -509,6 +526,7 @@ renegoads.com
 reqlog.elasticbeanstalk.com
 resources.host.bannerflow.com
 retracker.kld.ru
+retracker.telecom.kz
 rlog-new-795704922.ap-northeast-1.elb.amazonaws.com
 rlog.popin.cc
 rollingstone.adticket.de
@@ -528,6 +546,7 @@ s1.adform.net
 s1.adformdsp.net
 s1.gp1.adn.edgecastcdn.net
 s3ufm.trackvoluum.com
+s8.r-ad.ne.jp
 samuraiad.net
 samuraiad.net.s3-website-ap-northeast-1.amazonaws.com
 sankei2ad.durasite.net
@@ -579,6 +598,7 @@ stat.haloapps.com
 stat.hitosara.com
 stat.immolive24.com
 stat.kakaku.com
+stat.megacount.com
 stat.techtimes.com
 stat.tudou.com
 stat.vcpost.com
@@ -608,6 +628,7 @@ stats.mezzobit.com
 stats.nikkeibp.co.jp
 stats.pingdom.com
 stats.redditmedia.com
+stats.stackexchange.com
 stats.t-online.de
 stats.update.microsoft.com
 stats.wintotal.de
@@ -642,6 +663,7 @@ tm.r-ad.ne.jp
 tm.r-ad.ne.jp.cdngc.net
 toei-ad.primestage.net
 tr.r-ad.ne.jp
+track.adclear.net
 track.iconfinder.com
 track.kuronekoyamato.co.jp
 track.mk.impact-ad.jp
@@ -652,6 +674,7 @@ track.www.zazzle.at
 track.xmax.jp
 track.youdutou.cn
 track.zalando.at
+track2.cliplister.com
 track2.somewrite.jp
 track306.info
 tracker-bannerflow.trafficmanager.net
@@ -666,6 +689,8 @@ tracker.nwps.ws
 tracker.pomf.se
 tracker.secureboxes.net
 tracker.softgarden.de
+tracker.yhd.com
+tracker.yhd.com.yhcdn.cn
 tracker4.piratux.com
 tracking-1651687710.eu-west-1.elb.amazonaws.com
 tracking.aldi-international.com
@@ -737,6 +762,7 @@ www.liveads.jp
 www.lizads.com
 www.logly.co.jp
 www.marge-ad.com
+www.megacount.com
 www.metroflog.com
 www.mouse-ad.at
 www.passwordbox.com
@@ -755,6 +781,7 @@ www.vsncash.com
 www2.liveads.jp
 www2.moviepilot.de # cname record auf adserver.adtech.de
 www2.williamhill.com
+www7.smartadserver.com
 x.ligatus.com
 xml.affiliate.rakuten.co.jp
 y.analytics.app-adforce.jp
