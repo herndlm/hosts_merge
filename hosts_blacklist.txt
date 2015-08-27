@@ -1,6 +1,7 @@
 0003ad-1.l.windowsupdate.com
 100341.adnico.jp
 10147.engine.mobileapptracking.com
+10148.engine.mobileapptracking.com
 101623.sprout-ad.com
 106064.adnico.jp
 159126.engine.mobileapptracking.com
@@ -170,6 +171,7 @@ bc.ads.gree.net
 bc.ads.gree.net.gslb.idc.jp
 be2.at
 blog.statcounter.com
+bust3.analytics.qlook.net
 bypass.ad-stir.com
 c.0003ad.1.msftsrvcs.vo.llnwi.net
 c001.trax-ad.jp
@@ -223,6 +225,7 @@ cs59.adn.edgecastcdn.net
 cs80.adn.edgecastcdn.net
 cs83.adn.edgecastcdn.net
 cv.mobile.adicio.com
+d-guile-jp.ad-cloud.jp
 d-image-ad-jp.ad-cloud.jp
 d.adcl.medibaad.com
 d.adticker.net
@@ -292,6 +295,7 @@ infos.adalizer.com
 insanetrack.com
 irobstat.trafficmanager.net
 itx5-secure.smartadserver.com
+j-guile-jp.ad-cloud.jp
 j-image-ad-jp.ad-cloud.jp
 j.adticker.net
 jadserve.postrelease.com
@@ -381,6 +385,7 @@ piwik.nic.cz
 piwik.omnigroup.com
 piwik.openstreetmap.org
 piwik.rtr.at
+piwik.selly.at
 piwik.vulpecula.uberspace.de
 piwik.wu.ac.at
 piwikext.oebb.at
@@ -600,6 +605,7 @@ www.fastly-analytics.com
 www.financeads.net
 www.free-count.com
 www.gettyimagesaffiliates.com
+www.histats.com
 www.iij.ad.jp
 www.liveadoptimizer.com
 www.liveads.jp

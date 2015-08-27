@@ -33,6 +33,15 @@ echo_verbose() {
 	fi
 }
 
+print_usage() {
+	echo "USAGE: <script> [verbose] [check] [clean] [output=<filename>]"
+	echo
+	echo "verbose: print more info about what is going on"
+	echo "check: checks the whitelist and blacklist (whitelisted entries should exist and\
+ blacklisted entries should not exist in the uncleaned hosts data)"
+	echo "clean: cleanup whitelist and blacklist files ('check' should be run first)"
+}
+
 # check all parameters
 mode_verbose=0;
 mode_check=0;
@@ -46,6 +55,10 @@ for var in $@; do
 		mode_clean=1
 	elif [[ "$var" = "output="* ]]; then
 		file_result=${var/output=/}
+	# unknown or wrong command, print usage
+	else
+		print_usage
+		exit
 	fi
 done
 
@@ -55,10 +68,10 @@ readarray data_blacklist < "$file_blacklist"
 readarray data_whitelist < "$file_whitelist"
 # clean blacklist and whitelist data
 for index in "${!data_blacklist[@]}"; do
-	data_blacklist[$index]=`sed -e 's/#.*//g' <<< ${data_blacklist[$index]}`
+	data_blacklist[$index]=`sed -e 's/#.*//g' -e 's/ //g' <<< ${data_blacklist[$index]}`
 done
 for index in "${!data_whitelist[@]}"; do
-	data_whitelist[$index]=`sed -e 's/#.*//g' <<< ${data_whitelist[$index]}`
+	data_whitelist[$index]=`sed -e 's/#.*//g' -e 's/ //g' <<< ${data_whitelist[$index]}`
 done
 
 # truncate result file
@@ -98,7 +111,7 @@ if [ $mode_check -eq 1 ] || [ $mode_clean -eq 1 ]; then
 				echo "removing entry '$data_whitelist_entry' from the whitelist"
 				sed -i -e "/$data_whitelist_entry/d" "$file_whitelist"
 			else
-				echo "whitelist entry '$data_whitelist_entry' is existing in '$file_result'"
+				echo "whitelist entry '$data_whitelist_entry' is not existing in '$file_result'"
 			fi
 		fi
 	done

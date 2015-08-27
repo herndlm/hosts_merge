@@ -1,5 +1,5 @@
 adf.ly # many one click hoster use this
-imgstat.ameba.jp # images on ameba blog sites
+img.timeinc.net # images and css on time.com
 piwik.org # needed for doku, downloads
 po.st # url shortener
 yui.yahooapis.com # needed for www.bmobile.ne.jp
