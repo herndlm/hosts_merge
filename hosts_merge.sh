@@ -134,7 +134,7 @@ for data_whitelist_entry in "${data_whitelist[@]}"; do
 	sed -i -e "/ $data_whitelist_entry/d" "$file_result"
 done
 
-# add all blacklisted entries from hosts.txt file
+# add all blacklisted entries to hosts.txt file
 echo_verbose "adding all blacklisted entries"
 for data_blacklist_entry in "${data_blacklist[@]}"; do
 	echo "0.0.0.0 $data_blacklist_entry" >> "$file_result"
