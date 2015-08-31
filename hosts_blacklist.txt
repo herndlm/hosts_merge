@@ -148,6 +148,7 @@ app.adjust.com
 applift-b.apptornado.com
 apps.crashlytics.com
 apps.skype.com
+as.ao.impact-ad.jp
 as.gn.impact-ad.jp
 as.gq.impact-ad.jp
 as.iy.impact-ad.jp
@@ -269,6 +270,7 @@ eu-west-tracker-bannerflow.azurewebsites.net
 euwfb.adsrvr.org
 extensionanalytics-cdn2.elasticbeanstalk.com
 extensionanalytics-track.elasticbeanstalk.com
+f-counter.jp
 factoreleven.adspirit.de
 fam-ad.com
 fe2.update.microsoft.com.akadns.net
@@ -281,6 +283,7 @@ firstfirst.net # virus
 flex.msn.com
 forum.statcounter.com
 fra-ad-lb1.rfihub.com
+free-counter.jp
 fso-tapi.admatrix.jp
 ftp.iij.ad.jp
 gc136.xiti.com
@@ -296,6 +299,7 @@ gsweb.adlibjapan.jp
 h1.msn.com
 help.bingads.microsoft.com
 help.bingads.microsoft.com.nsatc.net
+hpcounter.nifty.com
 i1.services.social.microsoft.com
 i1.services.social.microsoft.com.nsatc.net
 i2i-ad-web-1621965200.ap-northeast-1.elb.amazonaws.com
@@ -363,6 +367,7 @@ logging.immobilien.net
 logmi.jp
 logql.g.yahoo.co.jp
 logql.yahoo.co.jp
+logs152.xiti.com
 m.adquar.store.aptoide.com
 m.hotmail.com
 m.iad1.yelp.com
@@ -410,6 +415,7 @@ piwik.linuxandi.net
 piwik.nic.cz
 piwik.omnigroup.com
 piwik.openstreetmap.org
+piwik.rail.cc
 piwik.rtr.at
 piwik.selly.at
 piwik.vulpecula.uberspace.de
@@ -417,6 +423,8 @@ piwik.wu.ac.at
 piwikext.oebb.at
 piwiki.kk-bits.com
 placements.bannerflow.netdna-cdn.com
+pool.adizio.iponweb.net
+pool.admedo.com
 postat01.webtrekk.net
 pre.footprintpredict.com
 preferences-mgr.truste.com
@@ -499,6 +507,7 @@ ssp.adskom.com
 ssp.n.adskom.com
 ssw.live.com # disable windows 10 onedrive reporting
 startrack.at
+stat.4travel.jp
 stat.acg.tv
 stat.ethz.ch
 stat.greenandwhite.at
@@ -656,10 +665,12 @@ www.advertising.expedia.com
 www.advmaker.ru
 www.amoad.com
 www.besucherzaehler-counter.de
+www.f-counter.jp
 www.fastcounter.de
 www.fastly-analytics.com
 www.financeads.net
 www.free-count.com
+www.free-counter.jp
 www.gettyimagesaffiliates.com
 www.histats.com
 www.iij.ad.jp
