@@ -9,21 +9,28 @@ DIR=${DIR%/*}
 file_blacklist="$DIR/hosts_blacklist.txt"
 file_whitelist="$DIR/hosts_whitelist.txt"
 file_result="$DIR/hosts.txt"
-file_ipv6="${file_result}.ipv6"
+file_temp=`mktemp`
+file_temp_ipv6="${file_temp}.ipv6"
 
-sources=(
+permissions_result=644
+
+sources_hosts_format=(
 	# global common
 	"http://hosts-file.net/ad_servers.txt"
 	"http://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext"
 	"http://winhelp2002.mvps.org/hosts.txt"
 	"http://someonewhocares.org/hosts/hosts"
-	# abuse / tracking lists (may have many false positives)
-	#"http://mirror2.malwaredomains.com/files/BOOT" # not a valid hosts format
-	#"https://zeustracker.abuse.ch/blocklist.php?download=hostfile"
-	#"http://sysctl.org/cameleon/hosts.win"
-	#"http://support.it-mate.co.uk/downloads/HOSTS.txt" # too big
-	# japanese special
+	#~ "http://support.it-mate.co.uk/downloads/HOSTS.txt" # very big
+	# japanese
 	"https://sites.google.com/site/cosmonoteshosts/hosts_for_Windows8.txt?attredirects=0"
+	# abuse / tracking lists (may have many false positives)
+	"https://zeustracker.abuse.ch/blocklist.php?download=hostfile"
+	"http://sysctl.org/cameleon/hosts.win"
+)
+
+sources_domains_only=(
+	# abuse / tracking lists (may have many false positives)
+	"http://mirror2.malwaredomains.com/files/justdomains"
 )
 
 # print argument as message only if verbose is set
@@ -74,55 +81,59 @@ for index in "${!data_whitelist[@]}"; do
 	data_whitelist[$index]=`sed -e 's/#.*//g' -e 's/ //g' <<< ${data_whitelist[$index]}`
 done
 
-# truncate result file
-echo_verbose "truncate file '$file_result'"
-: > "$file_result"
-
-# download all sources
-for source in "${sources[@]}"; do
-	echo_verbose "downloading '$source' to '$file_result'"
-	curl --location --silent "$source" >> "$file_result"
+# download all sources in hosts format
+for source_hosts_format in "${sources_hosts_format[@]}"; do
+	echo_verbose "downloading hosts source '$source_hosts_format' to '$file_temp'"
+	curl --location --silent "$source_hosts_format" >> "$file_temp"
 done
 
-echo_verbose "cleaning up '$file_result'"
+# download all domain only sources (we're just prepending the ip adress to every line here)
+for source_domains_only in "${sources_domains_only[@]}"; do
+	echo_verbose "downloading domain only source '$source_domains_only' to '$file_temp'"
+	curl --location --silent "$source_domains_only" | sed -e 's/^/0.0.0.0 /' >> "$file_temp"
+done
+
+echo_verbose "cleaning up '$file_temp'"
 # Remove MS-DOS carriage returns
-sed -i -e 's/\r//g' "$file_result"
+sed -i -e 's/\r//g' "$file_temp"
 # Replace 127.0.0.1 with 0.0.0.0 because then we don't have to wait for the resolver to fail
-sed -i -e 's/127.0.0.1/0.0.0.0/g' "$file_result"
+sed -i -e 's/127.0.0.1/0.0.0.0/g' "$file_temp"
 # Delete any lines containing the word localhost
-sed -i -e '/localhost/d' "$file_result"
+sed -i -e '/localhost/d' "$file_temp"
 # Remove all comments
-sed -i -e 's/#.*//g' "$file_result"
+sed -i -e 's/#.*//g' "$file_temp"
 # Replace tabs with a space
-sed -i -e 's/\t/ /g' "$file_result"
+sed -i -e 's/\t/ /g' "$file_temp"
 # Replace multiple spaces with one space
-sed -i -e 's/ \{2,\}/ /g' "$file_result"
+sed -i -e 's/ \{2,\}/ /g' "$file_temp"
 # Remove lines that do not start with "0.0.0.0"
-sed -i -e '/^0.0.0.0/!d' "$file_result"
+sed -i -e '/^0.0.0.0/!d' "$file_temp"
+# Remove lines that start correct but have no or empty domain
+sed -i -e '/^0\.0\.0\.0 \{0,\}$/d' "$file_temp"
 
 # check mode (checks entries of the white- & blacklist)
 # clean mode (remove whitelist entries that do not exist in the hosts file and remove blacklist
 # entries that do already exist in the hosts file)
 if [ $mode_check -eq 1 ] || [ $mode_clean -eq 1 ]; then
 	for data_whitelist_entry in "${data_whitelist[@]}"; do
-		echo_verbose "check if '$data_whitelist_entry' is not existing in '$file_result'"
-		if [ -z "`grep $data_whitelist_entry "$file_result"`" ]; then
+		echo_verbose "check if '$data_whitelist_entry' is not existing in '$file_temp'"
+		if [ -z "`grep $data_whitelist_entry "$file_temp"`" ]; then
 			if [ $mode_clean -eq 1 ]; then
 				echo "removing entry '$data_whitelist_entry' from the whitelist"
 				sed -i -e "/$data_whitelist_entry/d" "$file_whitelist"
 			else
-				echo "whitelist entry '$data_whitelist_entry' is not existing in '$file_result'"
+				echo "whitelist entry '$data_whitelist_entry' is not existing in '$file_temp'"
 			fi
 		fi
 	done
 	for data_blacklist_entry in "${data_blacklist[@]}"; do
-		echo_verbose "check if '$data_blacklist_entry' is existing in '$file_result'"
-		if [ -n "`grep $data_blacklist_entry "$file_result"`" ]; then
+		echo_verbose "check if '$data_blacklist_entry' is existing in '$file_temp'"
+		if [ -n "`grep $data_blacklist_entry "$file_temp"`" ]; then
 			if [ $mode_clean -eq 1 ]; then
 				echo "removing entry '$data_blacklist_entry' from the blacklist"
 				sed -i -e "/$data_blacklist_entry/d" "$file_blacklist"
 			else
-				echo "blacklist entry '$data_blacklist_entry' is existing in '$file_result'"
+				echo "blacklist entry '$data_blacklist_entry' is existing in '$file_temp'"
 			fi
 		fi
 	done
@@ -131,25 +142,25 @@ fi
 # remove all whitelisted entries from hosts.txt file
 echo_verbose "removing all whitelisted entries"
 for data_whitelist_entry in "${data_whitelist[@]}"; do
-	sed -i -e "/ $data_whitelist_entry/d" "$file_result"
+	sed -i -e "/ $data_whitelist_entry/d" "$file_temp"
 done
 
 # add all blacklisted entries to hosts.txt file
 echo_verbose "adding all blacklisted entries"
 for data_blacklist_entry in "${data_blacklist[@]}"; do
-	echo "0.0.0.0 $data_blacklist_entry" >> "$file_result"
+	echo "0.0.0.0 $data_blacklist_entry" >> "$file_temp"
 done
 
 # sort file entries and remove multiple occuring entries
 echo_verbose "sort file entries and remove multiple occuring entries"
-sort -u -o "$file_result" "$file_result"
+sort -u -o "$file_temp" "$file_temp"
 
 # duplicate data for IPv6 (e.g. dnsmasq needs such entries to block IPv6 hosts!)
-echo_verbose "duplicate data for IPv6"
-cp "$file_result" "$file_ipv6"
-sed -i -e 's/0.0.0.0/::0/g' "$file_ipv6"
-cat "$file_ipv6" >> "$file_result"
-rm -f "$file_ipv6"
+echo_verbose "duplicate data for IPv6 in temp file '$file_temp_ipv6'"
+cp "$file_temp" "$file_temp_ipv6"
+sed -i -e 's/0.0.0.0/::0/g' "$file_temp_ipv6"
+cat "$file_temp_ipv6" >> "$file_temp"
+rm -f "$file_temp_ipv6"
 
 # generate and write file header
 echo_verbose "generating and writing file header"
@@ -159,4 +170,12 @@ data_header="# clean merged adblocking-hosts file\n\
 \n\
 127.0.0.1 localhost.localdomain localhost\n\
 ::1 localhost.localdomain localhost\n"
-sed -i "1i${data_header}" "$file_result"
+sed -i "1i${data_header}" "$file_temp"
+
+# rotate in place
+echo_verbose "move temp file '$file_temp' to '$file_result'"
+mv -f "$file_temp" "$file_result"
+
+# fixup permissions (we don't want that limited temp perms)
+echo_verbose "chmod '$file_result' to '$permissions_result'"
+chmod $permissions_result "$file_result"
