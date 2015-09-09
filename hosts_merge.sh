@@ -15,22 +15,33 @@ file_temp_ipv6="${file_temp}.ipv6"
 permissions_result=644
 
 sources_hosts_format=(
+	# hpHosts database
+	"http://hosts-file.net/ad_servers.txt" # ad/tracking servers
+	"http://hosts-file.net/emd.txt" # malware
+	"http://hosts-file.net/exp.txt" # exploit
+	"http://hosts-file.net/fsa.txt" # fraud
+	"http://hosts-file.net/grm.txt" # spam
+	"http://hosts-file.net/hfs.txt" # hpHosts forum spammers
+	"http://hosts-file.net/hjk.txt" # hijack
+	"http://hosts-file.net/mmt.txt" # misleading marketing
+	"http://hosts-file.net/pha.txt" # illegal pharmacy
+	"http://hosts-file.net/psh.txt" # phishing
+	"http://hosts-file.net/wrz.txt" # warez/piracy
 	# global common
-	"http://hosts-file.net/ad_servers.txt"
-	"http://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext"
+	"http://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts"
 	"http://winhelp2002.mvps.org/hosts.txt"
 	"http://someonewhocares.org/hosts/hosts"
-	#~ "http://support.it-mate.co.uk/downloads/HOSTS.txt" # very big
 	# japanese
 	"https://sites.google.com/site/cosmonoteshosts/hosts_for_Windows8.txt?attredirects=0"
-	# abuse / tracking lists (may have many false positives)
+	# abuse / tracking lists
 	"https://zeustracker.abuse.ch/blocklist.php?download=hostfile"
 	"http://sysctl.org/cameleon/hosts.win"
 )
 
 sources_domains_only=(
-	# abuse / tracking lists (may have many false positives)
+	# abuse / tracking lists
 	"http://mirror2.malwaredomains.com/files/justdomains"
+	"https://isc.sans.edu/feeds/suspiciousdomains_Low.txt"
 )
 
 # print argument as message only if verbose is set
@@ -47,12 +58,14 @@ print_usage() {
 	echo "check: checks the whitelist and blacklist (whitelisted entries should exist and\
  blacklisted entries should not exist in the uncleaned hosts data)"
 	echo "clean: cleanup whitelist and blacklist files ('check' should be run first)"
+	echo "ipv6dup: duplicate all the domains with '::0' as prefix instead of '0.0.0.0'"
 }
 
 # check all parameters
 mode_verbose=0;
 mode_check=0;
 mode_clean=0;
+ipv6dup=0;
 for var in $@; do
 	if [ "$var" = "verbose" ]; then
 		mode_verbose=1
@@ -62,6 +75,8 @@ for var in $@; do
 		mode_clean=1
 	elif [[ "$var" = "output="* ]]; then
 		file_result=${var/output=/}
+	elif [[ "$var" = "ipv6dup" ]]; then
+		ipv6dup=1
 	# unknown or wrong command, print usage
 	else
 		print_usage
@@ -98,18 +113,24 @@ echo_verbose "cleaning up '$file_temp'"
 sed -i -e 's/\r//g' "$file_temp"
 # Replace 127.0.0.1 with 0.0.0.0 because then we don't have to wait for the resolver to fail
 sed -i -e 's/127.0.0.1/0.0.0.0/g' "$file_temp"
-# Delete any lines containing the word localhost
-sed -i -e '/localhost/d' "$file_temp"
 # Remove all comments
 sed -i -e 's/#.*//g' "$file_temp"
+# Strip trailing spaces and tabs
+sed -i -e 's/[ \t]*$//g' "$file_temp"
 # Replace tabs with a space
 sed -i -e 's/\t/ /g' "$file_temp"
+# Replace strange space character
+sed -i -e 's/ ﻿/ /g' "$file_temp"
 # Replace multiple spaces with one space
 sed -i -e 's/ \{2,\}/ /g' "$file_temp"
 # Remove lines that do not start with "0.0.0.0"
 sed -i -e '/^0.0.0.0/!d' "$file_temp"
+# Remove localhost lines
+sed -i -r -e '/^0\.0\.0\.0 local(host)*(.localdomain)*$/d' "$file_temp"
 # Remove lines that start correct but have no or empty domain
 sed -i -e '/^0\.0\.0\.0 \{0,\}$/d' "$file_temp"
+# Remove lines with invalid domains (domains must start with an alphanumeric character)
+sed -i -e '/^0\.0\.0\.0 [^a-zA-Z0-9]/d' "$file_temp"
 
 # check mode (checks entries of the white- & blacklist)
 # clean mode (remove whitelist entries that do not exist in the hosts file and remove blacklist
@@ -156,17 +177,20 @@ echo_verbose "sort file entries and remove multiple occuring entries"
 sort -u -o "$file_temp" "$file_temp"
 
 # duplicate data for IPv6 (e.g. dnsmasq needs such entries to block IPv6 hosts!)
-echo_verbose "duplicate data for IPv6 in temp file '$file_temp_ipv6'"
-cp "$file_temp" "$file_temp_ipv6"
-sed -i -e 's/0.0.0.0/::0/g' "$file_temp_ipv6"
-cat "$file_temp_ipv6" >> "$file_temp"
-rm -f "$file_temp_ipv6"
+if [ $ipv6dup -eq 1 ]; then
+	echo_verbose "duplicate data for IPv6 in temp file '$file_temp_ipv6'"
+	cp "$file_temp" "$file_temp_ipv6"
+	sed -i -e 's/0.0.0.0/::0/g' "$file_temp_ipv6"
+	cat "$file_temp_ipv6" >> "$file_temp"
+	rm -f "$file_temp_ipv6"
+fi
 
 # generate and write file header
 echo_verbose "generating and writing file header"
 data_header="# clean merged adblocking-hosts file\n\
-# source: hosts.herndl.org\n\
 # build date: `date --rfc-2822`\n\
+# build server: `hostname`\n\
+# more infos: https://github.com/monojp/hosts_merge\n\
 \n\
 127.0.0.1 localhost.localdomain localhost\n\
 ::1 localhost.localdomain localhost\n"
