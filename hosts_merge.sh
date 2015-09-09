@@ -119,8 +119,8 @@ sed -i -e 's/#.*//g' "$file_temp"
 sed -i -e 's/[ \t]*$//g' "$file_temp"
 # Replace tabs with a space
 sed -i -e 's/\t/ /g' "$file_temp"
-# Replace strange space character
-sed -i -e 's/ ﻿/ /g' "$file_temp"
+# Remove lines containing invalid characters
+sed -i -e '/[^a-zA-Z0-9\t\. _-]/d' "$file_temp"
 # Replace multiple spaces with one space
 sed -i -e 's/ \{2,\}/ /g' "$file_temp"
 # Remove lines that do not start with "0.0.0.0"
