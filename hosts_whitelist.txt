@@ -1,5 +1,12 @@
 adf.ly # many one click hoster use this
+fiddle.jshell.net
 img.timeinc.net # images and css on time.com
+jsfiddle.net
+jshell.net # for jsfiddle
 piwik.org # needed for doku, downloads
 po.st # url shortener
+thesaurus.com
+www.jsfiddle.net
+www.jshell.net # for jsfiddle
+www.thesaurus.com
 yui.yahooapis.com # needed for www.bmobile.ne.jp

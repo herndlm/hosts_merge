@@ -6,13 +6,20 @@
 DIR="$(readlink -f "$0")"
 DIR=${DIR%/*}
 
-file_temp=`mktemp`
-file_temp_ipv6="${file_temp}.ipv6"
-
 CURL_RETRY_NUM=3
+CURL_TIMEOUT=60
 
 # include user config
 source "$DIR/config.sh"
+
+# cleanup if user presses CTRL-C
+cleanup() {
+	log "cleaning up temp files"
+	rm "$file_temp"  > /dev/null 2>&1
+	rm "$file_temp_ipv6"  > /dev/null 2>&1
+	exit
+}
+trap cleanup INT SIGHUP SIGINT SIGTERM
 
 # log to stdout if verbose flag set and/or to file if file variable note empty
 log() {
@@ -32,6 +39,7 @@ log() {
 # function that outputs logs, outputs to stderr and exits
 log_exit() {
 	log "$1"
+	cleanup
 	echo >&2 "$1"
 	exit 1
 }
@@ -74,6 +82,10 @@ for var in $@; do
 	fi
 done
 
+# create / define temp files
+file_temp=`mktemp`
+file_temp_ipv6="${file_temp}.ipv6"
+
 # read blacklist and whitelist data
 log "read blacklist and whitelist data from '$file_blacklist' and '$file_whitelist'"
 readarray data_blacklist < "$file_blacklist" || log_exit "error on reading blacklist"
@@ -89,15 +101,17 @@ done
 # download all sources in hosts format
 for source_hosts_format in "${sources_hosts_format[@]}"; do
 	log "downloading hosts source '$source_hosts_format' to '$file_temp'"
-	curl --location --silent --retry $CURL_RETRY_NUM "$source_hosts_format" >> "$file_temp" || \
+	curl --location -sS --connect-timeout $CURL_TIMEOUT --max-time $CURL_TIMEOUT \
+--retry $CURL_RETRY_NUM "$source_hosts_format" >> "$file_temp" || \
 log_exit "error downloading file '$source_hosts_format'"
 done
 
 # download all domain only sources (we're just prepending the ip adress to every line here)
 for source_domains_only in "${sources_domains_only[@]}"; do
 	log "downloading domain only source '$source_domains_only' to '$file_temp'"
-	curl --location --silent --retry $CURL_RETRY_NUM "$source_domains_only" | \
-sed -e 's/^/0.0.0.0 /' >> "$file_temp" || log_exit "error downloading file 'source_domains_only'"
+	curl --location -sS --connect-timeout $CURL_TIMEOUT --max-time $CURL_TIMEOUT \
+--retry $CURL_RETRY_NUM "$source_domains_only" | sed -e 's/^/0.0.0.0 /' >> "$file_temp" || \
+log_exit "error downloading file 'source_domains_only'"
 done
 
 log "cleaning up '$file_temp'"
