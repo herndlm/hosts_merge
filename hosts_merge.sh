@@ -144,7 +144,7 @@ sed -i -e '/^0\.0\.0\.0 [^a-zA-Z0-9]/d' "$file_temp" || log_exit "error on clean
 # entries that do already exist in the hosts file)
 if [ $mode_check -eq 1 ] || [ $mode_clean -eq 1 ]; then
 	for data_whitelist_entry in "${data_whitelist[@]}"; do
-		log "check if '$data_whitelist_entry' is not existing in '$file_temp'"
+		#log "check if '$data_whitelist_entry' is not existing in '$file_temp'"
 		if [ -n "$data_whitelist_entry" ] && \
 [ -z "`grep "^0.0.0.0 $data_whitelist_entry$" "$file_temp"`" ]; then
 			if [ $mode_clean -eq 1 ]; then
@@ -157,7 +157,7 @@ log_exit "error on removing whitelist entry"
 		fi
 	done
 	for data_blacklist_entry in "${data_blacklist[@]}"; do
-		log "check if '$data_blacklist_entry' is existing in '$file_temp'"
+		#log "check if '$data_blacklist_entry' is existing in '$file_temp'"
 		if [ -n "$data_blacklist_entry" ] && \
 [ -n "`grep "^0.0.0.0 $data_blacklist_entry$" "$file_temp"`" ]; then
 			if [ $mode_clean -eq 1 ]; then

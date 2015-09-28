@@ -12,11 +12,14 @@
 3569326.fls.doubleclick.net
 4123103.fls.doubleclick.net
 4376337.fls.doubleclick.net
+4396297.fls.doubleclick.net
 4400523.fls.doubleclick.net
 4494021.fls.doubleclick.net
 4781124.fls.doubleclick.net
 4795949.fls.doubleclick.net
 4904949.fls.doubleclick.net
+4953227.fls.doubleclick.net
+4954221.fls.doubleclick.net
 4962007.fls.doubleclick.net
 883667.fls.doubleclick.net
 A8ad-server-1207659216.ap-northeast-1.elb.amazonaws.com
@@ -38,10 +41,12 @@ ad-js.chip.de
 ad-js.chip.de.edgesuite.net
 ad-servers-lb-6793338.us-east-1.elb.amazonaws.com
 ad.ad-arata.com
+ad.afad.jp
 ad.apsalar.com
 ad.aruba.it
 ad.benesse.co.jp
 ad.blogmura.com
+ad.burbanked.info
 ad.ca-conv.amoad.com
 ad.ca-conv.jp
 ad.caprofitx.adtdp.com
@@ -70,6 +75,7 @@ adc.tnt-ea.com
 adcaps.wsu.edu
 adchoices-preferences-2113344430.us-east-1.elb.amazonaws.com
 adchoices-preferences-mgr-1697672962.us-east-1.elb.amazonaws.com
+adforce.profilepassport.jp
 adformat.s3.amazonaws.com
 adgainersolutions.com
 adgen.socdm.com
@@ -119,6 +125,7 @@ ads.weddingpark.net
 ads.yemonisoni.com
 ads20.wwe-media.de
 ads24.tipps24-netzwerk.de
+adserv2.suumo.jp
 adserver-a-amt.adtech.de
 adserver-sb-ams.adtech.de
 adserver.adtechjp.com
@@ -139,6 +146,7 @@ advertising.amazon.com
 advertising.apartmenttherapy.com
 advertising.gawker.com
 adviqopartners.com
+adweb.nikkei.co.jp
 adzmob.net
 affiliate-program.amazon.co.uk
 affiliate.amazon.co.jp
@@ -169,12 +177,14 @@ analytics.seattleclouds.com
 analytics.sitefarm.info
 analytics.theta360.com
 analytics.trustyou.com
+androiddefender.com-mobbi.com # antivirus malware
 api-tracking.hermesworld.com
 api.ad-lista.com
 api.adrtx.net
 api.advarkads.com
 api.bttrack.com
 api.pitadtag.jp
+app-creatives.cdn.admobile.me
 app.adjust.com
 applift-b.apptornado.com
 apps.ad-x.co.uk
@@ -271,6 +281,7 @@ cs50.adn.edgecastcdn.net
 cs59.adn.edgecastcdn.net
 cs80.adn.edgecastcdn.net
 cs83.adn.edgecastcdn.net
+cust-banner-lb-297225090.ap-northeast-1.elb.amazonaws.com
 cv.mobile.adicio.com
 d-guile-jp.ad-cloud.jp
 d-image-ad-jp.ad-cloud.jp
@@ -484,6 +495,7 @@ r.amoad.com
 racking2.rce.veeseo.com
 record.ad.mobogenie.com
 renegoads.com
+renren.cm.admaster.com.cn
 reqlog.elasticbeanstalk.com
 resources.host.bannerflow.com
 retracker.kld.ru
@@ -590,6 +602,7 @@ stats.owncloud.services.stpdns.net
 stats.redditmedia.com
 stats.stackexchange.com
 stats.t-online.de
+stats.the-wedding.jp
 stats.tiffany.at
 stats.tiffany.co.jp
 stats.update.microsoft.com
@@ -624,6 +637,7 @@ track-eu.adform.net
 track-us.adform.net
 track.adclear.net
 track.androappss.com
+track.gamesamba.com
 track.iconfinder.com
 track.kuronekoyamato.co.jp
 track.safeclicker.nl

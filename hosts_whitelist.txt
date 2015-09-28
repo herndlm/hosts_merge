@@ -1,4 +1,8 @@
 adf.ly # many one click hoster use this
+admin.brightcove.com # videos on dmax.de
+cdn.optimizely.com # legit cdn
+cdn2.optimizely.com # legit cdn
+cdn3.optimizely.com # legit cdn
 fiddle.jshell.net
 img.timeinc.net # images and css on time.com
 jsfiddle.net
