@@ -7,10 +7,15 @@ fiddle.jshell.net
 img.timeinc.net # images and css on time.com
 jsfiddle.net
 jshell.net # for jsfiddle
+kinox.to # movie streaming
 piwik.org # needed for doku, downloads
 po.st # url shortener
+static.fleshlight.com
 thesaurus.com
+videos.fleshlight.com
+www.fleshlight.com
 www.jsfiddle.net
 www.jshell.net # for jsfiddle
+www.kinox.to # movie streaming
 www.thesaurus.com
 yui.yahooapis.com # needed for www.bmobile.ne.jp

@@ -7,20 +7,26 @@
 159126.engine.mobileapptracking.com
 16954.engine.mobileapptracking.com
 215bs.trackvoluum.com
+2310910166.log.optimizely.com
+2746110889.log.optimizely.com
 2941656.fls.doubleclick.net
+3216390760.log.optimizely.com
 3344304.fls.doubleclick.net
 3569326.fls.doubleclick.net
+3951336.fls.doubleclick.net
 4123103.fls.doubleclick.net
 4376337.fls.doubleclick.net
 4396297.fls.doubleclick.net
 4400523.fls.doubleclick.net
 4494021.fls.doubleclick.net
+4719922.fls.doubleclick.net
 4781124.fls.doubleclick.net
 4795949.fls.doubleclick.net
 4904949.fls.doubleclick.net
 4953227.fls.doubleclick.net
 4954221.fls.doubleclick.net
 4962007.fls.doubleclick.net
+4968236.fls.doubleclick.net
 883667.fls.doubleclick.net
 A8ad-server-1207659216.ap-northeast-1.elb.amazonaws.com
 Blogfostertracking-341952053.eu-west-1.elb.amazonaws.com
@@ -36,6 +42,7 @@ acookie.ztcadx.com
 acq-3pas.admatrix.jp
 ad-api-v01.uliza.jp
 ad-aws.neodatagroup.com
+ad-balancer.com
 ad-blacklist.p24.hu
 ad-js.chip.de
 ad-js.chip.de.edgesuite.net
@@ -87,7 +94,6 @@ adlice.com
 adlivery.wavecdn.net
 adlxtxfhky.spotilocal.com
 admaster.la.uae.uc.cn
-admaster.union.ucweb.com
 admax.socdm.com
 adn.18254.xicdn.net
 adn.6638.edgecastcdn.net
@@ -111,6 +117,7 @@ ads.deezer.com
 ads.evga.com
 ads.fc2.com
 ads.feedly.com
+ads.mediade.sk
 ads.party.at
 ads.petspot-gmbh.com
 ads.petspot-gmbh.com.s3.amazonaws.com
@@ -131,6 +138,7 @@ adserver-sb-ams.adtech.de
 adserver.adtechjp.com
 adserver.doccheck.com
 adshow.kodansha.net
+adt.pxl.ace.advertising.com
 adtech.nflximg.net
 adtechjp-ads-540903076.ap-northeast-1.elb.amazonaws.com
 adtechjp-ssp-ums-1450300015.ap-northeast-1.elb.amazonaws.com
@@ -147,11 +155,13 @@ advertising.apartmenttherapy.com
 advertising.gawker.com
 adviqopartners.com
 adweb.nikkei.co.jp
+adwombatdata-1428426364.us-east-1.elb.amazonaws.com
 adzmob.net
 affiliate-program.amazon.co.uk
 affiliate.amazon.co.jp
 affiliate.dmm.com
 affiliate.rakuten.co.jp
+affiliate.unister-gmbh.de
 affiliates.acprail.com
 affiliates.art.com
 afs.adjust-net.jp
@@ -256,6 +266,7 @@ clientlog.portal.office.com
 cm.adform.net
 cm.admaster.com.cn
 cm2.adform.net
+cmap.ace.advertising.com
 cnt.megacount.com
 content.cptrack.de
 cosmi-adtruth-1970014061.ap-northeast-1.elb.amazonaws.com
@@ -281,16 +292,19 @@ cs50.adn.edgecastcdn.net
 cs59.adn.edgecastcdn.net
 cs80.adn.edgecastcdn.net
 cs83.adn.edgecastcdn.net
+cts.servesharp.net
 cust-banner-lb-297225090.ap-northeast-1.elb.amazonaws.com
 cv.mobile.adicio.com
 d-guile-jp.ad-cloud.jp
 d-image-ad-jp.ad-cloud.jp
 d.adcl.medibaad.com
 d.adticker.net
+d.bg.adresult-sp.jp
 d28nwox1gdjlve.cloudfront.net
 d8ntgi0kad396.cloudfront.net
 data-dsp.ad-m.asia
 data-failover.ero-advertising.com
+data.adwombat.com
 datahub.serving-sys.com
 datatracker.ietf.org
 db3aqu.atdmt.com
@@ -298,9 +312,9 @@ delivery.b.switchadhub.com
 dex.advg.jp
 dex.send.microad.jp
 dmp-eu.adform.net
-dmp.adform.net
 dmp.amoad.com
 dsp.ztcadx.com
+dualstack.log-334788911.us-east-1.elb.amazonaws.com
 duktadvmmowhi.cloudfront.net
 dynalyst-imp.adtdp.com
 dynalyst-mk.adtdp.com
@@ -316,6 +330,7 @@ euwfb.adsrvr.org
 extended.las.dmtracker.com
 extensionanalytics-cdn2.elasticbeanstalk.com
 extensionanalytics-track.elasticbeanstalk.com
+extmap.rub.ace.advertising.com
 f-counter.jp
 f-counter.net
 factoreleven.adspirit.de
@@ -323,7 +338,6 @@ fam-ad.com
 feedback.premiads.yahoo.co.jp
 files.adform.net
 finanzennet-hitcount-nodejs-aeu.cloudapp.net
-flex.msn.com
 forum.statcounter.com
 fra-ad-lb1.rfihub.com
 free-counter.jp
@@ -351,6 +365,7 @@ ibplb-analytics-1010299867.us-east-1.elb.amazonaws.com
 ict.infinity-tracking.net
 im.3eb2c200.780d675.ads.a4cdn.contentabc.com
 im.3eb2c258.ad74a95.public.a4cdn.tube8.phncdn.com
+images.adwombat.com
 images.host.bannerflow.com
 images.ztcadx.com
 images.ztcadx.com.w.alikunlun.com
@@ -365,11 +380,12 @@ infos.adalizer.com
 insanetrack.com
 irobstat.trafficmanager.net
 itx5-secure.smartadserver.com
+j-bg-adresult-sp-jp.ad-cloud.jp
 j-guile-jp.ad-cloud.jp
 j-image-ad-jp.ad-cloud.jp
 j.adticker.net
+j.bg.adresult-sp.jp
 jobviewtrack.com
-js.adsrvr.org
 js.logentries.com
 js.mobogeniedelivery.com
 js.socialtrack.co
@@ -420,6 +436,8 @@ m.hotmail.com
 m.iad1.yelp.com
 ma180-r.analytics.edgesuite.net
 ma271-r.analytics.edgesuite.net
+match.basebanner.com
+matomy.adk2.com
 mcsaatchi.ad-x.co.uk
 media-ad.mynavi.jp
 media.hotels.com # cname to ads.expedia.com
@@ -427,6 +445,7 @@ mediacomfr.mmgl.cd.serving-sys.com
 mediad2.jp
 mediafriends.adspirit.net
 mk.ca-conv.amoad.com
+ms.the-offer-for-me01.com
 msftncsi.com
 mtwidget03.affiliate.ashiato.rakuten.co.jp
 mtwidget04.affiliate.rakuten.co.jp
@@ -438,8 +457,10 @@ n20.adshostnet.com
 nad2a.shinobi.jp
 nl1.ero-advertising.com
 ocsp.quovadisglobal.com
+oeamtc.ad-balancer.com
 og.affiliate.rakuten.co.jp
 origin.global.hua.aads1.net
+outletshoes.analytics.qlook.net
 p.amoad.com
 palxxx.com
 partner.adticket.de
@@ -489,6 +510,7 @@ prod-adlp.integra.fr
 prod-elb-ad-1687582245.ap-northeast-1.elb.amazonaws.com
 promo.search.yahoo.co.jp
 ps.serving-sys.com
+pxl.ace.advertising.com
 qadabratags.elasticbeanstalk.com
 r.adc-srv.net
 r.amoad.com
@@ -531,7 +553,6 @@ scripts.host.bannerflow.com
 sdk.adspruce.com
 sdlp.europacasino.com
 secure.adverserve.net
-secure.flashtalking.com
 selfserveads.ibtimes.com
 serv2.ad.mobogenie.com
 server.mobogarden.com
@@ -583,8 +604,11 @@ stat01.itbulls.at
 stat1.netletter.at
 static.adwiredmobile.com
 statistics.krone.mindtake.com
+statistics.riskommunal.net
 statistik.artada.de
 stats-redditmedia-com-1900479082.us-east-1.elb.amazonaws.com
+stats.2raumwelten.de
+stats.avaaz.org
 stats.bookassist.com
 stats.cyanogenmod.org
 stats.g.douleclick.net
@@ -744,6 +768,7 @@ www.msftncsi.com
 www.passwordbox.com
 www.pcspeeduplog.com
 www.performanceadexchange.com
+www.piwiktracker.de
 www.rentracks.jp
 www.scadnet.com
 www.smfads.com
