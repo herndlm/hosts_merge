@@ -40,4 +40,9 @@ sources_domains_only=(
 	# abuse / tracking lists
 	"http://mirror2.malwaredomains.com/files/justdomains"
 	"https://isc.sans.edu/feeds/suspiciousdomains_Low.txt"
+	# disconnect.me
+        "https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt"
+        "https://s3.amazonaws.com/lists.disconnect.me/simple_malware.txt"
+        "https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt"
+        "https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt"
 )

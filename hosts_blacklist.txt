@@ -14,6 +14,7 @@
 3344304.fls.doubleclick.net
 3569326.fls.doubleclick.net
 3951336.fls.doubleclick.net
+3992774.fls.doubleclick.net
 4123103.fls.doubleclick.net
 4376337.fls.doubleclick.net
 4396297.fls.doubleclick.net
@@ -27,6 +28,7 @@
 4954221.fls.doubleclick.net
 4962007.fls.doubleclick.net
 4968236.fls.doubleclick.net
+5164970.fls.doubleclick.net
 883667.fls.doubleclick.net
 A8ad-server-1207659216.ap-northeast-1.elb.amazonaws.com
 Blogfostertracking-341952053.eu-west-1.elb.amazonaws.com
@@ -44,8 +46,6 @@ ad-api-v01.uliza.jp
 ad-aws.neodatagroup.com
 ad-balancer.com
 ad-blacklist.p24.hu
-ad-js.chip.de
-ad-js.chip.de.edgesuite.net
 ad-servers-lb-6793338.us-east-1.elb.amazonaws.com
 ad.ad-arata.com
 ad.afad.jp
@@ -111,6 +111,8 @@ ads.adinall.com
 ads.austria.info
 ads.austrianwings.info
 ads.bestwebnutfun.com
+ads.bridgat.com
+ads.bridgat.com.cdn58.raxcdn.com
 ads.commonmedia.de
 ads.comnex.net
 ads.deezer.com
@@ -252,7 +254,6 @@ cdn.smartnews-ads.com
 cdn.smartnews-ads.com.edgekey.net
 cdn.teamskeetimages.com
 cdn.trackword.biz
-cdn2.mobile.contentdef.com
 cdn2.smartadserver.com.edgesuite.net
 cdn5.adspirit.de
 cdnadk.tlvmedia.com
@@ -316,6 +317,7 @@ dmp.amoad.com
 dsp.ztcadx.com
 dualstack.log-334788911.us-east-1.elb.amazonaws.com
 duktadvmmowhi.cloudfront.net
+dynalyst-auc.adtdp.com
 dynalyst-imp.adtdp.com
 dynalyst-mk.adtdp.com
 dynalyst-rd.adtdp.com
@@ -380,6 +382,7 @@ infos.adalizer.com
 insanetrack.com
 irobstat.trafficmanager.net
 itx5-secure.smartadserver.com
+iwiz-search-promo.c.yimg.jp
 j-bg-adresult-sp-jp.ad-cloud.jp
 j-guile-jp.ad-cloud.jp
 j-image-ad-jp.ad-cloud.jp
@@ -411,6 +414,7 @@ log.heftig.co
 log.immoversum.com
 log.mobogenie.com
 log.nablerstats.com
+log.octoshape.net
 log.planb.cd
 log.seekda.com
 log.snmi.cn
@@ -429,7 +433,9 @@ logmi.jp
 logql.g.yahoo.co.jp
 logql.yahoo.co.jp
 logs128.xiti.com
+logs1406.xiti.com
 logs152.xiti.com
+m-piwik.porsche.at
 m.adquar.store.aptoide.com
 m.amoad.com
 m.hotmail.com
@@ -455,7 +461,6 @@ n1071.adshostnet.com
 n141adserv.com
 n20.adshostnet.com
 nad2a.shinobi.jp
-nl1.ero-advertising.com
 ocsp.quovadisglobal.com
 oeamtc.ad-balancer.com
 og.affiliate.rakuten.co.jp
@@ -470,6 +475,8 @@ pbtngx-u-ds.nuggad.net
 pcspeeduplog.com
 performanceadexchange.comi
 pitadtag.jp
+piwik-nw.audi.at
+piwik-nw.porsche.at
 piwik.afs.de
 piwik.arbeiterkammer.at
 piwik.audi.at
@@ -610,6 +617,7 @@ stats-redditmedia-com-1900479082.us-east-1.elb.amazonaws.com
 stats.2raumwelten.de
 stats.avaaz.org
 stats.bookassist.com
+stats.cihar.com
 stats.cyanogenmod.org
 stats.g.douleclick.net
 stats.ibtimes.co.in
@@ -627,6 +635,7 @@ stats.redditmedia.com
 stats.stackexchange.com
 stats.t-online.de
 stats.the-wedding.jp
+stats.tiendeo.at
 stats.tiffany.at
 stats.tiffany.co.jp
 stats.update.microsoft.com
@@ -642,7 +651,6 @@ survstat.rki.de
 svc-stats.linkury.com
 sync-dsp.ad-m.asia
 sync.ad-stir.com
-sync.adaptv.advertising.com
 sync.ca-conv.amoad.com
 syndicate1.nads.a04.yahoodns.net
 t.inskinad.com
@@ -713,7 +721,6 @@ u.amoad.com
 ui.skype.com
 ums.adtechjp.com
 umsf.mmgl.cd.serving-sys.com
-us.cam4ads.com
 v.admaster.com.cn
 v6.advg.jp
 v9999.adv.admeme.net
@@ -728,6 +735,7 @@ web.highad.de
 webanalytics.btelligent.net
 webanalytics.tm00.com
 webstat.delti.com
+webstat.rrz.uni-koeln.de
 webstat02.feratel.at
 webstat02.feratel.com
 webstats.zecken.de
@@ -764,7 +772,9 @@ www.marge-ad.com
 www.megacount.com
 www.metroflog.com
 www.mouse-ad.at
+www.ms-ad-hd.com
 www.msftncsi.com
+www.oepiwik.de
 www.passwordbox.com
 www.pcspeeduplog.com
 www.performanceadexchange.com

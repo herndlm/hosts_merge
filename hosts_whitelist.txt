@@ -4,6 +4,7 @@ cdn.optimizely.com # legit cdn
 cdn2.optimizely.com # legit cdn
 cdn3.optimizely.com # legit cdn
 fiddle.jshell.net
+gdlp01.c-wss.com # canon driver downloads
 img.timeinc.net # images and css on time.com
 jsfiddle.net
 jshell.net # for jsfiddle
