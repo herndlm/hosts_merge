@@ -13,18 +13,18 @@ permissions_result=644
 FILE_LOG="/tmp/hosts_merge.log"
 
 sources_hosts_format=(
-	# hpHosts database
-	"http://hosts-file.net/ad_servers.txt" # ad/tracking servers
-	"http://hosts-file.net/emd.txt" # malware
-	"http://hosts-file.net/exp.txt" # exploit
-	"http://hosts-file.net/fsa.txt" # fraud
-	"http://hosts-file.net/grm.txt" # spam
-	"http://hosts-file.net/hfs.txt" # hpHosts forum spammers
-	"http://hosts-file.net/hjk.txt" # hijack
-	"http://hosts-file.net/mmt.txt" # misleading marketing
-	"http://hosts-file.net/pha.txt" # illegal pharmacy
-	"http://hosts-file.net/psh.txt" # phishing
-	"http://hosts-file.net/wrz.txt" # warez/piracy
+	# hpHosts database (unfortunately way too big for slow systems)
+	#"http://hosts-file.net/ad_servers.txt" # ad/tracking servers
+	#"http://hosts-file.net/emd.txt" # malware
+	#"http://hosts-file.net/exp.txt" # exploit
+	#"http://hosts-file.net/fsa.txt" # fraud
+	#"http://hosts-file.net/grm.txt" # spam
+	#"http://hosts-file.net/hfs.txt" # hpHosts forum spammers
+	#"http://hosts-file.net/hjk.txt" # hijack
+	#"http://hosts-file.net/mmt.txt" # misleading marketing
+	#"http://hosts-file.net/pha.txt" # illegal pharmacy
+	#"http://hosts-file.net/psh.txt" # phishing
+	#"http://hosts-file.net/wrz.txt" # warez/piracy
 	# global common
 	"http://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts"
 	"http://winhelp2002.mvps.org/hosts.txt"

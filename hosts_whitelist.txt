@@ -1,22 +1,9 @@
 adf.ly # many one click hoster use this
 admin.brightcove.com # videos on dmax.de
 cdn.optimizely.com # legit cdn
-cdn2.optimizely.com # legit cdn
 cdn3.optimizely.com # legit cdn
-fiddle.jshell.net
-gdlp01.c-wss.com # canon driver downloads
 img.timeinc.net # images and css on time.com
-jsfiddle.net
-jshell.net # for jsfiddle
-kinox.to # movie streaming
 piwik.org # needed for doku, downloads
 po.st # url shortener
 static.fleshlight.com
-thesaurus.com
 videos.fleshlight.com
-www.fleshlight.com
-www.jsfiddle.net
-www.jshell.net # for jsfiddle
-www.kinox.to # movie streaming
-www.thesaurus.com
-yui.yahooapis.com # needed for www.bmobile.ne.jp
