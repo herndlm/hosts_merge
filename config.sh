@@ -34,6 +34,8 @@ sources_hosts_format=(
 	# abuse / tracking lists
 	"https://zeustracker.abuse.ch/blocklist.php?download=hostfile"
 	"http://sysctl.org/cameleon/hosts.win"
+	# windows spying domains
+	"http://www.angelfire.com/comics2/fatboy9175/MShosts.txt"
 )
 
 sources_domains_only=(
