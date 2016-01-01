@@ -29,13 +29,16 @@ sources_hosts_format=(
 	"http://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts"
 	"http://winhelp2002.mvps.org/hosts.txt"
 	"http://someonewhocares.org/hosts/hosts"
+	"https://adaway.org/hosts.txt"
 	# japanese
 	"https://sites.google.com/site/cosmonoteshosts/hosts_for_Windows8.txt?attredirects=0"
 	# abuse / tracking lists
 	"https://zeustracker.abuse.ch/blocklist.php?download=hostfile"
 	"http://sysctl.org/cameleon/hosts.win"
-	# windows spying domains
-	"http://www.angelfire.com/comics2/fatboy9175/MShosts.txt"
+	# windows spying domains (blocks updates, bing, skype and maybe more!)
+	#"http://www.angelfire.com/comics2/fatboy9175/MShosts.txt"
+	# uTorrent / Bittorrent, Inc ads / malware
+	"http://www.angelfire.com/comics2/fatboy9175/uthosts.txt"
 )
 
 sources_domains_only=(
