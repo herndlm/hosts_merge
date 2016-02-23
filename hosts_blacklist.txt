@@ -14,7 +14,9 @@
 137852403.log.optimizely.com
 1425218314.log.optimizely.com
 146312396.log.optimizely.com
+151300895.log.optimizely.com
 159126.engine.mobileapptracking.com
+161118.engine.mobileapptracking.com
 16954.engine.mobileapptracking.com
 2011190031.log.optimizely.com
 2090660663.log.optimizely.com
@@ -27,6 +29,7 @@
 2232640358.log.optimizely.com
 2286361293.log.optimizely.com
 2310910166.log.optimizely.com
+2378780144.log.optimizely.com
 2542116.fls.doubleclick.net
 271989291.log.optimizely.com
 2746110889.log.optimizely.com
@@ -69,11 +72,13 @@
 4968236.fls.doubleclick.net
 5039270.fls.doubleclick.net
 5073118.fls.doubleclick.net
+5142114.fls.doubleclick.net
 5164970.fls.doubleclick.net
 51svs.ads.tremorhub.com
 5259442.fls.doubleclick.net
 526710254.log.optimizely.com
 538660950.log.optimizely.com
+5fd74.v.fwmrm.net # spots on crunchyroll
 63-233-126-34.dia.static.qwest.net
 63-233-126-43.dia.static.qwest.net
 701281621.log.optimizely.com
@@ -97,17 +102,12 @@ a01.taggyad.jp
 a1webstats.com
 a2-38-65-20-18.adform.net
 a2-38-65-20-19.adform.net
-a23-218-212-69.deploy.static.akamaitechnologies.com
-a23-3-12-43.deploy.akamaitechnologies.com
-a23-3-12-51.deploy.akamaitechnologies.com
-a23-3-68-136.deploy.akamaitechnologies.com
-a23-3-68-144.deploy.akamaitechnologies.com
-a23-66-164-226.deploy.akamaitechnologies.com
-a978.i6g1.akamai.net
 ab024d2e47f29345e76a02ff8e6537d53.profile.iad2.cloudfront.net
 aboutads.info
 acclog001.shop-pro.jp
 acclog002.shop-pro.jp
+acdn.adnxs.com
+acdn.adnxs.com.c.footprint.net
 acookie.ztcadx.com
 acq-3pas.admatrix.jp
 ad-api-v01.uliza.jp
@@ -157,6 +157,7 @@ adalizer.com
 adap-live-cms.convio.net
 adc.auone.jp
 adc.eamobile.com
+adc.gomplayer.jp
 adc.tnt-ea.com
 adc.tripple.at
 adc01.media-rep.com
@@ -164,6 +165,7 @@ adc02.media-rep.com
 adcaps.wsu.edu
 adchoices-preferences-2113344430.us-east-1.elb.amazonaws.com
 adchoices-preferences-mgr-1697672962.us-east-1.elb.amazonaws.com
+adclients.gomplayer.jp
 ade.clmbtech.com
 adf.fc2.com
 adforce.profilepassport.jp
@@ -174,9 +176,11 @@ adherents.com
 adimg.teacup.com
 adinfo.aol.com
 adland.tv
+adlib.cptv.jp
 adlice.com
 adlivery.wavecdn.net
 adlxtxfhky.spotilocal.com
+admane.jp
 admaster.la.uae.uc.cn
 admax.socdm.com
 admsteel.com
@@ -197,9 +201,13 @@ adops-fio.grooveshark.com
 adops.thechristianpost.netdna-cdn.com
 adrants.com
 adresult.genieesspv.jp
+adrise.com
+ads-adrise-tv-1652471092.us-west-1.elb.amazonaws.com
 ads-grooveshark.com
+ads-i2i.jp
 ads-swkbank.de
 ads.adinall.com
+ads.adrise.tv
 ads.adsclean.com
 ads.ani88.com
 ads.austria.info
@@ -217,6 +225,7 @@ ads.evga.com
 ads.fc2.com
 ads.feedly.com
 ads.golem.de
+ads.logsoku.com
 ads.mediade.sk
 ads.party.at
 ads.perfdrive.com
@@ -247,6 +256,7 @@ adsmockarc.azurewebsites.net
 adt.pxl.ace.advertising.com
 adtech.nflximg.net
 adtechjp-ads-540903076.ap-northeast-1.elb.amazonaws.com
+adtechjp-ads-atatwola-888306039.ap-northeast-1.elb.amazonaws.com
 adtechjp-ssp-ums-1450300015.ap-northeast-1.elb.amazonaws.com
 adtigerat.adspirit.net
 adtracker.eanalyzer.de
@@ -257,6 +267,7 @@ advarkads.com
 adverlicio.us
 advertiseonabout.com
 advertising.amazon.com
+advertising.aolp.jp
 advertising.apartmenttherapy.com
 advertising.gawker.com
 advertising.nypost.com
@@ -266,6 +277,7 @@ advidi-prod.clients.turbobytes.net
 adviqopartners.com
 adweb.nikkei.co.jp
 adwombatdata-1428426364.us-east-1.elb.amazonaws.com
+adx.g.doubleclick.net
 adzmob.net
 aef650cb4e439b26840414ad80c14b71.cdnext.stream.ne.jp
 affiliate-program.amazon.co.uk
@@ -273,6 +285,7 @@ affiliate.amazon.co.jp
 affiliate.dmm.com
 affiliate.rakuten.co.jp
 affiliate.stage.zap2it.com
+affiliate.strongvpn.com
 affiliate.unister-gmbh.de
 affiliates.acprail.com
 affiliates.art.com
@@ -280,9 +293,10 @@ affiliates.playboy.com
 afs.adjust-net.jp
 ajax.aspnetcdn.com
 akamai.smartadserver.com.edgesuite.net
-amazonadsi-a.akamaihd.net
 amazonadsi-a.akamaihd.net.edgesuite.net
 americas2.notify.windows.com.akadns.net
+analyse.sozialversicherung.at
+analysis.gathery.recruit-lifestyle.co.jp
 analytics-prod-ingress.bricknet.com
 analytics.braincms.de
 analytics.buyma.com
@@ -305,6 +319,7 @@ analytics.modul.ac.at
 analytics.news-host.com
 analytics.people.st
 analytics.phonedog.com
+analytics.pkshatech.com
 analytics.seattleclouds.com
 analytics.sitefarm.info
 analytics.theta360.com
@@ -312,10 +327,12 @@ analytics.trustyou.com
 android-com-fungamesforfree-colorfy.topaz-analytics.com
 androiddefender.com-mobbi.com # antivirus malware
 any.edge.bing.com
+api-adrise-tv-141632274.us-west-1.elb.amazonaws.com
 api-live-promotions.trafficmanager.net
 api-promotion-live-euno1.cloudapp.net
 api-tracking.hermesworld.com
 api.ad-lista.com
+api.adrise.tv
 api.adrtx.net
 api.advarkads.com
 api.bttrack.com
@@ -329,15 +346,18 @@ app.adjust.com
 app.adjust.com # firefox tracker http://www.kuketz-blog.de/icecat-der-bessere-firefox-fuer-android/
 appexmapsappupdate.blob.core.windows.net
 applift-b.apptornado.com
+applog.gomtv.com
 apps.ad-x.co.uk
 apps.crashlytics.com
 as.ao.impact-ad.jp
 as.gn.impact-ad.jp
 as.gq.impact-ad.jp
+as.hi.impact-ad.jp
 as.iy.impact-ad.jp
 as.kd.impact-ad.jp
 as.ko.impact-ad.jp
 as.kw.impact-ad.jp
+as.oe.impact-ad.jp
 as.on.impact-ad.jp
 as.op.impact-ad.jp
 as.xa.impact-ad.jp
@@ -377,6 +397,9 @@ c.0003ad.1.msftsrvcs.vo.llnwi.net
 c001.trax-ad.jp
 c01.i05.arnic.hadns.net
 c06.i06.arnic.hadns.net
+c12.adrise.tv
+c7.adrise.tv
+c8.adrise.tv
 cam4.ero-advertising.com
 cas.pxl.ace.advertising.com
 cast-cs-j.adtdp.com
@@ -388,12 +411,15 @@ cdn-tracking.bannerflow.netdna-cdn.com
 cdn.ad.maist.jp
 cdn.ad.maist.jp.cdngc.net
 cdn.adk2.co.edgekey.net
+cdn.adrise.tv
 cdn.adrtx.net
 cdn.adservhere.com
 cdn.adspirit.de.glb.ipcache.net
 cdn.amanad.adtdp.com
+cdn.cutestat.com
 cdn.extensionanalytics.com
 cdn.logbk.net
+cdn.logsoku.com
 cdn.r-adimg.com
 cdn.r-adimg.com.cdngc.net
 cdn.smartnews-ads.com
@@ -404,6 +430,7 @@ cdn2.ad-center.com
 cdn2.smartadserver.com.edgesuite.net
 cdn5.adspirit.de
 cdnadk.tlvmedia.com
+cdnads.tictacti.com
 cdni.amoad.com
 cdni.amoad.com.edgesuite.net
 cdp1.public-trust.com
@@ -459,6 +486,8 @@ cs80.adn.edgecastcdn.net
 cs83.adn.edgecastcdn.net
 cts.servesharp.net
 cust-banner-lb-297225090.ap-northeast-1.elb.amazonaws.com
+cutestat.com
+cutestatcdn.thapame.netdna-cdn.com
 cv.mobile.adicio.com
 d-guile-jp.ad-cloud.jp
 d-image-ad-jp.ad-cloud.jp
@@ -478,10 +507,12 @@ datahub.serving-sys.com
 datatracker.ietf.org
 dc.services.visualstudio.com
 deliver.contentignite.com
+delivery-geo.liverail.com
 delivery.b.switchadhub.com
 delivery.brokerbabe.com
 denizbank.adclear.net
 dev.virtualearth.net
+dev01.adrise.com
 devstats.apple.com
 dex.advg.jp
 dex.send.microad.jp
@@ -508,6 +539,10 @@ dynalyst-mk.adtdp.com
 dynalyst-rd.adtdp.com
 e.crashlytics.com
 e6655.dscna.akamaiedge.net
+edelivery.oracle.com
+edelivery.oracle.com.edgekey.net
+efzx8n7mhr.s.ad6media.fr
+elb-analysis-gathery-367571718.ap-northeast-1.elb.amazonaws.com
 embed.bannerflow.com
 en-us.appex-rf.msn.com
 engine.kadira.io
@@ -545,9 +580,11 @@ fra-ad-lb1.rfihub.com
 free-counter.jp
 fso-tapi.admatrix.jp
 ftp.iij.ad.jp
+gaff.gurunavi.jp
 gc136.xiti.com
 geo.serving-sys.com
 gettyimagesaffiliates.com
+glb-ads.atwola.adtechjp.com
 global.hua.aads1.net
 globalstats.ekmsecure.com
 go.skype.com
@@ -600,6 +637,7 @@ ipv6.msftncsi.com
 ipv6.msftncsi.com.edgesuite.net
 irobstat.trafficmanager.net
 is24-logging-api.cloudapp.net
+itrack2.valuecommerce.ne.jp
 itx5-secure.smartadserver.com
 iwiz-search-promo.c.yimg.jp
 j-bg-adresult-sp-jp.ad-cloud.jp
@@ -642,6 +680,8 @@ libertad365.com
 linkury-bumbleb-statisticsservice-westeurope.cloudapp.net
 linkury-services-stats.trafficmanager.net
 linuxgizmos.advertserve.com
+listener-group.logz.io
+listener.logz.io
 live.adyen.com
 liveadoptimizer.com
 lizadz.com
@@ -673,14 +713,15 @@ log.very911.com
 log.youdutou.cn
 log1.gooddo.jp
 log15.recommender.jp
+log16.recommender.jp
 log5-interactive-circle-1388207747.ap-northeast-1.elb.amazonaws.com
 log5.interactive-circle.jp
 logbk-prod.elasticbeanstalk.com
 logc136.xiti.com
+logc406.xiti.com
 logger-05.vty.dailymotion.com
 logger.instagram.com
 logging.immobilien.net
-login.live.com
 login.live.com.nsatc.net
 logmi.jp
 logql.g.yahoo.co.jp
@@ -691,11 +732,14 @@ logs1279.xiti.com
 logs128.xiti.com
 logs1406.xiti.com
 logs152.xiti.com
+logwarita.mastertopforum.us
 luxadv.com
 m-piwik.porsche.at
+m.adnxs.com
 m.adquar.store.aptoide.com
 m.ads2book.com
 m.amoad.com
+m.anycast.adnxs.com
 m.banner.t-online.de
 m.iad1.yelp.com
 m.msmtrakk04a.com
@@ -706,12 +750,15 @@ match.basebanner.com
 matomy.adk2.com
 mcsaatchi.ad-x.co.uk
 media-ad.mynavi.jp
+media.gssp.asia # ads on miomio
 media.hotels.com # cname to ads.expedia.com
 mediacomfr.mmgl.cd.serving-sys.com
 mediad2.jp
 mediafriends.adspirit.net
+metadata.erabu.sonymobile.com
 mk.ca-conv.amoad.com
 monetizemore-d3.openxenterprise.com
+motherless.com.cutestat.com
 mpd.mxptint.net
 ms.the-offer-for-me01.com
 msnbc.com
@@ -728,9 +775,11 @@ na.ads.yahoo.com
 nad2a.shinobi.jp
 nativeadsfeed.cpm.ak-is.net
 netlog-a.akamaihd.net.edgesuite.net
+news.xbmclogs.com
 nmtracking.eu-west-1.prodaa.netflix.com
 nmtracking.geo.netflix.com
 nmtracking.netflix.com
+nrtzue7f.emltrk.com # litmus email tracking
 ns3-194.akamaiedge.net
 ns5-194.akamaiedge.net
 ns6-194.akamaiedge.net
@@ -751,9 +800,11 @@ ox-d.kleinanzeigen.servedbyopenx.com
 ox-d.mailonline.servedbyopenx.com
 ox-d.monetizemore.servedbyopenx.com
 ox-d.spanishdict.servedbyopenx.com
+ox-d.tmn.servedbyopenx.com
 ox-d.wikihow.servedbyopenx.com
 p.adsymptotic.com
 p.amoad.com
+pagead46.l.doubleclick.net
 palxxx.com
 partner.adticket.de
 pbtng-u-b-ds.nuggad.net
@@ -786,6 +837,7 @@ piwik.linuxandi.net
 piwik.lknoe.at
 piwik.mswm.de
 piwik.nic.cz
+piwik.noaveragerobot.de
 piwik.omnigroup.com
 piwik.onatcer.com
 piwik.openstreetmap.org
@@ -800,6 +852,7 @@ piwik.wienerwald.info
 piwik.wu.ac.at
 piwikext.oebb.at
 piwiki.kk-bits.com
+pixel.combotag.com
 pkg.adfinis-sygroup.ch
 placements.bannerflow.netdna-cdn.com
 pool.adizio.iponweb.net
@@ -820,6 +873,7 @@ promo.search.yahoo.co.jp
 promo.smartapp.yahoo.co.jp
 promoshq.wildfireapp.com
 ps.serving-sys.com
+purch-adops.s3.amazonaws.com
 pxl.ace.advertising.com
 qadabratags.elasticbeanstalk.com
 r.adc-srv.net
@@ -830,9 +884,11 @@ record.ad.mobogenie.com
 redir.metaservices.microsoft.com
 register.mesh.com
 rellfeedtrack-815422206.us-east-1.elb.amazonaws.com
+rem-track.bild.de
 renegoads.com
 renren.cm.admaster.com.cn
 report-ads-to.pubnation.com
+reports.crashlytics.com
 reports.wes.df.telemetry.microsoft.com
 reqlog.elasticbeanstalk.com
 reserve-resebook-jp-148256034.ap-northeast-1.elb.amazonaws.com
@@ -876,12 +932,14 @@ scontent-iad3-1.xx.fbcdn.net
 scripts.bannerflow.netdna-cdn.com
 scripts.host.bannerflow.com
 sdk.adspruce.com
+sdklog.tvstore.opera.com
 sdlp.europacasino.com
 secure.adverserve.net
 segments.adap.tv
 selfserveads.ibtimes.com
 serpens.iad.appboy.com
 serv2.ad.mobogenie.com
+serve.combotag.com
 server.mobogarden.com
 server.mobogenie.com
 server05.adticket.de
@@ -911,6 +969,7 @@ smartcmd03.ad.aruba.it
 smfads.com
 snippets-stats.external.zlb.scl3.mozilla.com
 snippets-stats.mozilla.org
+soux.mj.am # mailjet transparent mail tracking gifs
 sp.advg.jp
 spcdnpc.i-mobile.co.jp
 sponsor.modelwettbewerb.at
@@ -940,12 +999,14 @@ stat-ssl.kinarino.jp
 stat.4travel.jp
 stat.acg.tv
 stat.automobile.de
+stat.china.alibaba.com
 stat.clfg.ru
 stat.clickfrog.ru
 stat.ethz.ch
 stat.greenandwhite.at
 stat.haloapps.com
 stat.hitosara.com
+stat.i3.dmm.com
 stat.immolive24.com
 stat.kakaku.com
 stat.megacount.com
@@ -965,6 +1026,7 @@ stats.2raumwelten.de
 stats.avaaz.org
 stats.bookassist.com
 stats.brandroid.org
+stats.canoo.com
 stats.cihar.com
 stats.crsend.com
 stats.cyanogenmod.org
@@ -973,6 +1035,8 @@ stats.ibtimes.co.in
 stats.ibtimes.co.uk
 stats.ifixit.com
 stats.immogator.at
+stats.ise.fraunhofer.de
+stats.kiwix.org
 stats.maxdevzone.com
 stats.maxdevzone.com.s3-website-us-east-1.amazonaws.com
 stats.mbamupdates.com
@@ -993,6 +1057,7 @@ stats.tiffany.at
 stats.tiffany.co.jp
 stats.wintotal.de
 stats.wms-analytics.net
+stats.ziprecipes.net
 stats.ztcadx.com
 stats1-prod-908373751.us-west-2.elb.amazonaws.com
 statsfe1.ws.microsoft.com
@@ -1027,6 +1092,7 @@ tes-ampagnen.s3.amazonaws.com
 thngw2.doubleclick.net
 tm.r-ad.ne.jp
 tm.r-ad.ne.jp.cdngc.net
+tmn-d3.openxenterprise.com
 toei-ad.primestage.net
 tr.r-ad.ne.jp
 track-eu.adform.net
@@ -1038,6 +1104,7 @@ track.androappss.com
 track.gamesamba.com
 track.iconfinder.com
 track.kuronekoyamato.co.jp
+track.rackvoluum.com
 track.reelfeed.tv
 track.safeclicker.nl
 track.top5apps2015.mobi
@@ -1048,6 +1115,7 @@ track.www.zazzle.at
 track.xmax.jp
 track.youdutou.cn
 track.zalando.at
+track.zipcar.hosted.strongview.com
 track2.cliplister.com
 track2.somewrite.jp
 track306.info
@@ -1058,6 +1126,7 @@ tracker.ccc.de
 tracker.downdetector.com
 tracker.euroweb.net
 tracker.kantan-access.com
+tracker.ktxp.com
 tracker.logbk.net
 tracker.mybonuslist.com
 tracker.novalayer.org
@@ -1088,8 +1157,10 @@ tracking.rapidape.com
 tracking.thelabelfinder.com
 tracking.wohnnet.at
 trackwords.jp
+traffic.em.io
 trakking.info
 travel.tile.appex.bing.com
+trc.pitadtag.jp
 tsog8.trackvoluum.com
 tube8.walprater.com
 tube8.xubukra.com
@@ -1169,6 +1240,7 @@ www.bounce-ads.de
 www.counter-hosting.com
 www.countercity.de
 www.countercity.net
+www.cutestat.com
 www.f-counter.jp
 www.f-counter.net
 www.fastcounter.de
@@ -1183,9 +1255,11 @@ www.intilery-analytics.com
 www.liveadoptimizer.com
 www.liveads.jp
 www.logly.co.jp
+www.logsoku.com
 www.marge-ad.com
 www.megacount.com
 www.metroflog.com
+www.miles-and-more-promotion.com
 www.mouse-ad.at
 www.ms-ad-hd.com
 www.mspytrack.com
@@ -1219,6 +1293,7 @@ y6jn8c31-18543cd064950b2e256ffad326736f5b6c216ed4-sac.d.aa.online-metrix.net
 y6jn8c31-e90ffe0612b8d9ad572406147b579504ff92b4d4-sac.d.aa.online-metrix.net
 yads.c.yimg.jp
 yads.g.yahoo.co.jp
+yx-ads6.com
 z-eu.amazon-adsystem.com
 z.track136.com
 z.track351.com
