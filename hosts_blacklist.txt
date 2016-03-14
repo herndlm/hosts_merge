@@ -22,6 +22,7 @@
 1783020031.log.optimizely.com
 1889410424.log.optimizely.com
 2011190031.log.optimizely.com
+2013561.fls.doubleclick.net
 2090660663.log.optimizely.com
 2157310088.log.optimizely.com
 215bs.trackvoluum.com
@@ -65,6 +66,7 @@
 4530664.fls.doubleclick.net
 4605973.fls.doubleclick.net
 4645336.fls.doubleclick.net
+4676131288.log.optimizely.com
 4719922.fls.doubleclick.net
 4781124.fls.doubleclick.net
 4795949.fls.doubleclick.net
@@ -333,6 +335,7 @@ analytics.phonedog.com
 analytics.pkshatech.com
 analytics.seattleclouds.com
 analytics.sitefarm.info
+analytics.slashdotmedia.com
 analytics.theta360.com
 analytics.trustyou.com
 android-com-fungamesforfree-colorfy.topaz-analytics.com
@@ -508,6 +511,7 @@ d.adcl.medibaad.com
 d.adticker.net
 d.bg.adresult-sp.jp
 d.billyaffcontent.com
+d.image-ad.jp
 d28nwox1gdjlve.cloudfront.net
 d2lfggfljarnad.cloudfront.net
 d2rps03kntrkqj.cloudfront.net
@@ -551,6 +555,7 @@ dynalyst-auc.adtdp.com
 dynalyst-imp.adtdp.com
 dynalyst-mk.adtdp.com
 dynalyst-rd.adtdp.com
+e.crashlytics.com
 e6655.dscna.akamaiedge.net
 edelivery.oracle.com
 edelivery.oracle.com.edgekey.net
@@ -615,7 +620,10 @@ havasfr.mmgl.cd.serving-sys.com
 heine2.adclear.net
 hotmail.com
 hpcounter.nifty.com
+i-image-ad-jp.ad-cloud.jp
 i.adingo.jp
+i.image-ad.jp
+i.image-ad.jp.edgesuite.net
 i.track777.com
 i1.services.social.microsoft.com
 i1.services.social.microsoft.com.nsatc.net
@@ -625,6 +633,7 @@ iadmoo.apple.com
 ibm.adlegend.com
 ibplb-analytics-1010299867.us-east-1.elb.amazonaws.com
 ict.infinity-tracking.net
+im-cas-tracking-api.elasticbeanstalk.com
 im.3eb2c200.780d675.ads.a4cdn.contentabc.com
 im.3eb2c258.ad74a95.public.a4cdn.tube8.phncdn.com
 images.adwombat.com
@@ -660,6 +669,7 @@ j-guile-jp.ad-cloud.jp
 j-image-ad-jp.ad-cloud.jp
 j.adticker.net
 j.bg.adresult-sp.jp
+j.image-ad.jp
 jobviewtrack.com
 jp-u.openx.net
 jp3adv-cdn.goldspotmedia.com
@@ -863,6 +873,7 @@ piwik.openstreetmap.org
 piwik.rail.cc
 piwik.rtr.at
 piwik.selly.at
+piwik.thermomix.com
 piwik.typo3.org
 piwik.volkswagen.at
 piwik.vor.at
@@ -872,6 +883,7 @@ piwik.wienerwald.info
 piwik.wu.ac.at
 piwikext.oebb.at
 piwiki.kk-bits.com
+piwikthermomix-1483511523.eu-west-1.elb.amazonaws.com
 pixel.combotag.com
 pkg.adfinis-sygroup.ch
 placements.bannerflow.netdna-cdn.com
@@ -906,6 +918,7 @@ rem-track.bild.de
 renegoads.com
 renren.cm.admaster.com.cn
 report-ads-to.pubnation.com
+reports.crashlytics.com
 reqlog.elasticbeanstalk.com
 reserve-resebook-jp-148256034.ap-northeast-1.elb.amazonaws.com
 reserve.resebook.jp
@@ -963,6 +976,7 @@ serverland.view-ads.de
 service.extracker.jp
 settings-crashlytics-1410998606.us-east-1.elb.amazonaws.com
 settings-sandbox.data.microsoft.com
+settings.crashlytics.com
 settings.data.glbdns2.microsoft.com
 sframes-debug.adx.vip.bf1.yahoo.com
 sg.a.stat.mi.com
@@ -1135,6 +1149,7 @@ track.zipcar.hosted.strongview.com
 track2.cliplister.com
 track2.somewrite.jp
 track306.info
+tracker-api-5098451.us-east-1.elb.amazonaws.com
 tracker-bannerflow.trafficmanager.net
 tracker.bannerflow.com
 tracker.btzoo.eu
@@ -1144,6 +1159,7 @@ tracker.euroweb.net
 tracker.kantan-access.com
 tracker.ktxp.com
 tracker.logbk.net
+tracker.mca-analytics.com
 tracker.mybonuslist.com
 tracker.novalayer.org
 tracker.nwps.ws
@@ -1154,6 +1170,7 @@ tracker.softgarden.de
 tracker.yhd.com
 tracker.yhd.com.yhcdn.cn
 tracker4.piratux.com
+trackerapi.truste.com
 tracking-1651687710.eu-west-1.elb.amazonaws.com
 tracking-rce.veeseo.com
 tracking.ad-survey.com
@@ -1177,6 +1194,8 @@ traffic.em.io
 trakking.info
 travel.tile.appex.bing.com
 trc.pitadtag.jp
+trk.bhs4.com
+trk.bhs4.com.distil.us
 tsog8.trackvoluum.com
 tube8.walprater.com
 tube8.xubukra.com
