@@ -44,6 +44,11 @@ log_exit() {
 	exit 1
 }
 
+# return md5sum (not file name) of file $1
+md5file() {
+	md5sum "$1" | awk '{print $1}'
+}
+
 # check dependencies
 command -v curl >/dev/null 2>&1 || log_exit "missing dependency: curl"
 command -v grep >/dev/null 2>&1 || log_exit "missing dependency: grep"
@@ -206,7 +211,6 @@ fi
 # generate and write file header
 log "generating and writing file header"
 data_header="# clean merged adblocking-hosts file\n\
-# build date: `date --rfc-2822`\n\
 # build server: `hostname`\n\
 # more infos: https://github.com/monojp/hosts_merge\n\
 \n\
@@ -214,10 +218,15 @@ data_header="# clean merged adblocking-hosts file\n\
 ::1 localhost.localdomain localhost\n"
 sed -i "1i${data_header}" "$file_temp" || log_exit "error on writing file headers"
 
-# rotate in place
-log "move temp file '$file_temp' to '$file_result'"
-mv -f "$file_temp" "$file_result" || log_exit "error on moving '$file_temp' to '$file_result'"
+# rotate in place and fix permissions if md5sum old - new is different, otherwise we're done
+if [ "`md5file $file_result`" != "`md5file $file_temp`" ]; then
+	# rotate in place
+	log "move temp file '$file_temp' to '$file_result'"
+	mv -f "$file_temp" "$file_result" || log_exit "error on moving '$file_temp' to '$file_result'"
 
-# fixup permissions (we don't want that limited temp perms)
-log "chmod '$file_result' to '$permissions_result'"
-chmod $permissions_result "$file_result" || log_exit "error on chmod on '$file_result'"
+	# fixup permissions (we don't want that limited temp perms)
+	log "chmod '$file_result' to '$permissions_result'"
+	chmod $permissions_result "$file_result" || log_exit "error on chmod on '$file_result'"
+else
+	log "no changes, skip rotating in place"
+fi
