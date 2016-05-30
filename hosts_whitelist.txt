@@ -5,3 +5,4 @@ cdn3.optimizely.com # legit cdn
 img.timeinc.net # images and css on time.com
 piwik.org # needed for doku, downloads
 po.st # url shortener
+s.youtube.com # for youtube "last viewed" stats
