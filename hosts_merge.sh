@@ -15,8 +15,8 @@ source "$DIR/config.sh"
 # cleanup if user presses CTRL-C
 cleanup() {
 	log "cleaning up temp files"
-	rm "$file_temp"  > /dev/null 2>&1
-	rm "$file_temp_ipv6"  > /dev/null 2>&1
+	rm "$file_temp" > /dev/null 2>&1
+	rm "$file_temp_ipv6" > /dev/null 2>&1
 	exit
 }
 trap cleanup INT SIGHUP SIGINT SIGTERM
@@ -230,3 +230,5 @@ if [ "`md5file $file_result`" != "`md5file $file_temp`" ]; then
 else
 	log "no changes, skip rotating in place"
 fi
+
+cleanup
