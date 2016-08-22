@@ -38,7 +38,7 @@ sources_hosts_format=(
 	# windows spying domains (blocks updates, bing, skype and maybe more!)
 	#"http://www.angelfire.com/comics2/fatboy9175/MShosts.txt"
 	# uTorrent / Bittorrent, Inc ads / malware
-	"http://www.angelfire.com/comics2/fatboy9175/uthosts.txt"
+	#"http://www.angelfire.com/comics2/fatboy9175/uthosts.txt"
 )
 
 sources_domains_only=(
