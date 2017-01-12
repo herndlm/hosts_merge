@@ -26,7 +26,7 @@ sources_hosts_format=(
 	#"http://hosts-file.net/psh.txt" # phishing
 	#"http://hosts-file.net/wrz.txt" # warez/piracy
 	# global common
-	"http://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts"
+	"https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts"
 	"http://winhelp2002.mvps.org/hosts.txt"
 	"http://someonewhocares.org/hosts/hosts"
 	"https://adaway.org/hosts.txt"
@@ -35,6 +35,7 @@ sources_hosts_format=(
 	# abuse / tracking lists
 	"https://zeustracker.abuse.ch/blocklist.php?download=hostfile"
 	"http://sysctl.org/cameleon/hosts.win"
+	"http://www.malwaredomainlist.com/hostslist/hosts.txt"
 	# windows spying domains (blocks updates, bing, skype and maybe more!)
 	#"http://www.angelfire.com/comics2/fatboy9175/MShosts.txt"
 	# uTorrent / Bittorrent, Inc ads / malware
@@ -45,6 +46,9 @@ sources_domains_only=(
 	# abuse / tracking lists
 	"http://mirror2.malwaredomains.com/files/justdomains"
 	"https://isc.sans.edu/feeds/suspiciousdomains_Low.txt"
+	"https://www.blocklist.de/downloads/urls/95.211.0.112-only-domains.txt"
+	"https://www.blocklist.de/downloads/urls/squarespace.com-only-subdomains.txt"
+	"http://malc0de.com/bl/BOOT"
 	# disconnect.me
         "https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt"
         "https://s3.amazonaws.com/lists.disconnect.me/simple_malware.txt"

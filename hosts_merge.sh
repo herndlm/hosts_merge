@@ -111,11 +111,12 @@ for source_hosts_format in "${sources_hosts_format[@]}"; do
 log_exit "error downloading file '$source_hosts_format'"
 done
 
-# download all domain only sources (we're just prepending the ip adress to every line here)
+# download all domain only sources (we're cleaning the lines and prepending ip adresses)
 for source_domains_only in "${sources_domains_only[@]}"; do
 	log "downloading domain only source '$source_domains_only' to '$file_temp'"
 	curl --location -sS --connect-timeout $CURL_TIMEOUT --max-time $CURL_TIMEOUT \
---retry $CURL_RETRY_NUM "$source_domains_only" | sed -e 's/^/0.0.0.0 /' >> "$file_temp" || \
+--retry $CURL_RETRY_NUM "$source_domains_only" | sed -e 's/^PRIMARY//g' | \
+sed -e 's/blockeddomain\.hosts$//g' | sed -e 's/^/0.0.0.0 /' >> "$file_temp" || \
 log_exit "error downloading file 'source_domains_only'"
 done
 
