@@ -44,7 +44,7 @@ sources_hosts_format=(
 
 sources_domains_only=(
 	# abuse / tracking lists
-	"http://mirror2.malwaredomains.com/files/justdomains"
+	"https://malwaredomains.usu.edu/justdomains"
 	"https://isc.sans.edu/feeds/suspiciousdomains_Low.txt"
 	"https://www.blocklist.de/downloads/urls/95.211.0.112-only-domains.txt"
 	"https://www.blocklist.de/downloads/urls/squarespace.com-only-subdomains.txt"
