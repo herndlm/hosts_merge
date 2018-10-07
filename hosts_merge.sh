@@ -61,6 +61,22 @@ md5file() {
 	md5sum "$1" | awk '{print $1}'
 }
 
+# checks if the domain resolves via DNS
+domain_resolves() {
+    output="`dig "$1" +short`"
+    # return OK if dig failes to avoid deleting domains when there are dns failures
+    if [ "$?" -ne "0" ]; then
+        return 0
+    fi
+
+    # domain resolves if dig outputs anything
+    if [ -n "$output" ]; then
+        return 0
+    fi
+
+    return 1
+}
+
 # check dependencies
 command -v curl >/dev/null 2>&1 || log_exit "missing dependency: curl"
 command -v grep >/dev/null 2>&1 || log_exit "missing dependency: grep"
@@ -176,7 +192,7 @@ if [ ${mode_check} -eq 1 ] || [ ${mode_clean} -eq 1 ]; then
 			else
 				echo "$counter/$count whitelist entry '$data_whitelist_entry' is not existing in '$file_temp'"
 			fi
-        elif [ -z "`dig "$data_whitelist_entry" +short`" ]; then
+        elif ! domain_resolves "$data_whitelist_entry"; then
 		    # entry that is not resolving any more
 			if [ ${mode_clean} -eq 1 ]; then
 				echo "$counter/$count removing non-resolving entry '$data_whitelist_entry' from the whitelist"
@@ -203,7 +219,7 @@ if [ ${mode_check} -eq 1 ] || [ ${mode_clean} -eq 1 ]; then
 			else
 				echo "$counter/$count blacklist entry '$data_blacklist_entry' is existing in '$file_temp'"
 			fi
-		elif [ -z "`dig "$data_blacklist_entry" +short`" ]; then
+		elif ! domain_resolves "$data_blacklist_entry"; then
 		    # entry that is not resolving any more
 			if [ ${mode_clean} -eq 1 ]; then
 				echo "$counter/$count removing non-resolving entry '$data_blacklist_entry' from the blacklist"
