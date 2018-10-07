@@ -13,45 +13,40 @@ permissions_result=644
 FILE_LOG="/tmp/hosts_merge.log"
 
 sources_hosts_format=(
-	# hpHosts database (unfortunately way too big for slow systems)
-	#"http://hosts-file.net/ad_servers.txt" # ad/tracking servers
-	#"http://hosts-file.net/emd.txt" # malware
-	#"http://hosts-file.net/exp.txt" # exploit
-	#"http://hosts-file.net/fsa.txt" # fraud
-	#"http://hosts-file.net/grm.txt" # spam
-	#"http://hosts-file.net/hfs.txt" # hpHosts forum spammers
-	#"http://hosts-file.net/hjk.txt" # hijack
-	#"http://hosts-file.net/mmt.txt" # misleading marketing
-	#"http://hosts-file.net/pha.txt" # illegal pharmacy
-	#"http://hosts-file.net/psh.txt" # phishing
-	#"http://hosts-file.net/wrz.txt" # warez/piracy
 	# global common
-	"https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts"
+	"https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&mimetype=plaintext&useip=0.0.0.0"
 	"http://winhelp2002.mvps.org/hosts.txt"
-	"http://someonewhocares.org/hosts/hosts"
-	"https://adaway.org/hosts.txt"
-	# japanese
-	"https://sites.google.com/site/cosmonoteshosts/hosts_for_Windows8.txt?attredirects=0"
-	# abuse / tracking lists
-	"https://zeustracker.abuse.ch/blocklist.php?download=hostfile"
-	"http://sysctl.org/cameleon/hosts.win"
+	"https://someonewhocares.org/hosts/zero/hosts"
 	"http://www.malwaredomainlist.com/hostslist/hosts.txt"
-	# windows spying domains (blocks updates, bing, skype and maybe more!)
-	#"http://www.angelfire.com/comics2/fatboy9175/MShosts.txt"
-	# uTorrent / Bittorrent, Inc ads / malware
-	#"http://www.angelfire.com/comics2/fatboy9175/uthosts.txt"
+	"https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt"
+	"https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts"
+	"https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts"
+	"https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Dead/hosts"
+	"https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts"
+	"https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts"
+	"https://raw.githubusercontent.com/mitchellkrogza/Badd-Boyz-Hosts/master/hosts"
+	"https://zerodot1.gitlab.io/CoinBlockerLists/hosts_browser"
+	"https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/hosts"
+	"https://raw.githubusercontent.com/lightswitch05/hosts/master/ads-and-tracking-extended.txt"
+	"https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts"
+	"https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts"
+	"https://raw.githubusercontent.com/azet12/KADhosts/master/KADhosts.txt"
+	"https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts"
+	"http://sysctl.org/cameleon/hosts.win"
+	# abuse / tracking lists (beware of false positives)
+	"https://zeustracker.abuse.ch/blocklist.php?download=hostfile"
 )
 
 sources_domains_only=(
-	# abuse / tracking lists
-	"https://malwaredomains.usu.edu/justdomains"
-	"https://isc.sans.edu/feeds/suspiciousdomains_Low.txt"
-	"https://www.blocklist.de/downloads/urls/95.211.0.112-only-domains.txt"
-	"https://www.blocklist.de/downloads/urls/squarespace.com-only-subdomains.txt"
-	"http://malc0de.com/bl/BOOT"
+	# abuse / tracking lists (beware of false positives)
+	#"https://malwaredomains.usu.edu/justdomains"
+	#"https://isc.sans.edu/feeds/suspiciousdomains_Low.txt"
+	#"https://www.blocklist.de/downloads/urls/95.211.0.112-only-domains.txt"
+	#"https://www.blocklist.de/downloads/urls/squarespace.com-only-subdomains.txt"
+	#"http://malc0de.com/bl/BOOT"
 	# disconnect.me
-        "https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt"
-        "https://s3.amazonaws.com/lists.disconnect.me/simple_malware.txt"
-        "https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt"
-        "https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt"
+    "https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt"
+    "https://s3.amazonaws.com/lists.disconnect.me/simple_malware.txt"
+    "https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt"
+    "https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt"
 )
