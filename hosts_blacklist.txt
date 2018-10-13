@@ -262,6 +262,7 @@ advertising.aolp.jp
 advertising.apartmenttherapy.com
 advertising.gawker.com
 advertising.nypost.com
+adx.ligadx.com
 api.adjust.com
 aw.dw.impact-ad.jp
 banner.alldatasheet.com
