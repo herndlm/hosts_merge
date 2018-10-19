@@ -456,6 +456,7 @@ log5.interactive-circle.jp
 log9.recommender.jp
 logc406.xiti.com
 logger-05.vty.dailymotion.com
+logger-06.vty.dailymotion.com
 logger-gtm.ooyala.com
 logger.genesis-api.jp
 logger.instagram.com
