@@ -2,7 +2,6 @@
 5fd74.v.fwmrm.net # spots on crunchyroll
 static.puls4.com # cname to austria1.adverserve.net
 media.gssp.asia # ads on miomio
-media.hotels.com # cname to ads.expedia.com
 
 # FinanceQuality Affiliate Network
 a.neqty.net
@@ -257,7 +256,6 @@ ads3.fingersoft.net
 adserv2.suumo.jp
 adserver.doccheck.com
 adserving.kiosked.iponweb.net
-adservingbase.ace.advertising.com
 advertising-eu.amazon.com
 advertising.amazon.com
 advertising.amazon.de
