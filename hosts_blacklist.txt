@@ -35,6 +35,9 @@ startrack.at
 # Amazon Adsystems
 z-na.amazon-adsystems.com
 
+# ATG Ad Tech
+media.oadts.com
+
 # ads via openx/revive
 advertisedmediagroup-d.openx.net
 answers-d.openx.net
@@ -331,7 +334,6 @@ track.dricy.com
 track.gamesamba.com
 track.go-rilla.mobi
 track.hroc.co.uk
-track.iconfinder.com
 track.kuronekoyamato.co.jp
 track.linksynergy.com
 track.mobiprofit.com
@@ -385,7 +387,6 @@ tracking.ad-survey.com
 tracking.affiliateclub.cz
 tracking.aldi-international.com
 tracking.artofclick.com
-tracking.autoscout24.com
 tracking.become.co.jp
 tracking.binarypromos.com
 tracking.bloomberg.com
