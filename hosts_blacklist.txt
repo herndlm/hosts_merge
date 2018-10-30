@@ -103,6 +103,7 @@ counts.yieldlab.net
 
 # tracking via piwik/matomo
 orfepiwik.orf-enterprise.at
+stats.parents.at
 piwik.afs.de
 piwik.arbeiterkammer.at
 piwik.berlinonline.de
