@@ -152,6 +152,7 @@ piwiki.kk-bits.com
 piwikpro.com.de-aurora-dc.cldsrv.biz
 
 # ads common
+a.cookpad-ads.com
 ad-api-v01.uliza.jp
 ad-aws.neodatagroup.com
 ad-balancer.com
