@@ -1,5 +1,4 @@
 # ads
-5fd74.v.fwmrm.net # spots on crunchyroll
 static.puls4.com # cname to austria1.adverserve.net
 media.gssp.asia # ads on miomio
 
@@ -20,7 +19,6 @@ smartads.mobile.g.yahoo.co.jp
 yads.yjtag.yahoo.co.jp
 
 # chartboost game ads
-a.chartboost.com
 
 # adverserve advertising Austria
 cdn-omd.adverserve.net
@@ -45,14 +43,11 @@ biglobeinc-d.openx.net
 ccisea-d.openx.net
 ccisea-d3.openxenterprise.com
 dena-d.openx.net
-esimedia-d.openx.net
 findtravel-d.openx.net
-hatena-d.openx.net
 heavy-d.openx.net
 issuu-d.openx.net
 jpmarket-d.openx.net
 mailonline-d3.openxenterprise.com
-mediafire-d.openx.net
 monetizemore-d3.openxenterprise.com
 ookla-d.openx.net
 openx.bergfex.at
@@ -63,8 +58,6 @@ ox-d.monetizemore.servedbyopenx.com
 ox-d.openx.jp
 servedby.openxmarket.asia
 traffective-d.openx.net
-voyagermarketing-d.openx.net
-weatherus-d.openx.net
 wetteronline-d.openx.net
 wikihow-d3.openxenterprise.com
 
@@ -118,7 +111,6 @@ piwik.ecchi.ca
 piwik.eco-online.net
 piwik.edev.at
 piwik.g.fc2.com
-piwik.gruene.at
 piwik.go2linux.com
 piwik.hacon.de
 piwik.hcs.at
@@ -166,7 +158,6 @@ ad-balancer.com
 ad-blacklist.p24.hu
 ad-choices.nuggad.net
 ad-img.iqon.jp
-ad-targeting-prod-elb.53.localytics.com
 ad.adnwif.smt.docomo.ne.jp
 ad.afad.jp
 ad.ajillionmax.com
@@ -267,7 +258,6 @@ advertising.apartmenttherapy.com
 advertising.gawker.com
 advertising.nypost.com
 adx.ligadx.com
-api.adjust.com
 aw.dw.impact-ad.jp
 banner.alldatasheet.com
 banner.bluesummit.de
@@ -329,7 +319,6 @@ track.affiliate-b.com
 track.affiliate-b.com.cdngc.net
 track.amebame.com
 track.androappss.com
-track.appsflyer.com
 track.buyma.com
 track.dricy.com
 track.gamesamba.com
@@ -409,7 +398,6 @@ tracking.thelabelfinder.com
 tracking.wetter.tv
 tracking.wohnnet.at
 tracking1.marketmind.com
-trk.adjust.com
 trk.bhs4.com
 trk.billysrv.com
 trk.glispa.com
