@@ -401,6 +401,7 @@ tracking.s24.com
 tracking.thelabelfinder.com
 tracking.wetter.tv
 tracking.wohnnet.at
+tracking.yieldlove-ad-serving.ne
 tracking1.marketmind.com
 trk.bhs4.com
 trk.billysrv.com
@@ -418,6 +419,7 @@ webstats.zecken.de
 webstats.zserv.tuwien.ac.at
 
 # logging / stats common
+l.logly.co.jp
 log-ec-1.adap.tv
 log-ec-2.adap.tv
 log-nj.adap.tv
@@ -536,3 +538,4 @@ stats.wms-analytics.net
 stats.ziprecipes.net
 stats.ztcadx.com
 statsd.urlaubspiraten.de
+sync.logly.co.jp
