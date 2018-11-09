@@ -60,6 +60,7 @@ servedby.openxmarket.asia
 traffective-d.openx.net
 wetteronline-d.openx.net
 wikihow-d3.openxenterprise.com
+yieldlove-d.openx.net
 
 # tracking
 soux.mj.am # mailjet transparent mail tracking gifs
