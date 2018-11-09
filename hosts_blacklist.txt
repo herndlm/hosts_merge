@@ -274,6 +274,8 @@ banners.analytics.organicfruitapps.com
 banners.itunes.apple.com
 banners.sexypartners.net
 meas.ad.pr.ameba.jp
+m.one.impact-ad.jp
+penta.a.one.impact-ad.jp
 
 # tracking common
 analysis.gathery.recruit-lifestyle.co.jp
