@@ -17,7 +17,6 @@ sources_hosts_format=(
 	"https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&mimetype=plaintext&useip=0.0.0.0"
 	"http://winhelp2002.mvps.org/hosts.txt"
 	"https://someonewhocares.org/hosts/zero/hosts"
-	"http://www.malwaredomainlist.com/hostslist/hosts.txt"
 	"https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt"
 	"https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts"
 	"https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts"
@@ -44,7 +43,6 @@ sources_domains_only=(
 	#"https://www.blocklist.de/downloads/urls/95.211.0.112-only-domains.txt"
 	#"https://www.blocklist.de/downloads/urls/squarespace.com-only-subdomains.txt"
 	#"http://malc0de.com/bl/BOOT"
-	"https://www.malwaredomainlist.com/hostslist/hosts.txt"
 	# disconnect.me
 	"https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt"
 	"https://s3.amazonaws.com/lists.disconnect.me/simple_malware.txt"
