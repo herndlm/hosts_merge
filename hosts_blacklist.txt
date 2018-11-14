@@ -285,7 +285,6 @@ analytics.apotheken-finder.at
 analytics.app-adforce.jp
 analytics.avanser.com
 analytics.braincms.de
-analytics.buyma.com
 analytics.cic.de
 analytics.convertlanguage.com
 analytics.copyright.com
