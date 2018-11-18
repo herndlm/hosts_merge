@@ -10,6 +10,11 @@ l.neqty.net
 trk.helios.ligatus.com
 x.ligatus.com
 
+# adingo (japanese ads)
+cs.adingo.jp
+s.sh.adingo.jp
+i.adingo.jp
+
 # yahoo japan
 ai.yimg.jp
 yads.c.yimg.jp
