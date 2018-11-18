@@ -15,6 +15,11 @@ cs.adingo.jp
 s.sh.adingo.jp
 i.adingo.jp
 
+# microad (japanese ads)
+dex.send.microad.jp
+ssp.send.microadinc.com
+s-rtb.send.microadinc.com
+
 # yahoo japan
 ai.yimg.jp
 yads.c.yimg.jp
