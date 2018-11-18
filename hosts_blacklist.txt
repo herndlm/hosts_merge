@@ -123,6 +123,7 @@ piwik.edev.at
 piwik.g.fc2.com
 piwik.go2linux.com
 piwik.hacon.de
+piwik.hammerl.ro
 piwik.hcs.at
 piwik.i-rsk.com
 piwik.ico.de
@@ -282,11 +283,17 @@ bannerfarm.aolp.jp
 banners.analytics.organicfruitapps.com
 banners.itunes.apple.com
 banners.sexypartners.net
+hilltopads.com
 meas.ad.pr.ameba.jp
 m.one.impact-ad.jp
+p.amoad.com
 penta.a.one.impact-ad.jp
+rs.adapf.com
+s.yimg.jp # conversion script
 
 # tracking common
+acclog002.shop-pro.jp
+acclog001.shop-pro.jp
 analysis.gathery.recruit-lifestyle.co.jp
 analytic.imlive.com
 analytics-prod-ingress.bricknet.com
@@ -324,6 +331,8 @@ analytics.upa-webdesign.de
 analytics.vanderbellen.at
 analytics.wildtangent.com
 analytics.wywy.com
+rd.tabelog.com # tracking pixel
+s.tabelog.com
 track-eu.adform.net
 track-us.adform.net
 track.adclear.net
@@ -454,6 +463,7 @@ log.very911.com
 log.youdutou.cn
 log1.gooddo.jp
 log1.makeshop.co.kr
+log1.mobylog.jp
 log12.f-tra.jp
 log2.tapatalk.com
 log5.interactive-circle.jp
@@ -547,3 +557,4 @@ stats.ziprecipes.net
 stats.ztcadx.com
 statsd.urlaubspiraten.de
 sync.logly.co.jp
+prd-beacon.cetlog.jp
