@@ -56,7 +56,6 @@ dena-d.openx.net
 findtravel-d.openx.net
 heavy-d.openx.net
 issuu-d.openx.net
-jpmarket-d.openx.net
 mailonline-d3.openxenterprise.com
 monetizemore-d3.openxenterprise.com
 ookla-d.openx.net
@@ -67,8 +66,6 @@ ox-d.kleinanzeigen.servedbyopenx.com
 ox-d.monetizemore.servedbyopenx.com
 ox-d.openx.jp
 servedby.openxmarket.asia
-traffective-d.openx.net
-wetteronline-d.openx.net
 wikihow-d3.openxenterprise.com
 
 # tracking
@@ -223,7 +220,6 @@ ads.avocet.io
 ads.aws.rubiconproject.com
 ads.bridgat.com
 ads.commonmedia.de
-ads.comnex.net
 ads.conative.de
 ads.donau.pixelpoint.at
 ads.ebay.com
@@ -289,7 +285,6 @@ m.one.impact-ad.jp
 p.amoad.com
 penta.a.one.impact-ad.jp
 rs.adapf.com
-s.yimg.jp # conversion script
 
 # tracking common
 acclog002.shop-pro.jp
@@ -388,7 +383,6 @@ tracker.the-other-store.net
 tracker.yhd.com
 tracker.yhd.com.yhcdn.cn
 tracker1.ep-solutions.at
-tracker4.piratux.com
 trackerapi.truste.com
 tracking-i2.adsafety.net
 tracking-prod-us-east-1-public.mgnt.cc
