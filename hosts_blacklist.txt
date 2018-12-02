@@ -327,7 +327,6 @@ analytics.vanderbellen.at
 analytics.wildtangent.com
 analytics.wywy.com
 rd.tabelog.com # tracking pixel
-s.tabelog.com
 track-eu.adform.net
 track-us.adform.net
 track.adclear.net
