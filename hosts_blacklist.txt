@@ -15,6 +15,10 @@ cs.adingo.jp
 s.sh.adingo.jp
 i.adingo.jp
 
+# adjust (japanese ads)
+afs.adjust-net.jp
+hbw.adjust-net.jp
+
 # microad (japanese ads)
 dex.send.microad.jp
 ssp.send.microadinc.com
