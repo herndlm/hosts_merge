@@ -446,10 +446,12 @@ webstats.zserv.tuwien.ac.at
 
 # logging / stats common
 l.logly.co.jp
+log000.goo.ne.jp
 log-ec-1.adap.tv
 log-ec-2.adap.tv
 log-nj.adap.tv
 log-v4.kaizenplatform.net
+log.affiliate.rakuten.co.jp
 log.go.com
 log.heftig.co
 log.heftig.de
