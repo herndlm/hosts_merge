@@ -19,6 +19,9 @@ i.adingo.jp
 afs.adjust-net.jp
 hbw.adjust-net.jp
 
+# iid (japanese ads/tracking)
+deliver.ads2.iid.jp
+
 # microad (japanese ads)
 dex.send.microad.jp
 ssp.send.microadinc.com
