@@ -18,6 +18,7 @@ i.adingo.jp
 # microad (japanese ads)
 dex.send.microad.jp
 ssp.send.microadinc.com
+s-cs.send.microad.jp
 s-rtb.send.microadinc.com
 
 # yahoo japan
