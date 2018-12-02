@@ -10,6 +10,9 @@ l.neqty.net
 trk.helios.ligatus.com
 x.ligatus.com
 
+# adapf (japanese ads)
+rs.adapf.com
+
 # adingo (japanese ads)
 cs.adingo.jp
 s.sh.adingo.jp
@@ -19,8 +22,17 @@ i.adingo.jp
 afs.adjust-net.jp
 hbw.adjust-net.jp
 
+# AMoAd (japanese ads)
+ad.ca-conv.amoad.com
+p.amoad.com
+
 # iid (japanese ads/tracking)
 deliver.ads2.iid.jp
+
+# impact ad (japanese)
+aw.dw.impact-ad.jp
+m.one.impact-ad.jp
+penta.a.one.impact-ad.jp
 
 # microad (japanese ads)
 dex.send.microad.jp
@@ -186,7 +198,6 @@ ad.bauermedia.com
 ad.benesse.co.jp
 ad.biglobe.ne.jp
 ad.blogmura.com
-ad.ca-conv.amoad.com
 ad.ca-conv.jp
 ad.caprofitx.adtdp.com
 ad.caprofitx.com
@@ -276,7 +287,6 @@ advertising.apartmenttherapy.com
 advertising.gawker.com
 advertising.nypost.com
 adx.ligadx.com
-aw.dw.impact-ad.jp
 banner.alldatasheet.com
 banner.bluesummit.de
 banner.buyee.jp
@@ -291,10 +301,6 @@ banners.itunes.apple.com
 banners.sexypartners.net
 hilltopads.com
 meas.ad.pr.ameba.jp
-m.one.impact-ad.jp
-p.amoad.com
-penta.a.one.impact-ad.jp
-rs.adapf.com
 
 # tracking common
 acclog002.shop-pro.jp
