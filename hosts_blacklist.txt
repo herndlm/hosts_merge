@@ -445,6 +445,7 @@ webstats.zecken.de
 webstats.zserv.tuwien.ac.at
 
 # logging / stats common
+js.logentries.com
 l.logly.co.jp
 log000.goo.ne.jp
 log-ec-1.adap.tv
