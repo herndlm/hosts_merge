@@ -8,7 +8,6 @@ l.neqty.net
 
 # ligatus advertising
 trk.helios.ligatus.com
-x.ligatus.com
 
 # adapf (japanese ads)
 rs.adapf.com
@@ -69,25 +68,20 @@ media.oadts.com
 
 # ads via openx/revive
 advertisedmediagroup-d.openx.net
-answers-d.openx.net
 biglobeinc-d.openx.net
 ccisea-d.openx.net
 ccisea-d3.openxenterprise.com
-dena-d.openx.net
 findtravel-d.openx.net
 heavy-d.openx.net
-immowelt-d.openx.net
 issuu-d.openx.net
 mailonline-d3.openxenterprise.com
 monetizemore-d3.openxenterprise.com
-ookla-d.openx.net
 openx.bergfex.at
 openx.sexsearch.com
 openxjapan-d3.openxenterprise.com
 ox-d.kleinanzeigen.servedbyopenx.com
 ox-d.monetizemore.servedbyopenx.com
 ox-d.openx.jp
-scout24-d.openx.net
 servedby.openxmarket.asia
 wikihow-d3.openxenterprise.com
 
@@ -242,7 +236,6 @@ ads.avocet.io
 ads.aws.rubiconproject.com
 ads.bridgat.com
 ads.commonmedia.de
-ads.conative.de
 ads.donau.pixelpoint.at
 ads.ebay.com
 ads.escinteractive.com
@@ -403,7 +396,6 @@ trackerapi.truste.com
 tracking-i2.adsafety.net
 tracking-prod-us-east-1-public.mgnt.cc
 tracking-stvde.adsafety.net
-tracking.acekoala.com
 tracking.ad-survey.com
 tracking.affiliateclub.cz
 tracking.aldi-international.com
