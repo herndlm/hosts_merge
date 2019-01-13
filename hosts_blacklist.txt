@@ -20,6 +20,7 @@ i.adingo.jp
 
 # adjust (japanese ads)
 afs.adjust-net.jp
+app.adjust.io
 hbw.adjust-net.jp
 
 # AMoAd (japanese ads)
