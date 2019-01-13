@@ -48,6 +48,12 @@ ard.yahoo.co.jp
 smartads.mobile.g.yahoo.co.jp
 yads.yjtag.yahoo.co.jp
 
+# adtdp (japanese ads from CyberAgent)
+ad.as.amanad.adtdp.com
+ad.amanad.adtdp.com
+ad.caprofitx.adtdp.com
+lodeo-adnw.adtdp.com
+
 # chartboost game ads
 
 # adverserve advertising Austria
@@ -93,7 +99,6 @@ nrtzue7f.emltrk.com # litmus email tracking
 clickcounter.iventa.at
 click.adzcore.com
 click.alibaba.com
-click.amanad.adtdp.com
 click.cptrack.de
 click.dsiads.mopo.jp
 click.nudevista.com
@@ -187,14 +192,12 @@ ad-img.iqon.jp
 ad.adnwif.smt.docomo.ne.jp
 ad.afad.jp
 ad.ajillionmax.com
-ad.amanad.adtdp.com
 ad.aruba.it
 ad.bauermedia.com
 ad.benesse.co.jp
 ad.biglobe.ne.jp
 ad.blogmura.com
 ad.ca-conv.jp
-ad.caprofitx.adtdp.com
 ad.caprofitx.com
 ad.cq-andc.jp
 ad.culture.pl
