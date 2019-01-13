@@ -116,6 +116,7 @@ count.shopping.t-online.de
 count1.123stat.com
 count2.makeshop.jp
 count3.makeshop.jp
+counter.adcourier.com
 counter.fc2.com
 counter.infoworx.at
 counter.kingsoft.com
