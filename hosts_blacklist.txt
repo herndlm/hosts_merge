@@ -74,7 +74,6 @@ media.oadts.com
 
 # ads via openx/revive
 advertisedmediagroup-d.openx.net
-biglobeinc-d.openx.net
 ccisea-d.openx.net
 ccisea-d3.openxenterprise.com
 findtravel-d.openx.net
@@ -186,7 +185,6 @@ piwikpro.com.de-aurora-dc.cldsrv.biz
 a.cookpad-ads.com
 ad-api-v01.uliza.jp
 ad-aws.neodatagroup.com
-ad-balancer.com
 ad-blacklist.p24.hu
 ad-choices.nuggad.net
 ad-img.iqon.jp
@@ -349,7 +347,6 @@ track.affiliate-b.com.cdngc.net
 track.amebame.com
 track.androappss.com
 track.buyma.com
-track.dricy.com
 track.gamesamba.com
 track.go-rilla.mobi
 track.hroc.co.uk
