@@ -102,7 +102,6 @@ click.cptrack.de
 click.dsiads.mopo.jp
 click.nudevista.com
 click.speee-ad.jp
-click.trackmb.com
 click.v1.rtb.revcloud.adaos-ads.net
 clicks.binarypromos.com
 clicks.mp.mydas.mobi
@@ -237,7 +236,6 @@ ads.austria.info
 ads.austrianwings.info
 ads.avocet.io
 ads.aws.rubiconproject.com
-ads.bridgat.com
 ads.commonmedia.de
 ads.donau.pixelpoint.at
 ads.ebay.com
@@ -321,7 +319,6 @@ analytics.fs-bdash.com
 analytics.global-websystem.net
 analytics.hapyak.com
 analytics.hotelwebservice.com
-analytics.iwavesmedia.com
 analytics.lekumo.jp
 analytics.lichtstark.com
 analytics.livesense.marketing
