@@ -15,12 +15,16 @@ rs.adapf.com
 # adingo (japanese ads)
 cs.adingo.jp
 s.sh.adingo.jp
+sh.adingo.jp
 i.adingo.jp
 
 # adjust (japanese ads)
 afs.adjust-net.jp
 app.adjust.io
 hbw.adjust-net.jp
+
+# Adspirit (german ads)
+absolventa.adspirit.de
 
 # AMoAd (japanese ads)
 ad.ca-conv.amoad.com
@@ -128,6 +132,7 @@ orfepiwik.orf-enterprise.at
 stats.parents.at
 piwik.afs.de
 piwik.arbeiterkammer.at
+piwik.auswaertiges-amt.de
 piwik.berlinonline.de
 piwik.boku.ac.at
 piwik.bouncingbytes.at
@@ -426,6 +431,7 @@ trk.billysrv.com
 trk.glispa.com
 trk.pinterest.com
 trk.tracksys55.com
+us.webtrack.com
 webanalytics.btelligent.net
 webanalytics.tm00.com
 webstat.delti.com
