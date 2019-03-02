@@ -151,6 +151,7 @@ piwik.hammerl.ro
 piwik.hcs.at
 piwik.i-rsk.com
 piwik.ico.de
+piwik.itzbund.de
 piwik.junge-gruene.at
 piwik.labbe.de
 piwik.lampertheim.cps-projects.de
@@ -367,6 +368,7 @@ track.stuttgarter-zeitung.de
 track.tagesanzeiger.ch
 track.travelbirdoesterreich.at
 track.us.org
+track.webstatistik-bw.de
 track.wt-eu02.net
 track.www.zazzle.at
 track.xmax.jp
