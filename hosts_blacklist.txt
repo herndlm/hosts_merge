@@ -99,7 +99,6 @@ soux.mj.am # mailjet transparent mail tracking gifs
 nrtzue7f.emltrk.com # litmus email tracking
 
 # counter / click tracking
-clickcounter.iventa.at
 click.adzcore.com
 click.alibaba.com
 click.cptrack.de
