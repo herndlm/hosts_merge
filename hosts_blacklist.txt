@@ -76,6 +76,20 @@ z-na.amazon-adsystems.com
 # ATG Ad Tech
 media.oadts.com
 
+# Digitalsunray media
+advantage.digitalsunray.com
+advantage-license-restapi.digitalsunray.com
+
+# ad4mat DE
+www.ad4mat.net
+
+# ADC
+ad2.adc-serv.net
+r.adc-srv.net
+
+# Naiadsystems
+api.naiadsystems.com
+
 # ads via openx/revive
 advertisedmediagroup-d.openx.net
 ccisea-d.openx.net
@@ -225,7 +239,6 @@ ad.tokyo-sports.co.jp
 ad.unikat.at
 ad.xyniubi.com
 ad.zfm.at
-ad2.adc-serv.net
 ad2.media01.eu
 ad2.movad.net
 ad2.tripple.at
@@ -324,6 +337,7 @@ analytics.fs-bdash.com
 analytics.global-websystem.net
 analytics.hapyak.com
 analytics.hotelwebservice.com
+analytics.imezzi.com
 analytics.lekumo.jp
 analytics.lichtstark.com
 analytics.livesense.marketing
