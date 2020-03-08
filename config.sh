@@ -33,6 +33,7 @@ export sources_hosts_format=(
 	"https://raw.githubusercontent.com/x0uid/SpotifyAdBlock/master/hosts"
 	"https://someonewhocares.org/hosts/zero/hosts"
 	"https://sysctl.org/cameleon/hosts.win"
+	"https://www.malwaredomainlist.com/hostslist/hosts.txt"
 	"https://zerodot1.gitlab.io/CoinBlockerLists/hosts_browser"
 )
 
