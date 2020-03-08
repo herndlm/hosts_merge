@@ -31,14 +31,17 @@ sources_hosts_format=(
 	"https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts"
 	"https://raw.githubusercontent.com/azet12/KADhosts/master/KADhosts.txt"
 	"https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts"
-	"http://sysctl.org/cameleon/hosts.win"
+	"https://sysctl.org/cameleon/hosts.win"
+	"https://hosts-file.net/ad_servers.txt"
+	"https://raw.githubusercontent.com/x0uid/SpotifyAdBlock/master/hosts"
 	# abuse / tracking lists (beware of false positives)
 	"https://zeustracker.abuse.ch/blocklist.php?download=hostfile"
 )
 
 sources_domains_only=(
 	# abuse / tracking lists (beware of false positives)
-	#"https://malwaredomains.usu.edu/justdomains"
+	"https://malwaredomains.usu.edu/justdomains"
+	"https://malwaredomains.usu.edu/immortal_domains.txt"
 	#"https://isc.sans.edu/feeds/suspiciousdomains_Low.txt"
 	#"https://www.blocklist.de/downloads/urls/95.211.0.112-only-domains.txt"
 	#"https://www.blocklist.de/downloads/urls/squarespace.com-only-subdomains.txt"
