@@ -123,7 +123,6 @@ click.v1.rtb.revcloud.adaos-ads.net
 clicks.binarypromos.com
 clicks.mp.mydas.mobi
 clicktale.pantherssl.com
-clicktracking.mobi-go.eu
 count.donreach.com
 count.manager-magazin.de
 count.oct-pass.net
@@ -137,7 +136,6 @@ counter.infoworx.at
 counter.kingsoft.com
 counter.unofficialwsx5.de
 countix.tele.net
-counts.yieldlab.net
 
 # tracking via piwik/matomo
 matomopvext.oebb.at
@@ -151,7 +149,6 @@ piwik.boku.ac.at
 piwik.bouncingbytes.at
 piwik.cadooz.com
 piwik.cardsys.at
-piwik.cwd.at
 piwik.documentfoundation.org
 piwik.ecchi.ca
 piwik.eco-online.net
@@ -227,7 +224,6 @@ ad.iqon.jp
 ad.jorte.com
 ad.liveburst.com
 ad.mamastar.jp
-ad.mtburn.com
 ad.museum.or.jp
 ad.pr.ameba.jp
 ad.primead.jp
@@ -245,7 +241,6 @@ ads-not-by-this-site.de
 ads-swkbank.de
 ads.adinall.com
 ads.admized.com
-ads.adrise.tv
 ads.adsmedia.com
 ads.altervista.org
 ads.austria.info
@@ -318,7 +313,6 @@ acclog001.shop-pro.jp
 analysis.gathery.recruit-lifestyle.co.jp
 analytic.imlive.com
 analytics-prod-ingress.bricknet.com
-analytics.aolonnetwork.com
 analytics.apotheken-finder.at
 analytics.app-adforce.jp
 analytics.avanser.com
@@ -359,7 +353,6 @@ track.adclear.net
 track.affiliate-b.com
 track.affiliate-b.com.cdngc.net
 track.amebame.com
-track.androappss.com
 track.buyma.com
 track.gamesamba.com
 track.go-rilla.mobi
@@ -406,7 +399,6 @@ tracker.slash-7.com
 tracker.softgarden.de
 tracker.the-other-store.net
 tracker.yhd.com
-tracker.yhd.com.yhcdn.cn
 tracker1.ep-solutions.at
 trackerapi.truste.com
 tracking-i2.adsafety.net
@@ -443,7 +435,6 @@ trk.billysrv.com
 trk.glispa.com
 trk.pinterest.com
 trk.tracksys55.com
-us.webtrack.com
 webanalytics.btelligent.net
 webanalytics.tm00.com
 webstat.delti.com
@@ -515,7 +506,6 @@ stat.cooking-conspiracy.de
 stat.eiga.com
 stat.ethz.ch
 stat.greenandwhite.at
-stat.haloapps.com
 stat.his-j.com
 stat.hitosara.com
 stat.i3.dmm.com
