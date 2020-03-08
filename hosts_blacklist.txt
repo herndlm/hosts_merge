@@ -7,20 +7,14 @@ a.neqty.net
 l.neqty.net
 
 # ligatus advertising
-trk.helios.ligatus.com
 
 # adapf (japanese ads)
-rs.adapf.com
 
 # adingo (japanese ads)
-cs.adingo.jp
-s.sh.adingo.jp
-sh.adingo.jp
 i.adingo.jp
 
 # adjust (japanese ads)
 afs.adjust-net.jp
-app.adjust.io
 hbw.adjust-net.jp
 
 # Adspirit (german ads)
@@ -34,29 +28,14 @@ p.amoad.com
 deliver.ads2.iid.jp
 
 # impact ad (japanese)
-aw.dw.impact-ad.jp
-m.one.impact-ad.jp
-penta.a.one.impact-ad.jp
 
 # microad (japanese ads)
-dex.send.microad.jp
-ssp.send.microadinc.com
-s-cs.send.microad.jp
-s-rtb.send.microadinc.com
 
 # yahoo japan
-ai.yimg.jp
-yads.c.yimg.jp
-rd.ane.yahoo.co.jp
-ard.yahoo.co.jp
 smartads.mobile.g.yahoo.co.jp
 yads.yjtag.yahoo.co.jp
 
 # adtdp (japanese ads from CyberAgent)
-ad.as.amanad.adtdp.com
-ad.amanad.adtdp.com
-ad.caprofitx.adtdp.com
-lodeo-adnw.adtdp.com
 
 # chartboost game ads
 
@@ -81,31 +60,17 @@ advantage.digitalsunray.com
 advantage-license-restapi.digitalsunray.com
 
 # ad4mat DE
-www.ad4mat.net
 
 # ADC
-ad2.adc-serv.net
-r.adc-srv.net
 
 # Naiadsystems
 api.naiadsystems.com
 
 # ads via openx/revive
-advertisedmediagroup-d.openx.net
-ccisea-d.openx.net
-ccisea-d3.openxenterprise.com
 findtravel-d.openx.net
-heavy-d.openx.net
-issuu-d.openx.net
 mailonline-d3.openxenterprise.com
 monetizemore-d3.openxenterprise.com
 openx.bergfex.at
-openx.sexsearch.com
-openxjapan-d3.openxenterprise.com
-ox-d.kleinanzeigen.servedbyopenx.com
-ox-d.monetizemore.servedbyopenx.com
-ox-d.openx.jp
-servedby.openxmarket.asia
 wikihow-d3.openxenterprise.com
 
 # tracking
@@ -114,7 +79,6 @@ nrtzue7f.emltrk.com # litmus email tracking
 
 # counter / click tracking
 click.adzcore.com
-click.alibaba.com
 click.cptrack.de
 click.dsiads.mopo.jp
 click.nudevista.com
@@ -126,14 +90,11 @@ clicktale.pantherssl.com
 count.donreach.com
 count.manager-magazin.de
 count.oct-pass.net
-count.shopping.t-online.de
 count1.123stat.com
 count2.makeshop.jp
 count3.makeshop.jp
 counter.adcourier.com
-counter.fc2.com
 counter.infoworx.at
-counter.kingsoft.com
 counter.unofficialwsx5.de
 countix.tele.net
 
@@ -199,7 +160,6 @@ piwikpro.com.de-aurora-dc.cldsrv.biz
 # ads common
 a.cookpad-ads.com
 ad-api-v01.uliza.jp
-ad-aws.neodatagroup.com
 ad-blacklist.p24.hu
 ad-img.iqon.jp
 ad.adnwif.smt.docomo.ne.jp
@@ -210,18 +170,13 @@ ad.bauermedia.com
 ad.benesse.co.jp
 ad.biglobe.ne.jp
 ad.blogmura.com
-ad.ca-conv.jp
-ad.caprofitx.com
 ad.cq-andc.jp
 ad.culture.pl
 ad.cya2.net
-ad.evozi.com
 ad.foxbeen.com
 ad.fujita-kanko.co.jp
-ad.i2idata.com
 ad.inter-edu.com
 ad.iqon.jp
-ad.jorte.com
 ad.liveburst.com
 ad.mamastar.jp
 ad.museum.or.jp
@@ -240,37 +195,27 @@ ads-i2i.jp
 ads-not-by-this-site.de
 ads-swkbank.de
 ads.adinall.com
-ads.admized.com
 ads.adsmedia.com
 ads.altervista.org
 ads.austria.info
 ads.austrianwings.info
-ads.avocet.io
 ads.aws.rubiconproject.com
 ads.commonmedia.de
 ads.donau.pixelpoint.at
-ads.ebay.com
 ads.escinteractive.com
 ads.evga.com
 ads.fc2.com
-ads.golem.de
-ads.google.com
 ads.logsoku.com
-ads.netcraft.com
 ads.party.at
 ads.petspot-gmbh.com
 ads.publick.apa.net
-ads.realitytraffic.com
 ads.rss-services.com
 ads.rtl2.de
-ads.s-i-r.de
 ads.shoplove.com
 ads.simplyhired.com
-ads.smartstream.tv
 ads.speead.jp
 ads.sprout-ad.com
 ads.tradefx.com
-ads.travelaudience.com
 ads.un-iq.de
 ads.urban-media.com
 ads.vamaker.com
@@ -280,7 +225,6 @@ ads.xwire.io
 ads1.livepromotools.com
 ads20.wwe-media.de
 ads24.tipps24-netzwerk.de
-ads3.fingersoft.net
 adserv2.suumo.jp
 adserver.doccheck.com
 adserving.kiosked.iponweb.net
@@ -291,19 +235,14 @@ advertising.aolp.jp
 advertising.apartmenttherapy.com
 advertising.gawker.com
 advertising.nypost.com
-adx.ligadx.com
 banner.alldatasheet.com
 banner.bluesummit.de
 banner.buyee.jp
-banner.dspcdn.com
 banner.electronic4you.at
-banner.tripple.at
 banner.vrtzads.com
 banner.worldshopping.jp
 bannerfarm.aolp.jp
 banners.analytics.organicfruitapps.com
-banners.itunes.apple.com
-banners.sexypartners.net
 hilltopads.com
 meas.ad.pr.ameba.jp
 
@@ -311,14 +250,10 @@ meas.ad.pr.ameba.jp
 acclog002.shop-pro.jp
 acclog001.shop-pro.jp
 analysis.gathery.recruit-lifestyle.co.jp
-analytic.imlive.com
-analytics-prod-ingress.bricknet.com
 analytics.apotheken-finder.at
-analytics.app-adforce.jp
 analytics.avanser.com
 analytics.braincms.de
 analytics.cic.de
-analytics.convertlanguage.com
 analytics.copyright.com
 analytics.corp.google.com
 analytics.disney.go.com
@@ -336,7 +271,6 @@ analytics.modul.ac.at
 analytics.news-host.com
 analytics.phonedog.com
 analytics.pkshatech.com
-analytics.seattleclouds.com
 analytics.sevenval-fit.com
 analytics.sitefarm.info
 analytics.sitefarm02.info
@@ -344,23 +278,15 @@ analytics.theta360.com
 analytics.trustyou.com
 analytics.upa-webdesign.de
 analytics.vanderbellen.at
-analytics.wildtangent.com
 analytics.wywy.com
 rd.tabelog.com # tracking pixel
-track-eu.adform.net
-track-us.adform.net
-track.adclear.net
-track.affiliate-b.com
-track.affiliate-b.com.cdngc.net
 track.amebame.com
 track.buyma.com
 track.gamesamba.com
 track.go-rilla.mobi
 track.hroc.co.uk
 track.kuronekoyamato.co.jp
-track.linksynergy.com
 track.mobiprofit.com
-track.movad.net
 track.neux.de
 track.nzz.ch
 track.o2online.de
@@ -368,7 +294,6 @@ track.outwriters.com
 track.productsup.io
 track.safeclicker.nl
 track.stuttgarter-zeitung.de
-track.tagesanzeiger.ch
 track.travelbirdoesterreich.at
 track.us.org
 track.webstatistik-bw.de
@@ -378,15 +303,10 @@ track.xmax.jp
 track.youdutou.cn
 track2.cliplister.com
 track306.info
-tracker-bannerflow.trafficmanager.net
 tracker.7tv.contentexchange.me
-tracker.adxpansion.com
-tracker.bestshopping.com
 tracker.btzoo.eu
-tracker.cdn-us-doubleverify.com
 tracker.downdetector.com
 tracker.durasite.net
-tracker.euroweb.net
 tracker.internet-media.com
 tracker.kantan-access.com
 tracker.ktxp.com
@@ -401,39 +321,29 @@ tracker.the-other-store.net
 tracker.yhd.com
 tracker1.ep-solutions.at
 trackerapi.truste.com
-tracking-i2.adsafety.net
 tracking-prod-us-east-1-public.mgnt.cc
-tracking-stvde.adsafety.net
 tracking.ad-survey.com
 tracking.affiliateclub.cz
 tracking.aldi-international.com
 tracking.artofclick.com
 tracking.become.co.jp
-tracking.binarypromos.com
-tracking.bloomberg.com
 tracking.crealytics.com
 tracking.eduscho.at
 tracking.finanzen.at
 tracking.globonet.ch
 tracking.hitcell.com
-tracking.host.bannerflow.com
 tracking.immobilienscout24.at
 tracking.interspar.at
-tracking.mlsat03.de
 tracking.netdoktor.at
 tracking.noen.at
 tracking.okwave.com
 tracking.rapidape.com
-tracking.s24.com
 tracking.thelabelfinder.com
 tracking.wetter.tv
 tracking.wohnnet.at
-tracking.yieldlove-ad-serving.net
 tracking1.marketmind.com
 trk.bhs4.com
 trk.billysrv.com
-trk.glispa.com
-trk.pinterest.com
 trk.tracksys55.com
 webanalytics.btelligent.net
 webanalytics.tm00.com
@@ -447,28 +357,22 @@ webstats.zserv.tuwien.ac.at
 
 # logging / stats common
 js.logentries.com
-l.logly.co.jp
-log000.goo.ne.jp
 log-ec-1.adap.tv
 log-ec-2.adap.tv
 log-nj.adap.tv
 log-v4.kaizenplatform.net
 log.affiliate.rakuten.co.jp
-log.go.com
 log.heftig.co
 log.heftig.de
 log.imishin.jp
 log.immoversum.com
-log.kukuplay.com
 log.nablerstats.com
 log.octoshape.net
 log.prezi.com
 log.seekda.com
 log.snmi.cn
-log.streamagent.sensic.net
 log.suumo.jp
 log.sv.pandora.tv
-log.tapatalk.com
 log.ti-da.net
 log.travel.co.jp
 log.uninstallmaster.com
@@ -489,12 +393,6 @@ logging.immobilien.net
 logql.g.yahoo.co.jp
 logql.yahoo.co.jp
 logreco.smartica.jp
-logs11.xiti.com
-logs1136.xiti.com
-logs1279.xiti.com
-logs128.xiti.com
-logs1406.xiti.com
-logs152.xiti.com
 stat-ssl.kinarino.jp
 stat.4travel.jp
 stat.acg.tv
@@ -521,7 +419,6 @@ stat01.itbulls.at
 stat1.netletter.at
 statistic.gamona.de
 statistics.aldi-international.com
-statistics.krone.mindtake.com
 statistics.riskommunal.net
 statistics.ziegeler-medien.de
 statistik.artada.de
@@ -533,10 +430,8 @@ stats.bookhostels.com
 stats.brandroid.org
 stats.canoo.com
 stats.cihar.com
-stats.computecmedia.de
 stats.crsend.com
 stats.cyanogenmod.org
-stats.datawrapper.de
 stats.esotericsystems.at
 stats.futureweb.at
 stats.g.douleclick.net
@@ -552,11 +447,9 @@ stats.mbamupdates.com
 stats.news24.jp
 stats.nextcloud.com
 stats.nikkeibp.co.jp
-stats.pingdom.com
 stats.riecken.de
 stats.sat1nrw.de
 stats.searchtrack.net
-stats.slideshare.net
 stats.snappytv.com
 stats.stackexchange.com
 stats.t-online.de
@@ -564,11 +457,9 @@ stats.the-wedding.jp
 stats.tiendeo.at
 stats.tiffany.at
 stats.tiffany.co.jp
-stats.unity3d.com
 stats.wintotal.de
 stats.wms-analytics.net
 stats.ziprecipes.net
 stats.ztcadx.com
 statsd.urlaubspiraten.de
-sync.logly.co.jp
 prd-beacon.cetlog.jp
