@@ -265,7 +265,6 @@ fi
 # generate and write file header
 log "generating and writing file header"
 data_header="# clean merged adblocking-hosts file\n\
-# build server: $(hostname)\n\
 # more infos: https://github.com/monojp/hosts_merge\n\
 \n\
 127.0.0.1 localhost\n\
