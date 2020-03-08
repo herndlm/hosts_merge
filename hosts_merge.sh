@@ -30,7 +30,7 @@ cleanup() {
 	log "cleaning up temp files"
 	rm "$file_temp" > /dev/null 2>&1
 	rm "$file_temp_ipv6" > /dev/null 2>&1
-	exit
+	exit 0
 }
 trap cleanup INT SIGHUP SIGINT SIGTERM
 
