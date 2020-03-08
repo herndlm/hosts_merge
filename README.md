@@ -12,6 +12,4 @@ clean: clean: cleanup whitelist and blacklist files (fixes the issues reported b
 ipv6dup: duplicate all the domains with '::0' as prefix instead of '0.0.0.0'
 ```
 
-If you're just looking for an up-to-date hosts file, you should probably check https://hosts.herndl.org/hosts.txt
-
-I also collect a blocklist with common ad and tracking domains at https://raw.githubusercontent.com/monojp/hosts_merge/master/hosts_blacklist.txt or https://hosts.herndl.org/hosts_blacklist.txt
+I also collect a blocklist with common ad and tracking domains at https://raw.githubusercontent.com/monojp/hosts_merge/master/hosts_blacklist.txt
