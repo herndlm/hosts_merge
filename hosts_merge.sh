@@ -273,7 +273,7 @@ data_header="# clean merged adblocking-hosts file\n\
 sed -i "1i${data_header}" "${file_temp}" || log_exit "error on writing file headers"
 
 # rotate in place and fix permissions if md5sum old - new is different, otherwise we're done
-if [ "$(md5file "${file_result}")" != "$(md5file "${file_temp}")" ]; then
+if [ ! -f "${file_result}" ] || [ "$(md5file "${file_result}")" != "$(md5file "${file_temp}")" ]; then
   # rotate in place
   log "move temp file '$file_temp' to '$file_result'"
   mv -f "${file_temp}" "${file_result}" || log_exit "error on moving '${file_temp}' to '${file_result}'"
