@@ -66,6 +66,21 @@ advantage-license-restapi.digitalsunray.com
 # Naiadsystems
 api.naiadsystems.com
 
+# CrossEngage
+trk-api.crossengage.io
+
+# Valueimpression
+adapter.valueimpression.com
+
+# Geniee
+js.gsspcln.jp
+
+# comnewsupdate.info push pop-ups
+comnewsupdate.info
+
+# propellerclick
+native.propellerclick.com
+
 # ads via openx/revive
 findtravel-d.openx.net
 mailonline-d3.openxenterprise.com
