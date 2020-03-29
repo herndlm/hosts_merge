@@ -6,13 +6,6 @@ media.gssp.asia # ads on miomio
 a.neqty.net
 l.neqty.net
 
-# ligatus advertising
-
-# adapf (japanese ads)
-
-# adingo (japanese ads)
-i.adingo.jp
-
 # adjust (japanese ads)
 afs.adjust-net.jp
 hbw.adjust-net.jp
@@ -20,24 +13,12 @@ hbw.adjust-net.jp
 # Adspirit (german ads)
 absolventa.adspirit.de
 
-# AMoAd (japanese ads)
-ad.ca-conv.amoad.com
-p.amoad.com
-
 # iid (japanese ads/tracking)
 deliver.ads2.iid.jp
-
-# impact ad (japanese)
-
-# microad (japanese ads)
 
 # yahoo japan
 smartads.mobile.g.yahoo.co.jp
 yads.yjtag.yahoo.co.jp
-
-# adtdp (japanese ads from CyberAgent)
-
-# chartboost game ads
 
 # adverserve advertising Austria
 cdn-omd.adverserve.net
@@ -59,10 +40,6 @@ media.oadts.com
 advantage.digitalsunray.com
 advantage-license-restapi.digitalsunray.com
 
-# ad4mat DE
-
-# ADC
-
 # Naiadsystems
 api.naiadsystems.com
 
@@ -71,9 +48,6 @@ trk-api.crossengage.io
 
 # Valueimpression
 adapter.valueimpression.com
-
-# Geniee
-js.gsspcln.jp
 
 # comnewsupdate.info push pop-ups
 comnewsupdate.info
