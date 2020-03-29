@@ -50,4 +50,6 @@ export sources_domains_only=(
 	"https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt"
 	"https://s3.amazonaws.com/lists.disconnect.me/simple_malware.txt"
 	"https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt"
+	# sony smart tvs
+	"https://gist.githubusercontent.com/casenjo/586c7b76dd6f7512125fb4e2fb853aae/raw/"
 )
