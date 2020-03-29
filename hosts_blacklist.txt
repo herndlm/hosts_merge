@@ -79,6 +79,7 @@ clicktale.pantherssl.com
 count.donreach.com
 count.manager-magazin.de
 count.oct-pass.net
+count.upc.rakuten.co.jp
 count1.123stat.com
 count2.makeshop.jp
 count3.makeshop.jp
@@ -103,6 +104,7 @@ piwik.documentfoundation.org
 piwik.ecchi.ca
 piwik.eco-online.net
 piwik.edev.at
+piwik.freifunk.net
 piwik.g.fc2.com
 piwik.go2linux.com
 piwik.hacon.de
@@ -268,6 +270,7 @@ analytics.trustyou.com
 analytics.upa-webdesign.de
 analytics.vanderbellen.at
 analytics.wywy.com
+collector.callstats.io
 rd.tabelog.com # tracking pixel
 track.amebame.com
 track.buyma.com
@@ -434,6 +437,7 @@ stats.kiwix.org
 stats.maxdevzone.com
 stats.mbamupdates.com
 stats.news24.jp
+stats.nevercodealone.de
 stats.nextcloud.com
 stats.nikkeibp.co.jp
 stats.riecken.de
