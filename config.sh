@@ -30,7 +30,6 @@ export sources_hosts_format=(
 	"https://raw.githubusercontent.com/azet12/KADhosts/master/KADhosts.txt"
 	"https://raw.githubusercontent.com/lightswitch05/hosts/master/ads-and-tracking-extended.txt"
 	"https://raw.githubusercontent.com/mitchellkrogza/Badd-Boyz-Hosts/master/hosts"
-	"https://raw.githubusercontent.com/x0uid/SpotifyAdBlock/master/hosts"
 	"https://someonewhocares.org/hosts/zero/hosts"
 	"https://sysctl.org/cameleon/hosts.win"
 	"https://www.malwaredomainlist.com/hostslist/hosts.txt"
