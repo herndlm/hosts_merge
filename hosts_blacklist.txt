@@ -36,6 +36,7 @@ ad2.media01.eu
 ad2.movad.net
 ad2.tripple.at
 adapter.valueimpression.com
+adlc-exchange.toast.com
 ads-i2i.jp
 ads-not-by-this-site.de
 ads-swkbank.de
@@ -84,6 +85,7 @@ advertising.gawker.com
 advertising.nypost.com
 afs.adjust-net.jp
 analysis.gathery.recruit-lifestyle.co.jp
+analytics-tracking.meetup.com
 analytics.apotheken-finder.at
 analytics.avanser.com
 analytics.braincms.de
@@ -113,6 +115,7 @@ analytics.trustyou.com
 analytics.upa-webdesign.de
 analytics.vanderbellen.at
 analytics.wywy.com
+api.adinplay.com
 api.naiadsystems.com
 banner.alldatasheet.com
 banner.bluesummit.de
@@ -122,6 +125,7 @@ banner.vrtzads.com
 banner.worldshopping.jp
 bannerfarm.aolp.jp
 banners.analytics.organicfruitapps.com
+browser-http-intake.logs.datadoghq.eu
 cdn-omd.adverserve.net
 cdn2.movad.net
 click.adzcore.com
@@ -145,6 +149,7 @@ counter.adcourier.com
 counter.infoworx.at
 counter.unofficialwsx5.de
 countix.tele.net
+country.adinplay.workers.dev
 deliver.ads2.iid.jp
 findtravel-d.openx.net
 hbw.adjust-net.jp
@@ -196,6 +201,7 @@ monetizemore-d3.openxenterprise.com
 native.propellerclick.com
 nrtzue7f.emltrk.com # litmus email tracking
 openx.bergfex.at
+optout.adalliance.io
 orfepiwik.orf-enterprise.at
 piwik.afs.de
 piwik.arbeiterkammer.at
@@ -209,6 +215,7 @@ piwik.documentfoundation.org
 piwik.ecchi.ca
 piwik.eco-online.net
 piwik.edev.at
+piwik.elternleben.de
 piwik.freifunk.net
 piwik.g.fc2.com
 piwik.go2linux.com
@@ -274,6 +281,7 @@ stat.i3.dmm.com
 stat.ime.baidu.jp
 stat.immolive24.com
 stat.kakaku.com
+stat.media
 stat.megacount.com
 stat.rtcnow.com
 stat.techtimes.com
@@ -281,6 +289,7 @@ stat.vcpost.com
 stat.vorwaerts.de
 stat01.itbulls.at
 stat1.netletter.at
+statcounter.va-endpoint.com
 static.puls4.com # cname to austria1.adverserve.net
 statistic.gamona.de
 statistics.aldi-international.com
@@ -396,6 +405,7 @@ trk.bhs4.com
 trk.billysrv.com
 trk.tracksys55.com
 video.adverserve.net
+weather.adalliance.io
 webanalytics.btelligent.net
 webanalytics.tm00.com
 webstat.delti.com
@@ -405,6 +415,7 @@ webstat02.feratel.com
 webstats.gnome.org
 webstats.zecken.de
 webstats.zserv.tuwien.ac.at
+webtrack.rund-ums-baby.de
 wikihow-d3.openxenterprise.com
 yads.yjtag.yahoo.co.jp
 z-na.amazon-adsystems.com
