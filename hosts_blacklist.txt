@@ -103,7 +103,6 @@ analytics.imezzi.com
 analytics.lekumo.jp
 analytics.lichtstark.com
 analytics.livesense.marketing
-analytics.modul.ac.at
 analytics.news-host.com
 analytics.phonedog.com
 analytics.pkshatech.com
@@ -184,7 +183,6 @@ log12.f-tra.jp
 log2.tapatalk.com
 log5.interactive-circle.jp
 log9.recommender.jp
-logc406.xiti.com
 logger-gtm.ooyala.com
 logger.genesis-api.jp
 logger.instagram.com
