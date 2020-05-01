@@ -36,6 +36,7 @@ ad2.media01.eu
 ad2.movad.net
 ad2.tripple.at
 adapter.valueimpression.com
+adinplay.com
 adlc-exchange.toast.com
 ads-i2i.jp
 ads-not-by-this-site.de
@@ -350,6 +351,7 @@ track.outwriters.com
 track.productsup.io
 track.safeclicker.nl
 track.stuttgarter-zeitung.de
+track.thebase.in
 track.travelbirdoesterreich.at
 track.us.org
 track.webstatistik-bw.de
