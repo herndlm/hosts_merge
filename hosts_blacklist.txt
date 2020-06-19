@@ -144,17 +144,20 @@ deliver.ads2.iid.jp
 findtravel-d.openx.net
 hbw.adjust-net.jp
 hilltopads.com
+integrations.fitanalytics.com
 js.logentries.com
 l.neqty.net
 log-ec-1.adap.tv
 log-ec-2.adap.tv
 log-nj.adap.tv
+log-v4-insight.kaizenplatform.net
 log-v4.kaizenplatform.net
 log.affiliate.rakuten.co.jp
 log.heftig.co
 log.heftig.de
 log.imishin.jp
 log.immoversum.com
+log.letro.jp
 log.nablerstats.com
 log.octoshape.net
 log.prezi.com
@@ -179,6 +182,7 @@ logger.genesis-api.jp
 logger.instagram.com
 logging.immobilien.net
 logql.yahoo.co.jp
+matomo.kinderaerzte-im-netz.de
 matomopvext.oebb.at
 meas.ad.pr.ameba.jp
 media.gssp.asia # ads on miomio
@@ -191,6 +195,7 @@ orfepiwik.orf-enterprise.at
 piwik.afs.de
 piwik.arbeiterkammer.at
 piwik.auswaertiges-amt.de
+piwik.baden-wuerttemberg.de
 piwik.boku.ac.at
 piwik.bouncingbytes.at
 piwik.cadooz.com
@@ -312,6 +317,7 @@ stats.tiffany.at
 stats.tiffany.co.jp
 stats.wintotal.de
 stats.wms-analytics.net
+stats.wpmucdn.com
 stats.ziprecipes.net
 stats.ztcadx.com
 statsd.urlaubspiraten.de
@@ -387,5 +393,6 @@ webstats.gnome.org
 webstats.zecken.de
 webstats.zserv.tuwien.ac.at
 webtrack.rund-ums-baby.de
+www.tm.a.prd.aadg.trafficmanager.net
 yads.yjtag.yahoo.co.jp
 z-na.amazon-adsystems.com
