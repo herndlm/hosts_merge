@@ -46,9 +46,7 @@ ads.adsmedia.com
 ads.altervista.org
 ads.austria.info
 ads.austrianwings.info
-ads.aws.rubiconproject.com
 ads.commonmedia.de
-ads.donau.pixelpoint.at
 ads.escinteractive.com
 ads.evga.com
 ads.fc2.com
@@ -59,7 +57,6 @@ ads.publick.apa.net
 ads.rss-services.com
 ads.rtl2.de
 ads.shoplove.com
-ads.simplyhired.com
 ads.speead.jp
 ads.sprout-ad.com
 ads.tradefx.com
@@ -94,13 +91,11 @@ analytics.cic.de
 analytics.copyright.com
 analytics.corp.google.com
 analytics.disney.go.com
-analytics.esolutions.lt
 analytics.flurry-cdn.com
 analytics.fs-bdash.com
 analytics.global-websystem.net
 analytics.hapyak.com
 analytics.hotelwebservice.com
-analytics.imezzi.com
 analytics.lekumo.jp
 analytics.lichtstark.com
 analytics.livesense.marketing
@@ -114,21 +109,18 @@ analytics.theta360.com
 analytics.trustyou.com
 analytics.upa-webdesign.de
 analytics.vanderbellen.at
-analytics.wywy.com
 api.adinplay.com
 api.naiadsystems.com
 banner.alldatasheet.com
 banner.bluesummit.de
 banner.buyee.jp
 banner.electronic4you.at
-banner.vrtzads.com
 banner.worldshopping.jp
 bannerfarm.aolp.jp
 banners.analytics.organicfruitapps.com
 browser-http-intake.logs.datadoghq.eu
 cdn-omd.adverserve.net
 cdn2.movad.net
-click.adzcore.com
 click.cptrack.de
 click.dsiads.mopo.jp
 click.nudevista.com
@@ -138,8 +130,6 @@ clicks.binarypromos.com
 clicktale.pantherssl.com
 collector.callstats.io
 comnewsupdate.info
-count.donreach.com
-count.manager-magazin.de
 count.oct-pass.net
 count.upc.rakuten.co.jp
 count1.123stat.com
@@ -188,15 +178,11 @@ logger-gtm.ooyala.com
 logger.genesis-api.jp
 logger.instagram.com
 logging.immobilien.net
-logql.g.yahoo.co.jp
 logql.yahoo.co.jp
-logreco.smartica.jp
-mailonline-d3.openxenterprise.com
 matomopvext.oebb.at
 meas.ad.pr.ameba.jp
 media.gssp.asia # ads on miomio
 media.oadts.com
-monetizemore-d3.openxenterprise.com
 native.propellerclick.com
 nrtzue7f.emltrk.com # litmus email tracking
 openx.bergfex.at
@@ -205,7 +191,6 @@ orfepiwik.orf-enterprise.at
 piwik.afs.de
 piwik.arbeiterkammer.at
 piwik.auswaertiges-amt.de
-piwik.berlinonline.de
 piwik.boku.ac.at
 piwik.bouncingbytes.at
 piwik.cadooz.com
@@ -217,7 +202,6 @@ piwik.edev.at
 piwik.elternleben.de
 piwik.freifunk.net
 piwik.g.fc2.com
-piwik.go2linux.com
 piwik.hacon.de
 piwik.hammerl.ro
 piwik.hcs.at
@@ -226,8 +210,6 @@ piwik.ico.de
 piwik.itzbund.de
 piwik.junge-gruene.at
 piwik.labbe.de
-piwik.lampertheim.cps-projects.de
-piwik.leihs.at
 piwik.lknoe.at
 piwik.mirumagency.de
 piwik.mittwald.gugler.at
@@ -258,7 +240,6 @@ piwik1.repromedia.at
 piwikext.oebb.at
 piwiki.kk-bits.com
 piwikpro.com.de-aurora-dc.cldsrv.biz
-prd-beacon.cetlog.jp
 rd.tabelog.com # tracking pixel
 smartads.mobile.g.yahoo.co.jp
 soux.mj.am # mailjet transparent mail tracking gifs
@@ -286,7 +267,6 @@ stat.rtcnow.com
 stat.techtimes.com
 stat.vcpost.com
 stat.vorwaerts.de
-stat01.itbulls.at
 stat1.netletter.at
 statcounter.va-endpoint.com
 static.puls4.com # cname to austria1.adverserve.net
@@ -301,7 +281,6 @@ stats.avaaz.org
 stats.bookassist.com
 stats.bookhostels.com
 stats.brandroid.org
-stats.canoo.com
 stats.cihar.com
 stats.crsend.com
 stats.cyanogenmod.org
@@ -325,7 +304,6 @@ stats.parents.at
 stats.riecken.de
 stats.sat1nrw.de
 stats.searchtrack.net
-stats.snappytv.com
 stats.stackexchange.com
 stats.t-online.de
 stats.the-wedding.jp
@@ -352,11 +330,9 @@ track.productsup.io
 track.safeclicker.nl
 track.stuttgarter-zeitung.de
 track.thebase.in
-track.travelbirdoesterreich.at
 track.us.org
 track.webstatistik-bw.de
 track.wt-eu02.net
-track.www.zazzle.at
 track.xmax.jp
 track.youdutou.cn
 track2.cliplister.com
@@ -370,7 +346,6 @@ tracker.kantan-access.com
 tracker.ktxp.com
 tracker.mca-analytics.com
 tracker.mg64.net
-tracker.novalayer.org
 tracker.pomf.se
 tracker.secureboxes.net
 tracker.slash-7.com
@@ -379,7 +354,6 @@ tracker.the-other-store.net
 tracker.yhd.com
 tracker1.ep-solutions.at
 trackerapi.truste.com
-tracking-prod-us-east-1-public.mgnt.cc
 tracking.ad-survey.com
 tracking.affiliateclub.cz
 tracking.aldi-international.com
@@ -391,13 +365,10 @@ tracking.finanzen.at
 tracking.globonet.ch
 tracking.hitcell.com
 tracking.immobilienscout24.at
-tracking.interspar.at
 tracking.netdoktor.at
 tracking.noen.at
-tracking.okwave.com
 tracking.rapidape.com
 tracking.thelabelfinder.com
-tracking.wetter.tv
 tracking.wohnnet.at
 tracking1.marketmind.com
 trk-api.crossengage.io
@@ -416,6 +387,5 @@ webstats.gnome.org
 webstats.zecken.de
 webstats.zserv.tuwien.ac.at
 webtrack.rund-ums-baby.de
-wikihow-d3.openxenterprise.com
 yads.yjtag.yahoo.co.jp
 z-na.amazon-adsystems.com
