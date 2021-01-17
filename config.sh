@@ -49,6 +49,8 @@ export sources_hosts_format=(
 	"https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt"
 	# WindowsSpyBlocker - Hosts spy rules
 	"https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt"
+	# First-party trackers host list
+	"https://hostfiles.frogeye.fr/firstparty-trackers-hosts.txt"
 )
 
 export sources_domains_only=(

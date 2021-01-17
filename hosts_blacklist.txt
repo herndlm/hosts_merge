@@ -47,8 +47,6 @@ ads.publick.apa.net
 ads.rss-services.com
 ads.rtl2.de
 ads.shoplove.com
-ads.speead.jp
-ads.sprout-ad.com
 ads.tradefx.com
 ads.un-iq.de
 ads.urban-media.com
@@ -207,7 +205,6 @@ rd.tabelog.com # tracking pixel
 smartads.mobile.g.yahoo.co.jp
 soux.mj.am # mailjet transparent mail tracking gifs
 startrack.at
-stat-ssl.kinarino.jp
 stat.4travel.jp
 stat.acg.tv
 stat.automobile.de
@@ -255,7 +252,6 @@ stats.maxdevzone.com
 stats.mbamupdates.com
 stats.nevercodealone.de
 stats.news24.jp
-stats.nikkeibp.co.jp
 stats.parents.at
 stats.riecken.de
 stats.sat1nrw.de
@@ -285,7 +281,6 @@ track.productsup.io
 track.safeclicker.nl
 track.stuttgarter-zeitung.de
 track.webstatistik-bw.de
-track.wt-eu02.net
 track.xmax.jp
 track.youdutou.cn
 track2.cliplister.com
@@ -312,7 +307,6 @@ tracking.aldi-international.com
 tracking.bd4travel.com
 tracking.become.co.jp
 tracking.crealytics.com
-tracking.eduscho.at
 tracking.finanzen.at
 tracking.globonet.ch
 tracking.hitcell.com
