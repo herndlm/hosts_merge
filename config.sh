@@ -14,7 +14,7 @@ export FILE_LOG="/tmp/hosts_merge.log"
 
 export sources_hosts_format=(
 	# MVPS HOSTS
-	"http://winhelp2002.mvps.org/hosts.txt"
+	"https://winhelp2002.mvps.org/hosts.txt"
 	# CoinBlockerLists
 	"https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/hosts"
 	"https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/hosts_browser"
