@@ -53,6 +53,8 @@ export sources_hosts_format=(
 	"https://hostfiles.frogeye.fr/firstparty-trackers-hosts.txt"
 	# abuse.ch URLhaus Host file
 	"https://urlhaus.abuse.ch/downloads/hostfile/"
+	# DigitalSite Threat-Intel
+	"https://osint.digitalside.it/Threat-Intel/lists/latestdomains.txt"
 )
 
 export sources_domains_only=(
