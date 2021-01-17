@@ -110,6 +110,7 @@ analytics.upa-webdesign.de
 analytics.vanderbellen.at
 api.adinplay.com
 api.naiadsystems.com
+autotrack.g.ebay.com
 banner.alldatasheet.com
 banner.bluesummit.de
 banner.buyee.jp
@@ -118,7 +119,9 @@ banner.worldshopping.jp
 bannerfarm.aolp.jp
 banners.analytics.organicfruitapps.com
 browser-http-intake.logs.datadoghq.eu
+ccp-et.adtechlab.zalan.do
 cdn-omd.adverserve.net
+cdn.connectad.io
 cdn2.movad.net
 click.cptrack.de
 click.dsiads.mopo.jp
@@ -141,6 +144,7 @@ countix.tele.net
 country.adinplay.workers.dev
 deliver.ads2.iid.jp
 findtravel-d.openx.net
+firebaselogging-pa.googleapis.com
 hbw.adjust-net.jp
 hilltopads.com
 integrations.fitanalytics.com
@@ -180,6 +184,7 @@ logger.genesis-api.jp
 logger.instagram.com
 logging.immobilien.net
 logql.yahoo.co.jp
+logs1409.xiti.com
 matomo.kinderaerzte-im-netz.de
 matomopvext.oebb.at
 meas.ad.pr.ameba.jp
@@ -319,6 +324,7 @@ stats.wpmucdn.com
 stats.ziprecipes.net
 stats.ztcadx.com
 statsd.urlaubspiraten.de
+tag.netrk.net
 track.amebame.com
 track.buyma.com
 track.gamesamba.com
@@ -345,6 +351,7 @@ tracker.7tv.contentexchange.me
 tracker.btzoo.eu
 tracker.downdetector.com
 tracker.durasite.net
+tracker.gamedock.io
 tracker.internet-media.com
 tracker.kantan-access.com
 tracker.ktxp.com
@@ -354,6 +361,7 @@ tracker.pomf.se
 tracker.secureboxes.net
 tracker.slash-7.com
 tracker.softgarden.de
+tracker.spapi.io
 tracker.the-other-store.net
 tracker.yhd.com
 tracker1.ep-solutions.at
@@ -362,6 +370,7 @@ tracking.ad-survey.com
 tracking.affiliateclub.cz
 tracking.aldi-international.com
 tracking.artofclick.com
+tracking.bd4travel.com
 tracking.become.co.jp
 tracking.crealytics.com
 tracking.eduscho.at
@@ -392,5 +401,6 @@ webstats.zecken.de
 webstats.zserv.tuwien.ac.at
 webtrack.rund-ums-baby.de
 www.tm.a.prd.aadg.trafficmanager.net
+www.tm.lg.prod.aadmsa.trafficmanager.net
 yads.yjtag.yahoo.co.jp
 z-na.amazon-adsystems.com
