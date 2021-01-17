@@ -37,7 +37,6 @@ ad2.movad.net
 ad2.tripple.at
 adapter.valueimpression.com
 adinplay.com
-adlc-exchange.toast.com
 ads-i2i.jp
 ads-not-by-this-site.de
 ads-swkbank.de
@@ -145,7 +144,6 @@ findtravel-d.openx.net
 hbw.adjust-net.jp
 hilltopads.com
 integrations.fitanalytics.com
-js.logentries.com
 l.neqty.net
 log-ec-1.adap.tv
 log-ec-2.adap.tv
