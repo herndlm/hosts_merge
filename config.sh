@@ -16,6 +16,7 @@ export sources_hosts_format=(
 	# global common
 	"http://winhelp2002.mvps.org/hosts.txt"
 	"https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/hosts"
+	"https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/hosts_browser"
 	"https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&mimetype=plaintext&useip=0.0.0.0"
 	"https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt"
 	"https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts"
