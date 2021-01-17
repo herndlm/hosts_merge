@@ -45,6 +45,8 @@ export sources_hosts_format=(
 	"https://hosts.ubuntu101.co.za/hosts"
 	# DataMaster-Android-AdBlock-Hosts
 	"https://raw.githubusercontent.com/DataMaster-2501/DataMaster-Android-AdBlock-Hosts/master/hosts"
+	# NoCoin Filter List
+	"https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt"
 )
 
 export sources_domains_only=(
