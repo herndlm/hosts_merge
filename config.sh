@@ -39,6 +39,8 @@ export sources_hosts_format=(
 	"https://raw.githubusercontent.com/ScottHelme/revocation-endpoints/master/crl.txt"
 	# Windows 10 Anti Spy
 	"https://www.encrypt-the-planet.com/downloads/hosts"
+	# Blacklist
+	"https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt"
 )
 
 export sources_domains_only=(

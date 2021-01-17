@@ -5,7 +5,6 @@ ad-blacklist.p24.hu
 ad-img.iqon.jp
 ad.adnwif.smt.docomo.ne.jp
 ad.afad.jp
-ad.ajillionmax.com
 ad.aruba.it
 ad.bauermedia.com
 ad.benesse.co.jp
@@ -67,13 +66,11 @@ adserving.kiosked.iponweb.net
 advantage-license-restapi.digitalsunray.com
 advantage.digitalsunray.com
 advertising-eu.amazon.com
-advertising.amazon.com
 advertising.amazon.de
 advertising.aolp.jp
 advertising.apartmenttherapy.com
 afs.adjust-net.jp
 analysis.gathery.recruit-lifestyle.co.jp
-analytics-tracking.meetup.com
 analytics.apotheken-finder.at
 analytics.avanser.com
 analytics.braincms.de
@@ -100,7 +97,6 @@ analytics.trustyou.com
 analytics.upa-webdesign.de
 analytics.vanderbellen.at
 api.adinplay.com
-api.naiadsystems.com
 autotrack.g.ebay.com
 banner.alldatasheet.com
 banner.bluesummit.de
@@ -110,7 +106,6 @@ banner.worldshopping.jp
 banners.analytics.organicfruitapps.com
 ccp-et.adtechlab.zalan.do
 cdn-omd.adverserve.net
-cdn.connectad.io
 cdn2.movad.net
 click.cptrack.de
 click.dsiads.mopo.jp
@@ -120,7 +115,6 @@ click.v1.rtb.revcloud.adaos-ads.net
 clicks.binarypromos.com
 clicktale.pantherssl.com
 collector.callstats.io
-comnewsupdate.info
 count.oct-pass.net
 count1.123stat.com
 count2.makeshop.jp
@@ -129,7 +123,6 @@ counter.infoworx.at
 counter.unofficialwsx5.de
 countix.tele.net
 country.adinplay.workers.dev
-findtravel-d.openx.net
 hbw.adjust-net.jp
 hilltopads.com
 integrations.fitanalytics.com
@@ -144,7 +137,6 @@ log.heftig.de
 log.imishin.jp
 log.immoversum.com
 log.letro.jp
-log.nablerstats.com
 log.octoshape.net
 log.seekda.com
 log.snmi.cn
@@ -157,7 +149,6 @@ log1.gooddo.jp
 log1.makeshop.co.kr
 log1.mobylog.jp
 log12.f-tra.jp
-log2.tapatalk.com
 log5.interactive-circle.jp
 log9.recommender.jp
 logger-gtm.ooyala.com
@@ -169,7 +160,6 @@ matomo.kinderaerzte-im-netz.de
 matomopvext.oebb.at
 media.gssp.asia # ads on miomio
 media.oadts.com
-native.propellerclick.com
 nrtzue7f.emltrk.com # litmus email tracking
 openx.bergfex.at
 optout.adalliance.io
@@ -247,10 +237,8 @@ stat.i3.dmm.com
 stat.ime.baidu.jp
 stat.immolive24.com
 stat.kakaku.com
-stat.media
 stat.megacount.com
 stat.rtcnow.com
-stat.techtimes.com
 stat.vcpost.com
 stat.vorwaerts.de
 stat1.netletter.at
@@ -281,7 +269,6 @@ stats.maxdevzone.com
 stats.mbamupdates.com
 stats.nevercodealone.de
 stats.news24.jp
-stats.nextcloud.com
 stats.nikkeibp.co.jp
 stats.parents.at
 stats.riecken.de
@@ -339,7 +326,6 @@ trackerapi.truste.com
 tracking.ad-survey.com
 tracking.affiliateclub.cz
 tracking.aldi-international.com
-tracking.artofclick.com
 tracking.bd4travel.com
 tracking.become.co.jp
 tracking.crealytics.com
@@ -371,4 +357,3 @@ webstats.zserv.tuwien.ac.at
 webtrack.rund-ums-baby.de
 www.tm.a.prd.aadg.trafficmanager.net
 www.tm.lg.prod.aadmsa.trafficmanager.net
-z-na.amazon-adsystems.com
