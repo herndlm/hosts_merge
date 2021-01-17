@@ -68,4 +68,6 @@ export sources_domains_only=(
 	"https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt"
 	# NoTracking
 	"https://raw.githubusercontent.com/notracking/hosts-blocklists/master/hostnames.txt"
+	# Personal Blocklist by WaLLy3K
+	"https://v.firebog.net/hosts/static/w3kbl.txt"
 )
