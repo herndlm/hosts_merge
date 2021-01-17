@@ -25,9 +25,7 @@ export sources_hosts_format=(
 	# FadeMind
 	"https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts"
 	"https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts"
-	"https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts"
 	"https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Dead/hosts"
-	"https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts"
 	"https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts"
 	"https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts"
 	# StevenBlack
