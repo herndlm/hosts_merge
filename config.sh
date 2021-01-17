@@ -31,7 +31,7 @@ export sources_hosts_format=(
 	"https://raw.githubusercontent.com/lightswitch05/hosts/master/ads-and-tracking-extended.txt"
 	"https://raw.githubusercontent.com/mitchellkrogza/Badd-Boyz-Hosts/master/hosts"
 	"https://someonewhocares.org/hosts/zero/hosts"
-	"https://sysctl.org/cameleon/hosts.win"
+	"https://sysctl.org/cameleon/hosts"
 	"https://www.malwaredomainlist.com/hostslist/hosts.txt"
 	"https://zerodot1.gitlab.io/CoinBlockerLists/hosts_browser"
 	# OCSP / CRL
