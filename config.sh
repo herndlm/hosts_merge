@@ -56,4 +56,6 @@ export sources_domains_only=(
 	"https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt"
 	# smart tvs
 	"https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV.txt"
+	# Spam404
+	"https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt"
 )
