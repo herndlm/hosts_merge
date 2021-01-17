@@ -33,6 +33,9 @@ export sources_hosts_format=(
 	"https://sysctl.org/cameleon/hosts.win"
 	"https://www.malwaredomainlist.com/hostslist/hosts.txt"
 	"https://zerodot1.gitlab.io/CoinBlockerLists/hosts_browser"
+	# OCSP / CRL
+	"https://raw.githubusercontent.com/ScottHelme/revocation-endpoints/master/ocsp.txt"
+	"https://raw.githubusercontent.com/ScottHelme/revocation-endpoints/master/crl.txt"
 )
 
 export sources_domains_only=(
