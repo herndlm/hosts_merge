@@ -47,6 +47,8 @@ export sources_hosts_format=(
 	"https://raw.githubusercontent.com/DataMaster-2501/DataMaster-Android-AdBlock-Hosts/master/hosts"
 	# NoCoin Filter List
 	"https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt"
+	# WindowsSpyBlocker - Hosts spy rules
+	"https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt"
 )
 
 export sources_domains_only=(
