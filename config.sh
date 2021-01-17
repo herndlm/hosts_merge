@@ -70,13 +70,9 @@ export sources_hosts_format=(
 )
 
 export sources_domains_only=(
-	# abuse / tracking lists (beware of false positives)
+	# malwaredomains
 	"https://malwaredomains.usu.edu/immortal_domains.txt"
 	"https://malwaredomains.usu.edu/justdomains"
-	#"https://isc.sans.edu/feeds/suspiciousdomains_Low.txt"
-	#"https://www.blocklist.de/downloads/urls/95.211.0.112-only-domains.txt"
-	#"https://www.blocklist.de/downloads/urls/squarespace.com-only-subdomains.txt"
-	#"http://malc0de.com/bl/BOOT"
 	# disconnect.me
 	"https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt"
 	"https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt"
