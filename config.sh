@@ -37,6 +37,8 @@ export sources_hosts_format=(
 	# OCSP / CRL
 	"https://raw.githubusercontent.com/ScottHelme/revocation-endpoints/master/ocsp.txt"
 	"https://raw.githubusercontent.com/ScottHelme/revocation-endpoints/master/crl.txt"
+	# Windows 10 Anti Spy
+	"https://www.encrypt-the-planet.com/downloads/hosts"
 )
 
 export sources_domains_only=(
