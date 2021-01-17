@@ -55,6 +55,8 @@ export sources_hosts_format=(
 	"https://urlhaus.abuse.ch/downloads/hostfile/"
 	# DigitalSite Threat-Intel
 	"https://osint.digitalside.it/Threat-Intel/lists/latestdomains.txt"
+	# Phishing Army
+	"https://phishing.army/download/phishing_army_blocklist_extended.txt"
 )
 
 export sources_domains_only=(
