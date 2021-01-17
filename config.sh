@@ -41,6 +41,8 @@ export sources_hosts_format=(
 	"https://www.encrypt-the-planet.com/downloads/hosts"
 	# Blacklist
 	"https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt"
+	# Ultimate Hosts Blacklist
+	"https://hosts.ubuntu101.co.za/hosts"
 )
 
 export sources_domains_only=(
