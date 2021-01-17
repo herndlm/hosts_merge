@@ -107,9 +107,7 @@ click.cptrack.de
 click.dsiads.mopo.jp
 click.nudevista.com
 click.speee-ad.jp
-click.v1.rtb.revcloud.adaos-ads.net
 clicks.binarypromos.com
-clicktale.pantherssl.com
 collector.callstats.io
 count.oct-pass.net
 count1.123stat.com
@@ -123,9 +121,6 @@ hbw.adjust-net.jp
 hilltopads.com
 integrations.fitanalytics.com
 l.neqty.net
-log-ec-1.adap.tv
-log-ec-2.adap.tv
-log-nj.adap.tv
 log-v4-insight.kaizenplatform.net
 log-v4.kaizenplatform.net
 log.heftig.co
@@ -147,7 +142,6 @@ log1.mobylog.jp
 log12.f-tra.jp
 log5.interactive-circle.jp
 log9.recommender.jp
-logger-gtm.ooyala.com
 logger.genesis-api.jp
 logger.instagram.com
 logging.immobilien.net
@@ -167,13 +161,11 @@ piwik.boku.ac.at
 piwik.bouncingbytes.at
 piwik.cadooz.com
 piwik.cardsys.at
-piwik.documentfoundation.org
 piwik.ecchi.ca
 piwik.eco-online.net
 piwik.edev.at
 piwik.elternleben.de
 piwik.freifunk.net
-piwik.g.fc2.com
 piwik.hacon.de
 piwik.hammerl.ro
 piwik.hcs.at
@@ -201,7 +193,6 @@ piwik.stylestep.de
 piwik.targit.eu
 piwik.thermomix.com
 piwik.typo3.org
-piwik.vm.de
 piwik.vor.at
 piwik.voycer.com
 piwik.vulpecula.uberspace.de
@@ -270,7 +261,6 @@ stats.riecken.de
 stats.sat1nrw.de
 stats.searchtrack.net
 stats.stackexchange.com
-stats.t-online.de
 stats.the-wedding.jp
 stats.tiendeo.at
 stats.tiffany.at
@@ -316,7 +306,6 @@ tracker.spapi.io
 tracker.the-other-store.net
 tracker.yhd.com
 tracker1.ep-solutions.at
-trackerapi.truste.com
 tracking.ad-survey.com
 tracking.affiliateclub.cz
 tracking.aldi-international.com

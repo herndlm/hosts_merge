@@ -43,6 +43,8 @@ export sources_hosts_format=(
 	"https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt"
 	# Ultimate Hosts Blacklist
 	"https://hosts.ubuntu101.co.za/hosts"
+	# DataMaster-Android-AdBlock-Hosts
+	"https://raw.githubusercontent.com/DataMaster-2501/DataMaster-Android-AdBlock-Hosts/master/hosts"
 )
 
 export sources_domains_only=(
