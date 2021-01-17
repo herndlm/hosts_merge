@@ -13,12 +13,16 @@ export permissions_result=644
 export FILE_LOG="/tmp/hosts_merge.log"
 
 export sources_hosts_format=(
-	# global common
+	# MVPS HOSTS
 	"http://winhelp2002.mvps.org/hosts.txt"
+	# CoinBlockerLists
 	"https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/hosts"
 	"https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/hosts_browser"
+	# pgl@yoyo.org
 	"https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&mimetype=plaintext&useip=0.0.0.0"
+	# AdAway
 	"https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt"
+	# FadeMind
 	"https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts"
 	"https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts"
 	"https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts"
@@ -26,14 +30,16 @@ export sources_hosts_format=(
 	"https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts"
 	"https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts"
 	"https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts"
+	# StevenBlack
 	"https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts"
-	"https://raw.githubusercontent.com/azet12/KADhosts/master/KADhosts.txt"
-	"https://raw.githubusercontent.com/lightswitch05/hosts/master/ads-and-tracking-extended.txt"
+	# Bad Boys Hosts
 	"https://raw.githubusercontent.com/mitchellkrogza/Badd-Boyz-Hosts/master/hosts"
+	# Dan Pollock hosts
 	"https://someonewhocares.org/hosts/zero/hosts"
+	# CAMELEON
 	"https://sysctl.org/cameleon/hosts"
+	# MalwareDomainList.com Hosts List
 	"https://www.malwaredomainlist.com/hostslist/hosts.txt"
-	"https://zerodot1.gitlab.io/CoinBlockerLists/hosts_browser"
 	# OCSP / CRL
 	"https://raw.githubusercontent.com/ScottHelme/revocation-endpoints/master/ocsp.txt"
 	"https://raw.githubusercontent.com/ScottHelme/revocation-endpoints/master/crl.txt"
