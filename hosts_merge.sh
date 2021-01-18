@@ -11,10 +11,8 @@ readonly DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
 readonly OS_NAME="$(uname -s)"
 if [[ $OS_NAME == "Darwin" ]]; then
   readonly SED_COMMAND="gsed"
-  readonly CHECKSUM_COMMAND="shasum --algorithm 256"
 elif [[ $OS_NAME == "Linux" ]]; then
   readonly SED_COMMAND="sed"
-  readonly CHECKSUM_COMMAND="sha256sum"
 else
   echo >&2 "OS ${OS_NAME} is not supported"
   exit 1
@@ -139,11 +137,6 @@ log_exit() {
   cleanup
   echo >&2 "$1"
   exit 1
-}
-
-# return a checksum of file $1
-file_checksum() {
-  ${CHECKSUM_COMMAND} "$1" | awk '{print $1}'
 }
 
 # checks if the domain resolves via DNS
@@ -351,17 +344,12 @@ data_header="# clean merged adblocking-hosts file\n\
 readonly domain_count=$(grep -c '^0.0.0.0 ' "${FILE_TEMP}")
 log "domains on block list: ${domain_count}"
 
-# rotate in place and fix permissions if md5sum old - new is different, otherwise we're done
-if [ ! -f "${FILE_RESULT}" ] || [ "$(file_checksum "${FILE_RESULT}")" != "$(file_checksum "${FILE_TEMP}")" ]; then
-  # rotate in place
-  log "move temp file '$FILE_TEMP' to '$FILE_RESULT'"
-  mv -f "${FILE_TEMP}" "${FILE_RESULT}"
+# rotate in place
+log "move temp file '$FILE_TEMP' to '$FILE_RESULT'"
+mv -f "${FILE_TEMP}" "${FILE_RESULT}"
 
-  # fixup permissions (we don't want that limited temp perms)
-  log "chmod '${FILE_RESULT}' to '${PERMISSIONS_RESULT}'"
-  chmod ${PERMISSIONS_RESULT} "${FILE_RESULT}"
-else
-  log "no changes, skip rotating in place"
-fi
+# fixup permissions (we don't want that limited temp perms)
+log "chmod '${FILE_RESULT}' to '${PERMISSIONS_RESULT}'"
+chmod ${PERMISSIONS_RESULT} "${FILE_RESULT}"
 
 cleanup
