@@ -348,6 +348,9 @@ data_header="# clean merged adblocking-hosts file\n\
 ::1 localhost\n"
 "${SED_COMMAND}" -i "1i${data_header}" "${FILE_TEMP}"
 
+readonly domain_count=$(grep -c '^0.0.0.0 ' "${FILE_TEMP}")
+log "domains on block list: ${domain_count}"
+
 # rotate in place and fix permissions if md5sum old - new is different, otherwise we're done
 if [ ! -f "${FILE_RESULT}" ] || [ "$(file_checksum "${FILE_RESULT}")" != "$(file_checksum "${FILE_TEMP}")" ]; then
   # rotate in place
