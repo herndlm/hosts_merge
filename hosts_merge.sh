@@ -11,10 +11,10 @@ readonly DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
 readonly OS_NAME="$(uname -s)"
 if [[ $OS_NAME == "Darwin" ]]; then
   readonly SED_COMMAND="gsed"
-  readonly MD5_COMMAND="md5"
+  readonly CHECKSUM_COMMAND="shasum --algorithm 256"
 elif [[ $OS_NAME == "Linux" ]]; then
   readonly SED_COMMAND="sed"
-  readonly MD5_COMMAND="md5sum"
+  readonly CHECKSUM_COMMAND="sha256sum"
 else
   echo >&2 "OS ${OS_NAME} is not supported"
   exit 1
@@ -141,9 +141,9 @@ log_exit() {
   exit 1
 }
 
-# return md5sum (not file name) of file $1
-md5file() {
-  "${MD5_COMMAND}" -q "$1"
+# return a checksum of file $1
+file_checksum() {
+  ${CHECKSUM_COMMAND} "$1" | awk '{print $1}'
 }
 
 # checks if the domain resolves via DNS
@@ -161,21 +161,6 @@ domain_resolves() {
   fi
 
   return 1
-}
-
-# check dependencies
-command -v curl >/dev/null 2>&1 || log_exit "missing dependency: curl"
-command -v grep >/dev/null 2>&1 || log_exit "missing dependency: grep"
-command -v "${SED_COMMAND}" >/dev/null 2>&1 || log_exit "missing dependency: ${SED_COMMAND}"
-command -v "${MD5_COMMAND}" >/dev/null 2>&1 || log_exit "missing dependency: ${MD5_COMMAND}"
-
-print_usage() {
-  echo "USAGE: <script> [verbose] [check] [clean] [ipv6dup] [output=<filename>]"
-  echo
-  echo "verbose: print more info about what is going on"
-  echo "check: checks the whitelist and blacklist (whitelisted entries should exist and blacklisted entries should not exist in the uncleaned hosts data), furthermore non-resolving domains from the blacklist are reported"
-  echo "clean: cleanup whitelist and blacklist files (fixes the issues reported by check)"
-  echo "ipv6dup: duplicate all the domains with '::0' as prefix instead of '0.0.0.0'"
 }
 
 # check all parameters
@@ -201,6 +186,15 @@ for var in "$@"; do
   fi
 done
 
+print_usage() {
+  echo "USAGE: <script> [verbose] [check] [clean] [ipv6dup] [output=<filename>]"
+  echo
+  echo "verbose: print more info about what is going on"
+  echo "check: checks the whitelist and blacklist (whitelisted entries should exist and blacklisted entries should not exist in the uncleaned hosts data), furthermore non-resolving domains from the blacklist are reported"
+  echo "clean: cleanup whitelist and blacklist files (fixes the issues reported by check)"
+  echo "ipv6dup: duplicate all the domains with '::0' as prefix instead of '0.0.0.0'"
+}
+
 # read blacklist and whitelist data
 log "read blacklist and whitelist data from '$FILE_BLACKLIST' and '$FILE_WHITELIST'"
 data_blacklist=()
@@ -220,17 +214,16 @@ done
 for source_hosts_format in "${SOURCES_HOST_FORMAT[@]}"; do
   log "downloading hosts source '$source_hosts_format' to '$FILE_TEMP'"
   curl --location -sS --connect-timeout ${CURL_TIMEOUT} --max-time ${CURL_TIMEOUT} \
-      --retry ${CURL_RETRY_NUM} "${source_hosts_format}" >> "${FILE_TEMP}"
+    --retry ${CURL_RETRY_NUM} "${source_hosts_format}" >>"${FILE_TEMP}"
 done
 
 # download all domain only sources (we're cleaning the lines and prepending ip adresses)
 for source_domains_only in "${SOURCES_DOMAINS_ONLY[@]}"; do
   log "downloading domain only source '${source_domains_only}' to '${FILE_TEMP}'"
   curl --location -sS --connect-timeout ${CURL_TIMEOUT} --max-time ${CURL_TIMEOUT} \
-      --retry ${CURL_RETRY_NUM} "${source_domains_only}" \
-    | grep -v '^#' \
-    | "${SED_COMMAND}" -e 's/^/0.0.0.0 /' >>"${FILE_TEMP}"
-
+    --retry ${CURL_RETRY_NUM} "${source_domains_only}" |
+    grep -v '^#' |
+    "${SED_COMMAND}" -e 's/^/0.0.0.0 /' >>"${FILE_TEMP}"
 done
 
 log "cleaning up '${FILE_TEMP}'"
@@ -356,7 +349,7 @@ data_header="# clean merged adblocking-hosts file\n\
 "${SED_COMMAND}" -i "1i${data_header}" "${FILE_TEMP}"
 
 # rotate in place and fix permissions if md5sum old - new is different, otherwise we're done
-if [ ! -f "${FILE_RESULT}" ] || [ "$(md5file "${FILE_RESULT}")" != "$(md5file "${FILE_TEMP}")" ]; then
+if [ ! -f "${FILE_RESULT}" ] || [ "$(file_checksum "${FILE_RESULT}")" != "$(file_checksum "${FILE_TEMP}")" ]; then
   # rotate in place
   log "move temp file '$FILE_TEMP' to '$FILE_RESULT'"
   mv -f "${FILE_TEMP}" "${FILE_RESULT}"
