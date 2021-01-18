@@ -1,9 +1,7 @@
 ad-img.iqon.jp
 ads.rtl2.de
 ads.tradefx.com
-ads.vertoz.com
 adserving.kiosked.iponweb.net
-analysis.gathery.recruit-lifestyle.co.jp
 autotrack.g.ebay.com
 banner.buyee.jp
 ccp-et.adtechlab.zalan.do
@@ -13,7 +11,6 @@ count.oct-pass.net
 count2.makeshop.jp
 counter.adcourier.com
 country.adinplay.workers.dev
-log.octoshape.net
 log.youdutou.cn
 log1.makeshop.co.kr
 log12.f-tra.jp
@@ -55,6 +52,5 @@ tracker.pomf.se
 tracker.spapi.io
 tracking.affiliateclub.cz
 trk-api.crossengage.io
-webstats.zserv.tuwien.ac.at
 www.tm.a.prd.aadg.trafficmanager.net
 www.tm.lg.prod.aadmsa.trafficmanager.net
