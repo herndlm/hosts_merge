@@ -214,14 +214,14 @@ done
 for source_hosts_format in "${SOURCES_HOST_FORMAT[@]}"; do
   log "downloading hosts source '$source_hosts_format' to '$FILE_TEMP'"
   curl --location -sS --connect-timeout ${CURL_TIMEOUT} --max-time ${CURL_TIMEOUT} \
-    --retry ${CURL_RETRY_NUM} "${source_hosts_format}" >>"${FILE_TEMP}"
+    --fail --retry ${CURL_RETRY_NUM} "${source_hosts_format}" >>"${FILE_TEMP}"
 done
 
 # download all domain only sources (we're cleaning the lines and prepending ip adresses)
 for source_domains_only in "${SOURCES_DOMAINS_ONLY[@]}"; do
   log "downloading domain only source '${source_domains_only}' to '${FILE_TEMP}'"
   curl --location -sS --connect-timeout ${CURL_TIMEOUT} --max-time ${CURL_TIMEOUT} \
-    --retry ${CURL_RETRY_NUM} "${source_domains_only}" |
+    --fail --retry ${CURL_RETRY_NUM} "${source_domains_only}" |
     grep -v '^#' |
     "${SED_COMMAND}" -e 's/^/0.0.0.0 /' >>"${FILE_TEMP}"
 done
