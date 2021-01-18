@@ -65,6 +65,8 @@ export sources_hosts_format=(
 	"https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Spotify-AdBlock.txt"
 	"https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Xiaomi-Extension.txt"
 	"https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-YouTube-AdBlock.txt"
+	# NoTracking
+	"https://raw.githubusercontent.com/notracking/hosts-blocklists/master/hostnames.txt"
 )
 
 export sources_domains_only=(
@@ -80,8 +82,6 @@ export sources_domains_only=(
 	"https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV.txt"
 	# Spam404
 	"https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt"
-	# NoTracking
-	"https://raw.githubusercontent.com/notracking/hosts-blocklists/master/hostnames.txt"
 	# Personal Blocklist by WaLLy3K
 	"https://v.firebog.net/hosts/static/w3kbl.txt"
 )
