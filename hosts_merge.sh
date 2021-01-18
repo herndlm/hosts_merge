@@ -111,8 +111,15 @@ readonly FILE_TEMP_IPV6="${FILE_TEMP}.ipv6"
 # cleanup if user presses CTRL-C
 cleanup() {
   log "cleaning up temp files"
-  rm "${FILE_TEMP}" >/dev/null 2>&1
-  rm "${FILE_TEMP_IPV6}" >/dev/null 2>&1
+
+  if [ -f "${FILE_TEMP}" ]; then
+    rm "${FILE_TEMP}"
+  fi
+
+  if [ -f "${FILE_TEMP_IPV6}" ]; then
+    rm "${FILE_TEMP_IPV6}"
+  fi
+
   exit 0
 }
 trap cleanup INT SIGHUP SIGINT SIGTERM
