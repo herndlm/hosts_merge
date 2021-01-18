@@ -3,9 +3,19 @@
 # https://github.com/monojp/hosts_merge
 # inspired by https://www.kubuntuforums.net/showthread.php/56419-Script-to-automate-building-an-adblocking-hosts-file
 
-# get absolute directory of script
-DIR="$(readlink -f "$0")"
-DIR=${DIR%/*}
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+readonly OS_NAME="$(uname -s)"
+if [[ $OS_NAME = "Darwin" ]]; then
+  readonly SED_COMMAND="gsed"
+  readonly MD5_COMMAND="md5"
+elif [[ $OS_NAME = "Linux" ]]; then
+  readonly SED_COMMAND="sed"
+  readonly MD5_COMMAND="md5sum"
+else
+  echo >&2 "OS ${OS_NAME} is not supported"
+  exit 1
+fi
 
 CURL_RETRY_NUM=5
 CURL_TIMEOUT=300
@@ -38,7 +48,7 @@ trap cleanup INT SIGHUP SIGINT SIGTERM
 # log to stdout if verbose flag set and/or to file if file variable note empty
 log() {
   # add date to message
-  message="$(date --rfc-3339='seconds') $1"
+  message="$(date) $1"
   # log to file if variable is not empty
   if [ -n "$FILE_LOG" ]; then
     echo -e "${message}" >> "$FILE_LOG"
@@ -59,7 +69,7 @@ log_exit() {
 
 # return md5sum (not file name) of file $1
 md5file() {
-  md5sum "$1" | awk '{print $1}'
+  "${MD5_COMMAND}" -q "$1"
 }
 
 # checks if the domain resolves via DNS
@@ -82,7 +92,8 @@ domain_resolves() {
 # check dependencies
 command -v curl >/dev/null 2>&1 || log_exit "missing dependency: curl"
 command -v grep >/dev/null 2>&1 || log_exit "missing dependency: grep"
-command -v sed >/dev/null 2>&1 || log_exit "missing dependency: sed"
+command -v "${SED_COMMAND}" >/dev/null 2>&1 || log_exit "missing dependency: ${SED_COMMAND}"
+command -v "${MD5_COMMAND}" >/dev/null 2>&1 || log_exit "missing dependency: ${MD5_COMMAND}"
 
 print_usage() {
   echo "USAGE: <script> [verbose] [check] [clean] [ipv6dup] [output=<filename>]"
@@ -125,10 +136,10 @@ readarray data_whitelist <"${file_whitelist}" || log_exit "error on reading whit
 # clean blacklist and whitelist data
 log "clean blacklist and whitelist data"
 for index in "${!data_blacklist[@]}"; do
-  data_blacklist[$index]=$(sed -e 's/#.*//g' -e 's/ //g' <<<"${data_blacklist[$index]}")
+  data_blacklist[$index]=$("${SED_COMMAND}" -e 's/#.*//g' -e 's/ //g' <<<"${data_blacklist[$index]}")
 done
 for index in "${!data_whitelist[@]}"; do
-  data_whitelist[$index]=$(sed -e 's/#.*//g' -e 's/ //g' <<<"${data_whitelist[$index]}")
+  data_whitelist[$index]=$("${SED_COMMAND}" -e 's/#.*//g' -e 's/ //g' <<<"${data_whitelist[$index]}")
 done
 
 # download all sources in hosts format
@@ -143,35 +154,34 @@ done
 for source_domains_only in "${sources_domains_only[@]}"; do
   log "downloading domain only source '${source_domains_only}' to '${file_temp}'"
   curl --location -sS --connect-timeout ${CURL_TIMEOUT} --max-time ${CURL_TIMEOUT} \
-    --retry ${CURL_RETRY_NUM} "${source_domains_only}" | sed -e 's/^PRIMARY//g' |
-    sed -e 's/blockeddomain\.hosts$//g' | sed -e 's/^/0.0.0.0 /' >> "${file_temp}" ||
+    --retry ${CURL_RETRY_NUM} "${source_domains_only}" | grep -v '^#' | "${SED_COMMAND}" -e 's/^/0.0.0.0 /' >> "${file_temp}" ||
     log_exit "error downloading file 'source_domains_only'"
 done
 
 log "cleaning up '${file_temp}'"
 # Remove MS-DOS carriage returns
-sed -i -e 's/\r//g' "${file_temp}" || log_exit "error on cleanup"
+"${SED_COMMAND}" -i -e 's/\r//g' "${file_temp}" || log_exit "error on cleanup"
 # Replace 127.0.0.1 with 0.0.0.0 because then we don't have to wait for the resolver to fail
-sed -i -e 's/127.0.0.1/0.0.0.0/g' "${file_temp}" || log_exit "error on cleanup"
+"${SED_COMMAND}" -i -e 's/127.0.0.1/0.0.0.0/g' "${file_temp}" || log_exit "error on cleanup"
 # Remove all comments
-sed -i -e 's/#.*//g' "${file_temp}" || log_exit "error on cleanup"
+"${SED_COMMAND}" -i -e 's/#.*//g' "${file_temp}" || log_exit "error on cleanup"
 # Strip trailing spaces and tabs
-sed -i -e 's/[ \t]*$//g' "${file_temp}" || log_exit "error on cleanup"
+"${SED_COMMAND}" -i -e 's/[ \t]*$//g' "${file_temp}" || log_exit "error on cleanup"
 # Replace tabs with a space
-sed -i -e 's/\t/ /g' "${file_temp}" || log_exit "error on cleanup"
+"${SED_COMMAND}" -i -e 's/\t/ /g' "${file_temp}" || log_exit "error on cleanup"
 # Remove lines containing invalid characters
-sed -i -e '/[^a-zA-Z0-9\t\. _-]/d' "${file_temp}" || log_exit "error on cleanup"
+"${SED_COMMAND}" -i -e '/[^a-zA-Z0-9\t\. _-]/d' "${file_temp}" || log_exit "error on cleanup"
 # Replace multiple spaces with one space
-sed -i -e 's/ \{2,\}/ /g' "${file_temp}" || log_exit "error on cleanup"
+"${SED_COMMAND}" -i -e 's/ \{2,\}/ /g' "${file_temp}" || log_exit "error on cleanup"
 # Remove lines that do not start with "0.0.0.0"
-sed -i -e '/^0.0.0.0/!d' "${file_temp}" || log_exit "error on cleanup"
+"${SED_COMMAND}" -i -e '/^0.0.0.0/!d' "${file_temp}" || log_exit "error on cleanup"
 # Remove localhost lines
-sed -i -r -e '/^0\.0\.0\.0 local(host)*(.localdomain)*$/d' "${file_temp}" ||
+"${SED_COMMAND}" -i -r -e '/^0\.0\.0\.0 local(host)*(.localdomain)*$/d' "${file_temp}" ||
   log_exit "error on cleanup"
 # Remove lines that start correct but have no or empty domain
-sed -i -e '/^0\.0\.0\.0 \{0,\}$/d' "${file_temp}" || log_exit "error on cleanup"
+"${SED_COMMAND}" -i -e '/^0\.0\.0\.0 \{0,\}$/d' "${file_temp}" || log_exit "error on cleanup"
 # Remove lines with invalid domains (domains must start with an alphanumeric character)
-sed -i -e '/^0\.0\.0\.0 [^a-zA-Z0-9]/d' "${file_temp}" || log_exit "error on cleanup"
+"${SED_COMMAND}" -i -e '/^0\.0\.0\.0 [^a-zA-Z0-9]/d' "${file_temp}" || log_exit "error on cleanup"
 
 # check mode (checks entries of the white- & blacklist)
 # clean mode (remove whitelist entries that do not exist in the hosts file and remove blacklist
@@ -190,7 +200,7 @@ if [ ${mode_check} -eq 1 ] || [ ${mode_clean} -eq 1 ]; then
       # entry that is not blocked any more
       if [ ${mode_clean} -eq 1 ]; then
         echo "${counter}/${count} removing entry '${data_whitelist_entry}' from the whitelist"
-        sed -i -e "/${data_whitelist_entry}/d" "${file_whitelist}" || log_exit "error on removing whitelist entry"
+        "${SED_COMMAND}" -i -e "/${data_whitelist_entry}/d" "${file_whitelist}" || log_exit "error on removing whitelist entry"
       else
         echo "${counter}/${count} whitelist entry '${data_whitelist_entry}' is not existing in '${file_temp}'"
       fi
@@ -198,7 +208,7 @@ if [ ${mode_check} -eq 1 ] || [ ${mode_clean} -eq 1 ]; then
       # entry that is not resolving any more
       if [ ${mode_clean} -eq 1 ]; then
         echo "${counter}/${count} removing non-resolving entry '${data_whitelist_entry}' from the whitelist"
-        sed -i -e "/${data_whitelist_entry}/d" "${file_whitelist}" || log_exit "error on removing whitelist entry"
+        "${SED_COMMAND}" -i -e "/${data_whitelist_entry}/d" "${file_whitelist}" || log_exit "error on removing whitelist entry"
       else
         echo "${counter}/${count} whitelist entry '${data_whitelist_entry}' is not resolving"
       fi
@@ -217,7 +227,7 @@ if [ ${mode_check} -eq 1 ] || [ ${mode_clean} -eq 1 ]; then
       # entry that is already blocked
       if [ ${mode_clean} -eq 1 ]; then
         echo "${counter}/${count} removing entry '${data_blacklist_entry}' from the blacklist"
-        sed -i -e "/${data_blacklist_entry}/d" "${file_blacklist}" || log_exit "error on removing blacklist entry"
+        "${SED_COMMAND}" -i -e "/${data_blacklist_entry}/d" "${file_blacklist}" || log_exit "error on removing blacklist entry"
       else
         echo "${counter}/${count} blacklist entry '${data_blacklist_entry}' is existing in '${file_temp}'"
       fi
@@ -225,7 +235,7 @@ if [ ${mode_check} -eq 1 ] || [ ${mode_clean} -eq 1 ]; then
       # entry that is not resolving any more
       if [ ${mode_clean} -eq 1 ]; then
         echo "${counter}/${count} removing non-resolving entry '${data_blacklist_entry}' from the blacklist"
-        sed -i -e "/${data_blacklist_entry}/d" "${file_blacklist}" || log_exit "error on removing blacklist entry"
+        "${SED_COMMAND}" -i -e "/${data_blacklist_entry}/d" "${file_blacklist}" || log_exit "error on removing blacklist entry"
       else
         echo "${counter}/${count} blacklist entry '${data_blacklist_entry}' is not resolving"
       fi
@@ -237,7 +247,7 @@ fi
 log "removing all whitelisted entries"
 for data_whitelist_entry in "${data_whitelist[@]}"; do
   if [ -n "${data_whitelist_entry}" ]; then
-    sed -i -e "/ ${data_whitelist_entry}/d" "${file_temp}" || log_exit "error on removing whitelisted entry"
+    "${SED_COMMAND}" -i -e "/ ${data_whitelist_entry}/d" "${file_temp}" || log_exit "error on removing whitelisted entry"
   fi
 done
 
@@ -257,7 +267,7 @@ sort -u -o "${file_temp}" "${file_temp}" || log_exit "error on sorting"
 if [ ${ipv6dup} -eq 1 ]; then
   log "duplicate data for IPv6 in temp file '${file_temp_ipv6}'"
   cp "${file_temp}" "${file_temp_ipv6}" || log_exit "error on copying '${file_temp}' to '${file_temp_ipv6}'"
-  sed -i -e 's/0.0.0.0/::0/g' "${file_temp_ipv6}" || log_exit "error on IPv6 replacement via sed"
+  "${SED_COMMAND}" -i -e 's/0.0.0.0/::0/g' "${file_temp_ipv6}" || log_exit "error on IPv6 replacement via sed"
   cat "${file_temp_ipv6}" >> "${file_temp}" || log_exit "error on IPv6 replacement via cat"
   rm -f "${file_temp_ipv6}" || log_exit "error on deleting '${file_temp_ipv6}'"
 fi
@@ -269,7 +279,7 @@ data_header="# clean merged adblocking-hosts file\n\
 \n\
 127.0.0.1 localhost\n\
 ::1 localhost\n"
-sed -i "1i${data_header}" "${file_temp}" || log_exit "error on writing file headers"
+"${SED_COMMAND}" -i "1i${data_header}" "${file_temp}" || log_exit "error on writing file headers"
 
 # rotate in place and fix permissions if md5sum old - new is different, otherwise we're done
 if [ ! -f "${file_result}" ] || [ "$(md5file "${file_result}")" != "$(md5file "${file_temp}")" ]; then

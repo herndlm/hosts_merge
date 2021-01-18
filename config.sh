@@ -1,8 +1,6 @@
 #!/bin/bash
 
-# get absolute directory of script
-DIR="$(readlink -f "$0")"
-DIR=${DIR%/*}
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 export file_blacklist="$DIR/hosts_blacklist.txt"
 export file_whitelist="$DIR/hosts_whitelist.txt"
