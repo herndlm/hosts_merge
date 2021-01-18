@@ -1,10 +1,11 @@
 #!/bin/bash
 
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+set -euo pipefail
+IFS=$'\n\t'
 
-export file_blacklist="$DIR/hosts_blacklist.txt"
-export file_whitelist="$DIR/hosts_whitelist.txt"
-export file_result="$DIR/hosts.txt"
+export file_blacklist="${DIR}/hosts_blacklist.txt"
+export file_whitelist="${DIR}/hosts_whitelist.txt"
+export file_result="${DIR}/hosts.txt"
 
 export permissions_result=644
 
