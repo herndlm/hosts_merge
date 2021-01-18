@@ -162,7 +162,7 @@ print_usage() {
   echo "verbose: print more info about what is going on"
   echo "check: checks the whitelist and blacklist (whitelisted entries should exist and blacklisted entries should not exist in the uncleaned hosts data), furthermore non-resolving domains from the blacklist are reported"
   echo "clean: cleanup whitelist and blacklist files (fixes the issues reported by check)"
-  echo "ipv6dup: duplicate all the domains with '::0' as prefix instead of '0.0.0.0'"
+  echo "ipv6dup: duplicate all the domains with '::0' as IP instead of '0.0.0.0'"
 }
 
 check_dependencies() {
@@ -324,10 +324,10 @@ done
   # generate and write file header
   log "generating and writing file header"
   local -r data_header="# clean merged adblocking-hosts file\n\
-  # more infos: https://github.com/monojp/hosts_merge\n\
-  \n\
-  127.0.0.1 localhost\n\
-  ::1 localhost\n"
+# more infos: https://github.com/monojp/hosts_merge\n\
+\n\
+127.0.0.1 localhost\n\
+::1 localhost\n"
   "${SED_COMMAND}" -i "1i${data_header}" "${FILE_TEMP}"
 
   local -r domain_count=$(grep -c '^0.0.0.0 ' "${FILE_TEMP}")
