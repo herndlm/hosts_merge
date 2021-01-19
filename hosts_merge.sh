@@ -23,7 +23,6 @@ CURL_TIMEOUT=300
 
 readonly FILE_BLACKLIST="${DIR}/hosts_blacklist.txt"
 readonly FILE_WHITELIST="${DIR}/hosts_whitelist.txt"
-readonly FILE_RESULT="${DIR}/hosts.txt"
 
 readonly PERMISSIONS_RESULT=644
 
@@ -351,6 +350,8 @@ done
   cleanup
 }
 
+FILE_RESULT="${DIR}/hosts.txt"
+
 # check all parameters
 mode_verbose=0
 mode_check=0
@@ -373,6 +374,8 @@ for var in "$@"; do
     exit
   fi
 done
+
+readonly FILE_RESULT
 readonly mode_verbose
 readonly mode_check
 readonly mode_clean
