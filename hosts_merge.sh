@@ -21,6 +21,7 @@ fi
 CURL_RETRY_NUM=5
 CURL_TIMEOUT=300
 
+readonly CACHE_DIR="${DIR}/cache"
 readonly FILE_BLACKLIST="${DIR}/hosts_blacklist.txt"
 readonly FILE_WHITELIST="${DIR}/hosts_whitelist.txt"
 
@@ -178,6 +179,37 @@ check_dependencies() {
   command -v "${SED_COMMAND}" >/dev/null 2>&1 || log_exit "missing dependency: ${SED_COMMAND}"
 }
 
+#######################################
+# Downloads a file using caching
+# Globals:
+#   CACHE_DIR
+#   CURL_RETRY_NUM
+#   CURL_TIMEOUT
+# Arguments:
+#   source URL
+# Outputs:
+#   file contents
+#######################################
+download_file_to_cache() {
+  local -r url="$1"
+
+  if [ ! -d "${CACHE_DIR}" ]; then
+    mkdir "${CACHE_DIR}"
+  fi
+
+  local -r file="${CACHE_DIR}/${url//\//_}"
+
+  curl --silent --show-error --fail \
+      --output "$file" \
+      --time-cond "$file" \
+      --connect-timeout ${CURL_TIMEOUT} \
+      --max-time ${CURL_TIMEOUT} \
+      --retry ${CURL_RETRY_NUM} \
+      "$url"
+
+  cat "$file"
+}
+
 main() {
   check_dependencies
 
@@ -200,17 +232,15 @@ main() {
 
   # download all sources in hosts format
   for source_hosts_format in "${SOURCES_HOST_FORMAT[@]}"; do
-    log "downloading hosts source '$source_hosts_format' to '$FILE_TEMP'"
-    curl --location -sS --connect-timeout ${CURL_TIMEOUT} --max-time ${CURL_TIMEOUT} \
-      --fail --retry ${CURL_RETRY_NUM} "${source_hosts_format}" >>"${FILE_TEMP}"
+    log "downloading hosts source '${source_hosts_format}' to '${FILE_TEMP}'"
+    download_file_to_cache "${source_hosts_format}" >>"${FILE_TEMP}"
   done
 
 # download all domain only sources (we're cleaning the lines and prepending ip adresses)
 for source_domains_only in "${SOURCES_DOMAINS_ONLY[@]}"; do
   log "downloading domain only source '${source_domains_only}' to '${FILE_TEMP}'"
-  curl --location -sS --connect-timeout ${CURL_TIMEOUT} --max-time ${CURL_TIMEOUT} \
-    --fail --retry ${CURL_RETRY_NUM} "${source_domains_only}" |
-    grep -v '^#' |
+  download_file_to_cache "${source_domains_only}" \
+    grep -v '^#' | \
     "${SED_COMMAND}" -e 's/^/0.0.0.0 /' >>"${FILE_TEMP}"
 done
 
