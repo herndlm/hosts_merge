@@ -7,6 +7,7 @@ set -euo pipefail
 IFS=$'\n\t'
 
 readonly DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
+readonly TMP_DIR="$(dirname $(mktemp -u))"
 
 readonly OS_NAME="$(uname -s)"
 if [[ $OS_NAME == "Darwin" ]]; then
@@ -26,8 +27,6 @@ readonly FILE_BLACKLIST="${DIR}/hosts_blacklist.txt"
 readonly FILE_WHITELIST="${DIR}/hosts_whitelist.txt"
 
 readonly PERMISSIONS_RESULT=644
-
-readonly FILE_LOG="/tmp/hosts_merge.log"
 
 readonly SOURCES_HOST_FORMAT=(
   # MVPS HOSTS
@@ -125,7 +124,7 @@ log() {
     echo -e "${message}" >>"$FILE_LOG"
   fi
   # print argument as message if verbose is set
-  if [ "${mode_verbose}" -eq 1 ]; then
+  if [ "${VERBOSE}" -eq 1 ]; then
     echo -e "${message}"
   fi
 }
@@ -156,12 +155,15 @@ domain_resolves() {
 }
 
 print_usage() {
-  echo "USAGE: <script> [verbose] [check] [clean] [ipv6dup] [output=<filename>]"
+  echo "USAGE: <script> [OPTION] OUTPUT"
   echo
-  echo "verbose: print more info about what is going on"
-  echo "check: checks the whitelist and blacklist (whitelisted entries should exist and blacklisted entries should not exist in the uncleaned hosts data), furthermore non-resolving domains from the blacklist are reported"
-  echo "clean: cleanup whitelist and blacklist files (fixes the issues reported by check)"
-  echo "ipv6dup: duplicate all the domains with '::0' as IP instead of '0.0.0.0'"
+  echo "Options"
+  echo "--verbose: print more info about what is going on"
+  echo "--check: check the whitelist and blacklist (whitelisted entries should exist and blacklisted entries should not exist in the uncleaned hosts data), furthermore non-resolving domains from the blacklist are reported"
+  echo "--clean: cleanup whitelist and blacklist files (fixes the issues reported by check)"
+  echo "--ipv6dup: duplicate all the domains with '::' as IP instead of '0.0.0.0'"
+  echo "--output <filename>: use a different output file (default: hosts.txt)"
+  echo "--log <filename>: use a different log file (default: ${TMP_DIR}/hosts_merge.log)"
 }
 
 check_dependencies() {
@@ -263,7 +265,7 @@ done
   # check mode (checks entries of the white- & blacklist)
   # clean mode (remove whitelist entries that do not exist in the hosts file and remove blacklist
   # entries that do already exist in the hosts file)
-  if [ "${mode_check}" -eq 1 ] || [ "${mode_clean}" -eq 1 ]; then
+  if [ "${CHECK}" -eq 1 ] || [ "${CLEAN}" -eq 1 ]; then
     # whitelist
     count=${#data_whitelist[@]}
     counter=0
@@ -275,7 +277,7 @@ done
 
       if grep -q "^0.0.0.0 ${data_whitelist_entry}$" "${FILE_TEMP}"; then
         # entry that is not blocked any more
-        if [ "${mode_clean}" -eq 1 ]; then
+        if [ "${CLEAN}" -eq 1 ]; then
           echo "${counter}/${count} removing entry '${data_whitelist_entry}' from the whitelist"
           "${SED_COMMAND}" -i -e "/${data_whitelist_entry}/d" "${FILE_WHITELIST}"
         else
@@ -283,7 +285,7 @@ done
         fi
       elif ! domain_resolves "${data_whitelist_entry}"; then
         # entry that is not resolving any more
-        if [ "${mode_clean}" -eq 1 ]; then
+        if [ "${CLEAN}" -eq 1 ]; then
           echo "${counter}/${count} removing non-resolving entry '${data_whitelist_entry}' from the whitelist"
           "${SED_COMMAND}" -i -e "/${data_whitelist_entry}/d" "${FILE_WHITELIST}"
         else
@@ -302,7 +304,7 @@ done
 
       if grep -q "^0.0.0.0 ${data_blacklist_entry}$" "${FILE_TEMP}"; then
         # entry that is already blocked
-        if [ "${mode_clean}" -eq 1 ]; then
+        if [ "${CLEAN}" -eq 1 ]; then
           echo "${counter}/${count} removing entry '${data_blacklist_entry}' from the blacklist"
           "${SED_COMMAND}" -i -e "/${data_blacklist_entry}/d" "${FILE_BLACKLIST}"
         else
@@ -310,7 +312,7 @@ done
         fi
       elif ! domain_resolves "${data_blacklist_entry}"; then
         # entry that is not resolving any more
-        if [ "${mode_clean}" -eq 1 ]; then
+        if [ "${CLEAN}" -eq 1 ]; then
           echo "${counter}/${count} removing non-resolving entry '${data_blacklist_entry}' from the blacklist"
           "${SED_COMMAND}" -i -e "/${data_blacklist_entry}/d" "${FILE_BLACKLIST}"
         else
@@ -341,7 +343,7 @@ done
   sort -u -o "${FILE_TEMP}" "${FILE_TEMP}"
 
   # duplicate data for IPv6 (e.g. dnsmasq needs such entries to block IPv6 hosts)
-  if [ "${ipv6dup}" -eq 1 ]; then
+  if [ "${IPV6DUP}" -eq 1 ]; then
     log "duplicate data for IPv6 in temp file '${FILE_TEMP_IPV6}'"
     cp "${FILE_TEMP}" "${FILE_TEMP_IPV6}"
     "${SED_COMMAND}" -i -e 's/0.0.0.0/::/g' "${FILE_TEMP_IPV6}"
@@ -362,45 +364,62 @@ done
   log "domains on block list: ${domain_count}"
 
   # rotate in place
-  log "move temp file '$FILE_TEMP' to '$FILE_RESULT'"
-  mv -f "${FILE_TEMP}" "${FILE_RESULT}"
+  log "move temp file '$FILE_TEMP' to '$OUTPUT'"
+  mv -f "${FILE_TEMP}" "${OUTPUT}"
 
   # fixup permissions (we don't want that limited temp perms)
-  log "chmod '${FILE_RESULT}' to '${PERMISSIONS_RESULT}'"
-  chmod ${PERMISSIONS_RESULT} "${FILE_RESULT}"
+  log "chmod '${OUTPUT}' to '${PERMISSIONS_RESULT}'"
+  chmod ${PERMISSIONS_RESULT} "${OUTPUT}"
 
   cleanup
 }
 
-FILE_RESULT="${DIR}/hosts.txt"
-
-# check all parameters
-mode_verbose=0
-mode_check=0
-mode_clean=0
-ipv6dup=0
-for var in "$@"; do
-  if [ "${var}" = "verbose" ]; then
-    mode_verbose=1
-  elif [ "${var}" = "check" ]; then
-    mode_check=1
-  elif [ "${var}" = "clean" ]; then
-    mode_clean=1
-  elif [[ "${var}" == "output="* ]]; then
-    FILE_RESULT=${var/output=/}
-  elif [[ "${var}" == "ipv6dup" ]]; then
-    ipv6dup=1
-  # unknown or wrong command, print usage
-  else
-    print_usage
-    exit
-  fi
+VERBOSE=0
+CHECK=0
+CLEAN=0
+IPV6DUP=0
+OUTPUT="${DIR}/hosts.txt"
+FILE_LOG="${TMP_DIR}/hosts_merge.log"
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+      --verbose)
+        VERBOSE=1
+        shift
+        ;;
+      --check)
+        CHECK=1
+        shift
+        ;;
+      --clean)
+        CLEAN=1
+        shift
+        ;;
+      --ipv6dup)
+        IPV6DUP=1
+        shift
+        ;;
+      --output)
+        OUTPUT="$2"
+        shift
+        shift
+        ;;
+      --log)
+        FILE_LOG="$2"
+        shift
+        shift
+        ;;
+      *)
+        echo "Unknown option $1"
+        print_usage
+        exit
+  esac
 done
 
-readonly FILE_RESULT
-readonly mode_verbose
-readonly mode_check
-readonly mode_clean
-readonly ipv6dup
+readonly VERBOSE
+readonly CHECK
+readonly CLEAN
+readonly IPV6DUP
+readonly OUTPUT
+readonly FILE_LOG
 
 main "$@"
