@@ -1,5 +1,6 @@
 a.cookpad-ads.com
 a.neqty.net
+absolventa.adspirit.de
 ad-blacklist.p24.hu
 ad-img.iqon.jp
 ad.adnwif.smt.docomo.ne.jp
@@ -29,6 +30,7 @@ ad2.media01.eu
 ad2.movad.net
 ad2.tripple.at
 adapter.valueimpression.com
+adinplay.com
 ads-i2i.jp
 ads-not-by-this-site.de
 ads-swkbank.de
@@ -59,6 +61,7 @@ adserver.doccheck.com
 adserving.kiosked.iponweb.net
 advantage-license-restapi.digitalsunray.com
 advantage.digitalsunray.com
+advertising-eu.amazon.com
 advertising.amazon.de
 advertising.aolp.jp
 advertising.apartmenttherapy.com
@@ -87,6 +90,7 @@ analytics.theta360.com
 analytics.trustyou.com
 analytics.upa-webdesign.de
 analytics.vanderbellen.at
+api.adinplay.com
 autotrack.g.ebay.com
 banner.alldatasheet.com
 banner.bluesummit.de
@@ -143,6 +147,7 @@ logger-gtm.ooyala.com
 logger.genesis-api.jp
 logger.instagram.com
 logging.immobilien.net
+logs1409.xiti.com
 matomo.kinderaerzte-im-netz.de
 matomopvext.oebb.at
 media.gssp.asia # ads on miomio
@@ -282,6 +287,7 @@ track.outwriters.com
 track.productsup.io
 track.safeclicker.nl
 track.stuttgarter-zeitung.de
+track.us.org
 track.webstatistik-bw.de
 track.xmax.jp
 track.youdutou.cn
