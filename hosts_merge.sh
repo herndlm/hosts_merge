@@ -344,7 +344,7 @@ done
   if [ "${ipv6dup}" -eq 1 ]; then
     log "duplicate data for IPv6 in temp file '${FILE_TEMP_IPV6}'"
     cp "${FILE_TEMP}" "${FILE_TEMP_IPV6}"
-    "${SED_COMMAND}" -i -e 's/0.0.0.0/::0/g' "${FILE_TEMP_IPV6}"
+    "${SED_COMMAND}" -i -e 's/0.0.0.0/::/g' "${FILE_TEMP_IPV6}"
     cat "${FILE_TEMP_IPV6}" >>"${FILE_TEMP}"
     rm -f "${FILE_TEMP_IPV6}"
   fi
