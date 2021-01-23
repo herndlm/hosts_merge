@@ -64,8 +64,6 @@ readonly SOURCES_HOST_FORMAT=(
   "https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt"
   # Ultimate Hosts Blacklist
   "https://hosts.ubuntu101.co.za/hosts"
-  # DataMaster-Android-AdBlock-Hosts
-  "https://raw.githubusercontent.com/DataMaster-2501/DataMaster-Android-AdBlock-Hosts/master/hosts"
   # NoCoin Filter List
   "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt"
   # WindowsSpyBlocker - Hosts spy rules
