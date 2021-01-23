@@ -78,12 +78,6 @@ readonly SOURCES_HOST_FORMAT=(
   "https://osint.digitalside.it/Threat-Intel/lists/latestdomains.txt"
   # Phishing Army
   "https://phishing.army/download/phishing_army_blocklist_extended.txt"
-  # GoodByeAds
-  "https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Hosts/GoodbyeAds.txt"
-  "https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Samsung-AdBlock.txt"
-  "https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Spotify-AdBlock.txt"
-  "https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Xiaomi-Extension.txt"
-  "https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-YouTube-AdBlock.txt"
   # NoTracking
   "https://raw.githubusercontent.com/notracking/hosts-blocklists/master/hostnames.txt"
 )
