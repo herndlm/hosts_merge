@@ -52,9 +52,6 @@ readonly SOURCES_HOST_FORMAT=(
   "https://someonewhocares.org/hosts/zero/hosts"
   # CAMELEON
   "https://sysctl.org/cameleon/hosts"
-  # OCSP / CRL
-  "https://raw.githubusercontent.com/ScottHelme/revocation-endpoints/master/ocsp.txt"
-  "https://raw.githubusercontent.com/ScottHelme/revocation-endpoints/master/crl.txt"
   # Windows 10 Anti Spy
   "https://www.encrypt-the-planet.com/downloads/hosts"
   # Blacklist
