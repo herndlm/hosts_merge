@@ -52,8 +52,6 @@ readonly SOURCES_HOST_FORMAT=(
   "https://someonewhocares.org/hosts/zero/hosts"
   # CAMELEON
   "https://sysctl.org/cameleon/hosts"
-  # MalwareDomainList.com Hosts List
-  "https://www.malwaredomainlist.com/hostslist/hosts.txt"
   # OCSP / CRL
   "https://raw.githubusercontent.com/ScottHelme/revocation-endpoints/master/ocsp.txt"
   "https://raw.githubusercontent.com/ScottHelme/revocation-endpoints/master/crl.txt"
