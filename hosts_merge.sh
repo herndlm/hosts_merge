@@ -70,6 +70,8 @@ readonly SOURCES_HOST_FORMAT=(
   "https://phishing.army/download/phishing_army_blocklist_extended.txt"
   # NoTracking
   "https://raw.githubusercontent.com/notracking/hosts-blocklists/master/hostnames.txt"
+  # d3ward
+  "https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.txt"
 )
 
 readonly SOURCES_DOMAINS_ONLY=(
