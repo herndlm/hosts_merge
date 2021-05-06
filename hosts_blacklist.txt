@@ -198,7 +198,6 @@ piwikext.oebb.at
 piwiki.kk-bits.com
 piwikpro.com.de-aurora-dc.cldsrv.biz
 rd.tabelog.com # tracking pixel
-smartads.mobile.g.yahoo.co.jp
 soux.mj.am # mailjet transparent mail tracking gifs
 startrack.at
 stat.4travel.jp
