@@ -8,7 +8,6 @@ ad.afad.jp
 ad.aruba.it
 ad.bauermedia.com
 ad.benesse.co.jp
-ad.biglobe.ne.jp
 ad.blogmura.com
 ad.cq-andc.jp
 ad.culture.pl
@@ -123,7 +122,6 @@ log.heftig.co
 log.heftig.de
 log.imishin.jp
 log.immoversum.com
-log.letro.jp
 log.seekda.com
 log.snmi.cn
 log.ti-da.net
@@ -178,7 +176,6 @@ piwik.omnigroup.com
 piwik.onatcer.com
 piwik.owl-ict.nl
 piwik.rail.cc
-piwik.riemser.de
 piwik.rtr.at
 piwik.selly.at
 piwik.solunic.at
@@ -260,7 +257,6 @@ stats.wintotal.de
 stats.wms-analytics.net
 stats.ziprecipes.net
 stats.ztcadx.com
-statsd.urlaubspiraten.de
 tag.netrk.net
 track.amebame.com
 track.gamesamba.com
@@ -269,7 +265,6 @@ track.hroc.co.uk
 track.kuronekoyamato.co.jp
 track.mobiprofit.com
 track.neux.de
-track.nzz.ch
 track.o2online.de
 track.outwriters.com
 track.productsup.io
@@ -291,7 +286,6 @@ tracker.mca-analytics.com
 tracker.mg64.net
 tracker.pomf.se
 tracker.secureboxes.net
-tracker.slash-7.com
 tracker.softgarden.de
 tracker.spapi.io
 tracker.the-other-store.net
