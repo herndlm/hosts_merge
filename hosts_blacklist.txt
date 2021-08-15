@@ -211,7 +211,6 @@ stat.hitosara.com
 stat.i3.dmm.com
 stat.ime.baidu.jp
 stat.immolive24.com
-stat.kakaku.com
 stat.megacount.com
 stat.rtcnow.com
 stat.vcpost.com
@@ -264,7 +263,6 @@ track.go-rilla.mobi
 track.hroc.co.uk
 track.kuronekoyamato.co.jp
 track.mobiprofit.com
-track.neux.de
 track.o2online.de
 track.outwriters.com
 track.productsup.io
