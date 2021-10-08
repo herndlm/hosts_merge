@@ -296,6 +296,7 @@ tracking.finanzen.at
 tracking.globonet.ch
 tracking.hitcell.com
 tracking.immobilienscout24.at
+tracking.maptoolkit.net
 tracking.rapidape.com
 tracking.thelabelfinder.com
 tracking.wohnnet.at
