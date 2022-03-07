@@ -316,5 +316,3 @@ webstat02.feratel.com
 webstats.gnome.org
 webstats.zecken.de
 webtrack.rund-ums-baby.de
-www.tm.a.prd.aadg.trafficmanager.net
-www.tm.lg.prod.aadmsa.trafficmanager.net
