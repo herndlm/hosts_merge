@@ -145,6 +145,7 @@ nrtzue7f.emltrk.com # litmus email tracking
 openx.bergfex.at
 optout.adalliance.io
 orfepiwik.orf-enterprise.at
+partner.ads.js
 piwik.arbeiterkammer.at
 piwik.auswaertiges-amt.de
 piwik.baden-wuerttemberg.de
